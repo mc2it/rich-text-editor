@@ -3,11 +3,11 @@
 
 A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
-## Ressources
+## Resources
 - [Documentation](https://github.com/sab-international/rich-text-editor/wiki)
 - [API reference](https://sab-international.github.io/rich-text-editor)
 - [npm package](https://www.npmjs.com/package/@sab-international/rich-text-editor)
 - [GitHub repository](https://github.com/sab-international/rich-text-editor)
 
-## Licence
+## License
 [SAB Rich Text Editor](https://github.com/sab-international/rich-text-editor) is distributed under the MIT License.
