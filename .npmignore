@@ -1,0 +1,13 @@
+/.*
+
+/src/
+/test/
+/var/
+/web/
+
+/*.iml
+/*.js
+/*.yaml
+/*.yml
+/lib/**/*.map
+/tsconfig.json

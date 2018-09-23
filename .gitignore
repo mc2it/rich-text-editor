@@ -1,0 +1,14 @@
+/.*/
+!/.vscode/
+
+/build/
+/doc/api/
+/lib/
+/node_modules/
+/var/
+/web/
+
+/*.iml
+/**/.DS_Store
+/npm-debug.log
+/package-lock.json
