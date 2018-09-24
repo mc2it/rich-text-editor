@@ -76,7 +76,7 @@ export class RichTextEditor extends ClassicEditor {
     table: {toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']},
     toolbar: {
       items: [
-        'heading', 'fontSize', '|',
+        'heading', '|',
         'bold', 'italic', 'underline', 'strikethrough', '|',
         'undo', 'redo', '|',
         'bulletedList', 'numberedList', '|',
