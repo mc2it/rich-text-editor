@@ -50,17 +50,14 @@ export class RichTextEditor extends ClassicEditor {
   static readonly builtinPlugins: Plugin[] = [
     Alignment,
     Autoformat,
-    Bold,
-    Essentials, // Includes: Clipboard, Enter, Typing and Undo.
+    Bold, Italic, Strikethrough, Underline,
+    Essentials, // Includes: Clipboard, Enter, ShiftEnter, Typing and Undo.
     Heading,
     Image, ImageCaption, ImageStyle, ImageToolbar,
-    Italic,
     Link,
     List,
     Paragraph,
-    Strikethrough,
-    Table, TableToolbar,
-    Underline
+    Table, TableToolbar
   ];
 
   /**

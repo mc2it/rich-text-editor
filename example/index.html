@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>SAB Rich Text Editor</title>
     <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/i18n/en.js"></script>
 
     <style>
       html { height: 100%; }
@@ -17,7 +18,7 @@
 
     <script>
       RichTextEditor
-        .create(document.querySelector('#editor'))
+        .create(document.querySelector('#editor'), {language: 'en'})
         .catch(error => console.error(error));
     </script>
   </body>
