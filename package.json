@@ -29,9 +29,9 @@
     "@ckeditor/ckeditor5-theme-lark": "^11.0.0"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-dev-utils": "^11.0.0",
-    "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.0",
-    "@types/node": "^10.10.3",
+    "@ckeditor/ckeditor5-dev-utils": "^11.0.1",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.1",
+    "@types/node": "^10.11.2",
     "babel-minify-webpack-plugin": "^0.3.1",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -41,8 +41,8 @@
     "style-loader": "^0.23.0",
     "tslint": "^5.11.0",
     "typedoc": "^0.12.0",
-    "typescript": "^3.0.3",
-    "webpack": "^4.19.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
     "webpack-cli": "^3.1.0"
   },
   "engines": {
