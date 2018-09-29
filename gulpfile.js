@@ -49,13 +49,18 @@ gulp.task('serve', () => _exec('http-server', ['example', '-o']));
 /**
  * Upgrades the project to the latest revision.
  */
-gulp.task('upgrade', async () => {
+gulp.task('upgrade:git', async () => {
   await _exec('git', ['reset', '--hard']);
   await _exec('git', ['fetch', '--all', '--prune']);
-  await _exec('git', ['pull', '--rebase']);
+  return _exec('git', ['pull', '--rebase']);
+});
+
+gulp.task('upgrade:npm', async () => {
   await _exec('npm', ['install', '--ignore-scripts']);
   return _exec('npm', ['update', '--dev']);
 });
+
+gulp.task('upgrade', gulp.series('upgrade:git', 'upgrade:npm'));
 
 /**
  * Watches for file changes.
