@@ -17,9 +17,10 @@ const sources = ['*.js', 'src/**/*.ts'];
 /**
  * Builds the project.
  */
-gulp.task('build:dist', () => _exec('webpack'));
-gulp.task('build:esm', () => _exec('tsc', ['--project', 'src/tsconfig.json']));
-gulp.task('build', gulp.series('build:esm', 'build:dist'));
+gulp.task('build', async () => {
+  await _exec('tsc', ['--project', 'src/tsconfig.json']);
+  return _exec('webpack');
+});
 
 /**
  * Deletes all generated files and reset any saved state.
@@ -49,18 +50,13 @@ gulp.task('serve', () => _exec('http-server', ['example', '-o']));
 /**
  * Upgrades the project to the latest revision.
  */
-gulp.task('upgrade:git', async () => {
+gulp.task('upgrade', async () => {
   await _exec('git', ['reset', '--hard']);
   await _exec('git', ['fetch', '--all', '--prune']);
-  return _exec('git', ['pull', '--rebase']);
-});
-
-gulp.task('upgrade:npm', async () => {
+  await _exec('git', ['pull', '--rebase']);
   await _exec('npm', ['install', '--ignore-scripts']);
   return _exec('npm', ['update', '--dev']);
 });
-
-gulp.task('upgrade', gulp.series('upgrade:git', 'upgrade:npm'));
 
 /**
  * Watches for file changes.
