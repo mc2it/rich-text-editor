@@ -31,6 +31,8 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 // @ts-ignore: no typings available for this package.
 import List from '@ckeditor/ckeditor5-list/src/list';
 // @ts-ignore: no typings available for this package.
+import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+// @ts-ignore: no typings available for this package.
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 // @ts-ignore: no typings available for this package.
 import Table from '@ckeditor/ckeditor5-table/src/table';
@@ -56,6 +58,7 @@ export class RichTextEditor extends ClassicEditor {
     Image, ImageCaption, ImageStyle, ImageToolbar,
     Link,
     List,
+    MediaEmbed,
     Paragraph,
     Table, TableToolbar
   ];
@@ -64,13 +67,17 @@ export class RichTextEditor extends ClassicEditor {
    * The default editor settings.
    */
   static readonly defaultConfig: JsonMap = {
-    alignment: {options: ['left', 'center', 'right']},
+    alignment: {
+      options: ['left', 'center', 'right']
+    },
     image: {
       styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
       toolbar: ['imageStyle:full', 'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight']
     },
     language: 'fr',
-    table: {toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']},
+    table: {
+      toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
+    },
     toolbar: {
       items: [
         'heading', '|',
@@ -78,7 +85,7 @@ export class RichTextEditor extends ClassicEditor {
         'undo', 'redo', '|',
         'bulletedList', 'numberedList', '|',
         'alignment:left', 'alignment:center', 'alignment:right', '|',
-        'link', 'insertTable'
+        'link', 'mediaEmbed', 'insertTable'
       ]
     }
   };
