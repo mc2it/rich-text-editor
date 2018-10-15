@@ -33,6 +33,8 @@ import List from '@ckeditor/ckeditor5-list/src/list';
 // @ts-ignore: no typings available for this package.
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 // @ts-ignore: no typings available for this package.
+import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar';
+// @ts-ignore: no typings available for this package.
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 // @ts-ignore: no typings available for this package.
 import Table from '@ckeditor/ckeditor5-table/src/table';
@@ -58,7 +60,7 @@ export class RichTextEditor extends ClassicEditor {
     Image, ImageCaption, ImageStyle, ImageToolbar,
     Link,
     List,
-    MediaEmbed,
+    MediaEmbed, MediaEmbedToolbar,
     Paragraph,
     Table, TableToolbar
   ];
@@ -76,17 +78,15 @@ export class RichTextEditor extends ClassicEditor {
     },
     language: 'fr',
     table: {
-      toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
+      contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
     },
-    toolbar: {
-      items: [
-        'heading', '|',
-        'bold', 'italic', 'underline', 'strikethrough', '|',
-        'undo', 'redo', '|',
-        'bulletedList', 'numberedList', '|',
-        'alignment:left', 'alignment:center', 'alignment:right', '|',
-        'link', 'mediaEmbed', 'insertTable'
-      ]
-    }
+    toolbar: [
+      'heading', '|',
+      'bold', 'italic', 'underline', 'strikethrough', 'link', '|',
+      'undo', 'redo', '|',
+      'bulletedList', 'numberedList', '|',
+      'alignment:left', 'alignment:center', 'alignment:right', '|',
+      'insertTable', 'mediaEmbed'
+    ]
   };
 }
