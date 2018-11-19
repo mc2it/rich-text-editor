@@ -4,7 +4,7 @@
 A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
 ## Documentation
-- [Documentation](https://dev.sabcomputer.com/rich-text-editor)
+- [User guide](https://dev.sabcomputer.com/rich-text-editor)
 - [API reference](https://dev.sabcomputer.com/rich-text-editor/api)
 
 ## Development
