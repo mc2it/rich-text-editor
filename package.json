@@ -3,7 +3,7 @@
   "browser": "./build/editor.js",
   "bugs": "https://github.com/sab-international/rich-text-editor/issues",
   "description": "A customized build of CKEditor, a rich text editor.",
-  "homepage": "https://github.com/sab-international/rich-text-editor",
+  "homepage": "https://dev.sabcomputer.com/rich-text-editor",
   "license": "MIT",
   "main": "./lib/index.js",
   "name": "@sab-international/rich-text-editor",

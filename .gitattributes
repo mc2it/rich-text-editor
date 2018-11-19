@@ -1,14 +1,10 @@
 * text=auto
 
 .* text
-*.css text diff=css
-*.html text diff=html
 *.js text
 *.json text
 *.md text
-*.scss text
-*.sh text eol=lf
-*.svg text
+*.opts text
 *.ts text
 *.txt text
 *.yaml text

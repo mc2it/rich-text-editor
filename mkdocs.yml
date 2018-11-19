@@ -1,0 +1,42 @@
+site_name: SAB Rich Text Editor
+site_description: A customized build of CKEditor, a rich text editor.
+site_author: SAB International - contact@sabcomputer.com
+site_url: https://dev.sabcomputer.com/rich-text-editor
+
+docs_dir: doc
+site_dir: web
+
+repo_name: GitHub
+repo_url: https://github.com/sab-international/rich-text-editor
+edit_uri: edit/master/
+
+copyright: Copyright &copy; 2018 SAB International
+google_analytics:
+- !!python/object/apply:os.getenv [GOOGLE_ANALYTICS_ID]
+- auto
+
+extra:
+  social:
+  - {type: globe, link: 'http://www.sabcomputer.com'}
+  - {type: github, link: 'https://github.com/sab-international'}
+  - {type: facebook, link: 'https://www.facebook.com/sabinternational34'}
+  - {type: linkedin, link: 'https://linkedin.com/company/sab-international-sarl'}
+
+markdown_extensions:
+- admonition
+- codehilite
+- meta
+
+nav:
+- Overview: index.md
+- Installation: installation.md
+- Usage: usage.md
+- About:
+  - Changelog: about/changelog.md
+  - License: about/license.md
+  - See also: about/see_also.md
+
+theme:
+  name: material
+  favicon: img/favicon.ico
+  palette: {primary: yellow, accent: yellow}

@@ -2,6 +2,7 @@
 
 const {spawn} = require('child_process');
 const del = require('del');
+const {promises} = require('fs');
 const gulp = require('gulp');
 const {delimiter, normalize, resolve} = require('path');
 
@@ -32,7 +33,12 @@ gulp.task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
 /**
  * Builds the documentation.
  */
-gulp.task('doc', () => _exec('typedoc'));
+gulp.task('doc', async () => {
+  await promises.copyFile('CHANGELOG.md', 'doc/about/changelog.md');
+  await promises.copyFile('LICENSE.md', 'doc/about/license.md');
+  await _exec('typedoc');
+  return _exec('mkdocs', ['build']);
+});
 
 /**
  * Fixes the coding standards issues.
