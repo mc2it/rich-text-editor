@@ -21,6 +21,7 @@ extra:
   - {type: github, link: 'https://github.com/sab-international'}
   - {type: facebook, link: 'https://www.facebook.com/sabinternational34'}
   - {type: linkedin, link: 'https://linkedin.com/company/sab-international-sarl'}
+  - {type: twitter, link: 'https://twitter.com/SABDistribution'}
 
 markdown_extensions:
 - admonition
