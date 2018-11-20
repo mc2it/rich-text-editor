@@ -8,7 +8,7 @@ site_dir: web
 
 repo_name: GitHub
 repo_url: https://github.com/sab-international/rich-text-editor
-edit_uri: edit/master/doc/
+edit_uri: ''
 
 copyright: Copyright &copy; 2018 SAB International
 google_analytics:
