@@ -29,6 +29,7 @@ This code snippet will turn the `<textarea id="editor">` into a rich text editor
 - [Headings](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html)
 - [Images](https://ckeditor.com/docs/ckeditor5/latest/features/image.html): `Image`, `ImageCaption`, `ImageStyle` and `ImageToolbar`.
 - [Media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html): `MediaEmbed` and `MediaEmbedToolbar`.
+- [Paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/paste-from-word.html)
 - [Tables](https://ckeditor.com/docs/ckeditor5/latest/features/table.html): `Table` and `TableToolbar`.
 - [Text alignment](https://ckeditor.com/docs/ckeditor5/latest/features/text-alignment.html)
 - Other editing features: `Link`, `List` and `Paragraph`.
