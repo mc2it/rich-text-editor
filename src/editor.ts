@@ -37,6 +37,8 @@ import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoo
 // @ts-ignore: no typings available for this package.
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 // @ts-ignore: no typings available for this package.
+import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+// @ts-ignore: no typings available for this package.
 import Table from '@ckeditor/ckeditor5-table/src/table';
 // @ts-ignore: no typings available for this package.
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
@@ -62,6 +64,7 @@ export class RichTextEditor extends ClassicEditor {
     List,
     MediaEmbed, MediaEmbedToolbar,
     Paragraph,
+    PasteFromOffice,
     Table, TableToolbar
   ];
 
