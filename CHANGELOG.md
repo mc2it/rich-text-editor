@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [1.2.0](https://github.com/sab-international/rich-text-editor/compare/v1.1.0...v1.2.0)
+- Enabled the [paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/paste-from-word.html) feature.
+- Updated the package dependencies.
+
 ## Version [1.1.0](https://github.com/sab-international/rich-text-editor/compare/v1.0.2...v1.1.0)
 - Enabled the [media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html) feature.
 - Updated the package dependencies.
