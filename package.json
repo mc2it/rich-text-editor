@@ -9,7 +9,7 @@
   "name": "@sab-international/rich-text-editor",
   "repository": "sab-international/rich-text-editor",
   "types": "./lib/index.d.ts",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "dependencies": {
     "@ckeditor/ckeditor5-alignment": "^10.0.4",
     "@ckeditor/ckeditor5-autoformat": "^10.0.4",
