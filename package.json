@@ -1,5 +1,4 @@
 {
-  "author": "SAB International <contact@sabcomputer.com>",
   "browser": "./build/editor.js",
   "bugs": "https://github.com/sab-international/rich-text-editor/issues",
   "description": "A customized build of CKEditor, a rich text editor.",
@@ -7,9 +6,19 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "name": "@sab-international/rich-text-editor",
-  "repository": "sab-international/rich-text-editor",
+  "repository": "github:sab-international/rich-text-editor",
   "types": "./lib/index.d.ts",
   "version": "1.2.0",
+  "author": {
+    "email": "contact@sabcomputer.com",
+    "name": "SAB International",
+    "url": "http://www.sabcomputer.com"
+  },
+  "contributors": [{
+    "email": "cedric@belin.io",
+    "name": "Cédric Belin",
+    "url": "https://belin.io"
+  }],
   "dependencies": {
     "@ckeditor/ckeditor5-alignment": "^10.0.4",
     "@ckeditor/ckeditor5-autoformat": "^10.0.4",
@@ -38,11 +47,11 @@
     "postcss-loader": "^3.0.0",
     "raw-loader": "^1.0.0",
     "style-loader": "^0.23.1",
-    "tslint": "^5.12.0",
-    "typedoc": "^0.14.0",
+    "tslint": "^5.12.1",
+    "typedoc": "^0.14.1",
     "typescript": "^3.2.2",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   },
   "engines": {
     "node": ">=10.15.0",
