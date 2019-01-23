@@ -37,7 +37,7 @@ import {RichTextEditor} from '@sab-international/rich-text-editor';
 ```
 
 !!! info
-    This library is packaged as [`ECMAScript modules`](http://www.ecma-international.org/ecma-262/6.0/#sec-modules).  
+    This library is packaged as [ECMAScript modules](https://nodejs.org/api/esm.html) (`.js` files).  
     To consume it, you must use a dedicated tool chain, like a build system coupled with a bundler.
 
 ### 3. Use it
