@@ -3,7 +3,7 @@
   "description": "A customized build of CKEditor, a rich text editor.",
   "homepage": "https://dev.sabcomputer.com/rich-text-editor",
   "license": "MIT",
-  "main": "lib/index",
+  "main": "lib/index.js",
   "name": "@sab-international/rich-text-editor",
   "repository": "github:sab-international/rich-text-editor",
   "types": "lib/index.d.ts",
