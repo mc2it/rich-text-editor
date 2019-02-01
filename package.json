@@ -38,7 +38,7 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^11.0.1",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.1",
-    "@types/node": "^10.12.18",
+    "@types/node": "^10.12.21",
     "babel-minify-webpack-plugin": "^0.3.1",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
