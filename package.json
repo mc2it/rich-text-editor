@@ -38,7 +38,7 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^11.0.1",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^7.0.1",
-    "@types/node": "^10.12.21",
+    "@types/node": "^10.12.22",
     "babel-minify-webpack-plugin": "^0.3.1",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -48,9 +48,9 @@
     "style-loader": "^0.23.1",
     "tslint": "^5.12.1",
     "typedoc": "^0.14.2",
-    "typescript": "^3.2.4",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "engines": {
     "node": ">=10.15.0",
