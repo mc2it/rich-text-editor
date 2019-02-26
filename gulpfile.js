@@ -1,9 +1,8 @@
 'use strict';
-
 const {spawn} = require('child_process');
 const del = require('del');
 const {promises} = require('fs');
-const gulp = require('gulp');
+const {task, watch} = require('gulp');
 const {delimiter, normalize, resolve} = require('path');
 
 // Initialize the build system.
@@ -20,7 +19,7 @@ const sources = ['*.js', 'src/**/*.ts'];
 /**
  * Builds the project.
  */
-gulp.task('build', async () => {
+task('build', async () => {
   await _exec('tsc', ['--project', 'src/tsconfig.json']);
   return _exec('webpack');
 });
@@ -28,12 +27,12 @@ gulp.task('build', async () => {
 /**
  * Deletes all generated files and reset any saved state.
  */
-gulp.task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
+task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
 
 /**
  * Builds the documentation.
  */
-gulp.task('doc', async () => {
+task('doc', async () => {
   await promises.copyFile('CHANGELOG.md', 'doc/about/changelog.md');
   await promises.copyFile('LICENSE.md', 'doc/about/license.md');
   await _exec('typedoc');
@@ -43,22 +42,22 @@ gulp.task('doc', async () => {
 /**
  * Fixes the coding standards issues.
  */
-gulp.task('fix', () => _exec('tslint', ['--fix', ...sources]));
+task('fix', () => _exec('tslint', ['--fix', ...sources]));
 
 /**
  * Performs the static analysis of source code.
  */
-gulp.task('lint', () => _exec('tslint', sources));
+task('lint', () => _exec('tslint', sources));
 
 /**
  * Starts the development server.
  */
-gulp.task('serve', () => _exec('http-server', ['example', '-o']));
+task('serve', () => _exec('http-server', ['example', '-o']));
 
 /**
  * Upgrades the project to the latest revision.
  */
-gulp.task('upgrade', async () => {
+task('upgrade', async () => {
   await _exec('git', ['reset', '--hard']);
   await _exec('git', ['fetch', '--all', '--prune']);
   await _exec('git', ['pull', '--rebase']);
@@ -69,12 +68,12 @@ gulp.task('upgrade', async () => {
 /**
  * Watches for file changes.
  */
-gulp.task('watch', () => gulp.watch('src/**/*.ts', {ignoreInitial: false}, gulp.task('build')));
+task('watch', () => watch('src/**/*.ts', {ignoreInitial: false}, task('build')));
 
 /**
  * Runs the default tasks.
  */
-gulp.task('default', gulp.task('build'));
+task('default', task('build'));
 
 /**
  * Spawns a new process using the specified command.
