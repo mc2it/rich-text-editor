@@ -50,7 +50,7 @@
     "style-loader": "^0.23.1",
     "tslint": "^5.15.0",
     "typedoc": "^0.14.2",
-    "typescript": "^3.4.2",
+    "typescript": "^3.4.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
