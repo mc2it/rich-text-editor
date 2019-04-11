@@ -35,8 +35,8 @@ task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
 task('doc', async () => {
   await promises.copyFile('CHANGELOG.md', 'doc/about/changelog.md');
   await promises.copyFile('LICENSE.md', 'doc/about/license.md');
-  await _exec('typedoc');
-  return _exec('mkdocs', ['build']);
+  await _exec('typedoc', ['--options', 'doc/typedoc.js']);
+  return _exec('mkdocs', ['build', '--config-file=doc/mkdocs.yml']);
 });
 
 /**
