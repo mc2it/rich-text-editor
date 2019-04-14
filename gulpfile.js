@@ -21,7 +21,7 @@ const sources = ['*.js', 'src/**/*.ts'];
  */
 task('build', async () => {
   await _exec('tsc', ['--project', 'src/tsconfig.json']);
-  return _exec('webpack');
+  return _exec('webpack', ['--config=src/webpack.config.js']);
 });
 
 /**

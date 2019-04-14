@@ -5,7 +5,7 @@ const BabelMinifyPlugin = require('babel-minify-webpack-plugin');
 const {join} = require('path');
 
 module.exports = {
-  entry: './lib/index.js',
+  entry: join(__dirname, '../lib/index.js'),
   mode: 'production',
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
     library: 'RichTextEditor',
     libraryExport: 'RichTextEditor',
     libraryTarget: 'window',
-    path: join(__dirname, 'build')
+    path: join(__dirname, '../build')
   },
   performance: {hints: false},
   plugins: [
