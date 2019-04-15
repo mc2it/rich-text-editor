@@ -45,14 +45,10 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 import {JsonMap} from './map';
 
-/**
- * An implementation of a rich text editor.
- */
+/** An implementation of a rich text editor. */
 export class RichTextEditor extends ClassicEditor {
 
-  /**
-   * The set of supported plug-ins.
-   */
+  /** The set of supported plug-ins. */
   static readonly builtinPlugins: Plugin[] = [
     Alignment,
     Autoformat,
@@ -68,9 +64,7 @@ export class RichTextEditor extends ClassicEditor {
     Table, TableToolbar
   ];
 
-  /**
-   * The default editor settings.
-   */
+  /** The default editor settings. */
   static readonly defaultConfig: JsonMap = {
     alignment: {
       options: ['left', 'center', 'right']
