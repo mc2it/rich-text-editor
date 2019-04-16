@@ -5,13 +5,16 @@ const {promises} = require('fs');
 const {task, watch} = require('gulp');
 const {delimiter, normalize, resolve} = require('path');
 
+/**
+ * The file patterns providing the list of source files.
+ * @type {string[]}
+ */
+const sources = ['*.js', 'src/**/*.ts'];
+
 // Initialize the build system.
 const _path = 'PATH' in process.env ? process.env.PATH : '';
 const _vendor = resolve('node_modules/.bin');
 if (!_path.includes(_vendor)) process.env.PATH = `${_vendor}${delimiter}${_path}`;
-
-/** @type {string[]} The file patterns providing the list of source files. */
-const sources = ['*.js', 'src/**/*.ts'];
 
 /** Builds the project. */
 task('build', async () => {
@@ -36,9 +39,7 @@ task('fix', () => _exec('tslint', ['--fix', ...sources]));
 /** Performs the static analysis of source code. */
 task('lint', () => _exec('tslint', sources));
 
-/**
- * Starts the development server.
- */
+/** Starts the development server. */
 task('serve', () => _exec('http-server', ['example', '-o']));
 
 /** Upgrades the project to the latest revision. */
