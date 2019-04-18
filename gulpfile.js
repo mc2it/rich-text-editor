@@ -19,7 +19,7 @@ if (!_path.includes(_vendor)) process.env.PATH = `${_vendor}${delimiter}${_path}
 /** Builds the project. */
 task('build', async () => {
   await _exec('tsc', ['--project', 'src/tsconfig.json']);
-  return _exec('webpack', ['--config=src/webpack.config.js']);
+  return _exec('webpack', ['--config=etc/webpack.js']);
 });
 
 /** Deletes all generated files and reset any saved state. */
@@ -28,16 +28,16 @@ task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
 /** Builds the documentation. */
 task('doc', async () => {
   for (const path of ['CHANGELOG.md', 'LICENSE.md']) await promises.copyFile(path, `doc/about/${path.toLowerCase()}`);
-  await _exec('typedoc', ['--options', 'doc/typedoc.js']);
-  await _exec('mkdocs', ['build', '--config-file=doc/mkdocs.yml']);
-  return del(['doc/about/changelog.md', 'doc/about/license.md', 'web/mkdocs.yml', 'web/typedoc.js']);
+  await _exec('typedoc', ['--options', 'etc/typedoc.js']);
+  await _exec('mkdocs', ['build', '--config-file=etc/mkdocs.yml']);
+  return del(['doc/about/changelog.md', 'doc/about/license.md']);
 });
 
 /** Fixes the coding standards issues. */
-task('fix', () => _exec('tslint', ['--fix', ...sources]));
+task('fix', () => _exec('tslint', ['--config', 'etc/tslint.yaml', '--fix', ...sources]));
 
 /** Performs the static analysis of source code. */
-task('lint', () => _exec('tslint', sources));
+task('lint', () => _exec('tslint', ['--config', 'etc/tslint.yaml', ...sources]));
 
 /** Starts the development server. */
 task('serve', () => _exec('http-server', ['example', '-o']));

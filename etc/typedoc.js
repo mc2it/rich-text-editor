@@ -6,5 +6,5 @@ module.exports = {
   gitRevision: 'master',
   mode: 'modules',
   name: 'SAB Rich Text Editor',
-  out: join(__dirname, 'api')
+  out: join(__dirname, '../doc/api')
 };
