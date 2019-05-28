@@ -30,6 +30,10 @@ module.exports = {
   },
   performance: {hints: false},
   plugins: [
-    new CKEditorPlugin({additionalLanguages: 'all', language: 'fr', outputDirectory: 'i18n'})
+    new CKEditorPlugin({
+      additionalLanguages: 'all',
+      language: 'fr',
+      outputDirectory: 'i18n'
+    })
   ]
 };
