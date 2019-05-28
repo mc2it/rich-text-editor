@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.0.0](https://github.com/sab-international/rich-text-editor/compare/v1.4.0...v2.0.0)
+- Updated the package dependencies.
+
 ## Version [1.4.0](https://github.com/sab-international/rich-text-editor/compare/v1.3.0...v1.4.0)
 - Enabled some [font features](https://ckeditor.com/docs/ckeditor5/latest/features/font.html): color and background color.
 - Updated the package dependencies.

@@ -1,4 +1,3 @@
-/* tslint:disable: variable-name */
 const {styles} = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
 const BabelMinifyPlugin = require('babel-minify-webpack-plugin');

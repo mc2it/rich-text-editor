@@ -12,30 +12,30 @@ edit_uri: ''
 
 copyright: Copyright &copy; 2018 - 2019 SAB International
 google_analytics:
-- !!python/object/apply:os.getenv [GOOGLE_ANALYTICS_ID]
-- auto
+  - !!python/object/apply:os.getenv [GOOGLE_ANALYTICS_ID]
+  - auto
 
 extra:
   social:
-  - {type: globe, link: 'http://www.sabcomputer.com'}
-  - {type: github, link: 'https://github.com/sab-international'}
-  - {type: facebook, link: 'https://www.facebook.com/sabinternational34'}
-  - {type: twitter, link: 'https://twitter.com/SABDistribution'}
-  - {type: linkedin, link: 'https://linkedin.com/company/sab-international-sarl'}
+    - {type: globe, link: 'http://www.sabcomputer.com'}
+    - {type: github, link: 'https://github.com/sab-international'}
+    - {type: facebook, link: 'https://www.facebook.com/sabinternational34'}
+    - {type: twitter, link: 'https://twitter.com/SABDistribution'}
+    - {type: linkedin, link: 'https://linkedin.com/company/sab-international-sarl'}
 
 markdown_extensions:
-- admonition
-- codehilite
-- meta
+  - admonition
+  - codehilite
+  - meta
 
 nav:
-- Overview: index.md
-- Installation: installation.md
-- Usage: usage.md
-- About:
-  - Changelog: about/changelog.md
-  - License: about/license.md
-  - See also: about/see_also.md
+  - Overview: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - About:
+      - Changelog: about/changelog.md
+      - License: about/license.md
+      - See also: about/see_also.md
 
 theme:
   name: material
