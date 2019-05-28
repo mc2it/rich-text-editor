@@ -1,9 +1,9 @@
 /.*/
+!/.github/
 !/.vscode/
 
 /build/
 /doc/api/
-/lib/
 /node_modules/
 /var/
 /web/

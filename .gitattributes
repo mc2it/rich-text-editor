@@ -1,16 +1,15 @@
 * text=auto
 
 .* text
+*.info text
 *.js text
 *.json text
 *.md text
 *.opts text
-*.ts text
 *.txt text
 *.yaml text
 *.yml text
 
-*.gif binary
 *.ico binary
 *.jpg binary
 *.pdf binary
