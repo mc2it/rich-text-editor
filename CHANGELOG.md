@@ -1,6 +1,10 @@
 # Changelog
 
 ## Version [2.0.0](https://github.com/sab-international/rich-text-editor/compare/v1.4.0...v2.0.0)
+- Breaking change: ported the source code to [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+- Enabled the [remove format](https://ckeditor.com/docs/ckeditor5/latest/features/remove-format.html) feature.
+- Replaced [TypeDoc](https://typedoc.org) documentation generator by [JSDoc](https://jsdoc.app).
+- Replaced [TSLint](https://palantir.github.io/tslint) static analyzer by [ESLint](https://eslint.org).
 - Updated the package dependencies.
 
 ## Version [1.4.0](https://github.com/sab-international/rich-text-editor/compare/v1.3.0...v1.4.0)
