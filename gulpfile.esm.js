@@ -27,16 +27,8 @@ task('clean', () => del(['.nyc_output', 'build', 'doc/api', 'var/**/*', 'web']))
 
 /** Builds the documentation. */
 task('doc', async () => {
-  for (const path of ['CHANGELOG.md', 'LICENSE.md']) await promises.copyFile(path, `doc/about/${path.toLowerCase()}`);
-  await _exec('typedoc', ['--options', 'etc/typedoc.js']);
-  await _exec('mkdocs', ['build', '--config-file=etc/mkdocs.yaml']);
-  return del(['doc/about/changelog.md', 'doc/about/license.md']);
-});
-
-/** Builds the documentation. */
-task('doc', async () => {
   for (const path of ['CHANGELOG.md', 'LICENSE.md']) await copyFile(path, `doc/about/${path.toLowerCase()}`);
-  await _exec('esdoc', ['-c', 'etc/esdoc.json']);
+  await _exec('jsdoc', ['--configure', 'etc/jsdoc.json']);
   await _exec('mkdocs', ['build', '--config-file=etc/mkdocs.yaml']);
   return del(['doc/about/changelog.md', 'doc/about/license.md']);
 });

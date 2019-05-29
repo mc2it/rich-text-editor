@@ -1,9 +1,9 @@
 # SAB Rich Text Editor
 ![Runtime](https://img.shields.io/node/v/@sab-international/rich-text-editor.svg) ![Release](https://img.shields.io/npm/v/@sab-international/rich-text-editor.svg) ![License](https://img.shields.io/npm/l/@sab-international/rich-text-editor.svg) ![Downloads](https://img.shields.io/npm/dt/@sab-international/rich-text-editor.svg) ![Dependencies](https://david-dm.org/sab-international/rich-text-editor.svg)
 
-A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
-
 ![Screenshot](img/screenshot.jpg)
+
+A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
 !!! info
     This library is packaged as [ECMAScript modules](https://nodejs.org/api/esm.html).
