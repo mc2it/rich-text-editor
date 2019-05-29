@@ -1,9 +1,9 @@
-const {styles} = require('@ckeditor/ckeditor5-dev-utils');
-const CKEditorPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
-const BabelMinifyPlugin = require('babel-minify-webpack-plugin');
-const {join} = require('path');
+import devUtils from '@ckeditor/ckeditor5-dev-utils';
+import CKEditorPlugin from '@ckeditor/ckeditor5-dev-webpack-plugin';
+import BabelMinifyPlugin from 'babel-minify-webpack-plugin';
+import {join} from 'path';
 
-module.exports = {
+export default {
   entry: join(__dirname, '../lib/index.js'),
   mode: 'production',
   module: {
@@ -11,7 +11,7 @@ module.exports = {
       {test: /\.svg$/, use: 'raw-loader'},
       {test: /\.css$/, use: [
         {loader: 'style-loader', options: {singleton: true}},
-        {loader: 'postcss-loader', options: styles.getPostCssConfig({
+        {loader: 'postcss-loader', options: devUtils.styles.getPostCssConfig({
           minify: true,
           themeImporter: {themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')}
         })}
