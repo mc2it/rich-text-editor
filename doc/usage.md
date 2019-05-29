@@ -1,5 +1,5 @@
 path: blob/master
-source: src/editor.ts
+source: lib/editor.js
 
 # Usage
 This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor](https://ckeditor.com/ckeditor-5)'s classic editor. It extends from the [`ClassicEditor`](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) class provided by this project, so its usage is basically the same.
@@ -31,6 +31,7 @@ This code snippet will turn the `<textarea id="editor">` into a rich text editor
 - [Images](https://ckeditor.com/docs/ckeditor5/latest/features/image.html): `Image`, `ImageCaption`, `ImageStyle` and `ImageToolbar`.
 - [Media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html): `MediaEmbed` and `MediaEmbedToolbar`.
 - [Paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/paste-from-word.html)
+- [Remove format](https://ckeditor.com/docs/ckeditor5/latest/features/remove-format.html)
 - [Tables](https://ckeditor.com/docs/ckeditor5/latest/features/table.html): `Table` and `TableToolbar`.
 - [Text alignment](https://ckeditor.com/docs/ckeditor5/latest/features/text-alignment.html)
 - Other editing features: `Link`, `List` and `Paragraph`.
