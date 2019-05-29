@@ -1,7 +1,7 @@
 {
   "metadata": {
     "header": {"background": "#f9a825", "color": "white"},
-    "title": "Which for JS"
+    "title": "SAB Rich Text Editor"
   },
   "opts": {
     "destination": "doc/api",
