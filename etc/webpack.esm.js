@@ -1,17 +1,17 @@
-import devUtils from '@ckeditor/ckeditor5-dev-utils';
+import utils from '@ckeditor/ckeditor5-dev-utils';
 import CKEditorPlugin from '@ckeditor/ckeditor5-dev-webpack-plugin';
 import BabelMinifyPlugin from 'babel-minify-webpack-plugin';
-import {join} from 'path';
+import {resolve} from 'path';
 
 export default {
-  entry: join(__dirname, '../lib/index.js'),
+  entry: resolve(__dirname, '../lib/index.js'),
   mode: 'production',
   module: {
     rules: [
       {test: /\.svg$/, use: 'raw-loader'},
       {test: /\.css$/, use: [
         {loader: 'style-loader', options: {singleton: true}},
-        {loader: 'postcss-loader', options: devUtils.styles.getPostCssConfig({
+        {loader: 'postcss-loader', options: utils.styles.getPostCssConfig({
           minify: true,
           themeImporter: {themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')}
         })}
@@ -26,7 +26,7 @@ export default {
     library: 'RichTextEditor',
     libraryExport: 'RichTextEditor',
     libraryTarget: 'window',
-    path: join(__dirname, '../build')
+    path: resolve(__dirname, '../build')
   },
   performance: {hints: false},
   plugins: [
