@@ -68,6 +68,7 @@
     "wysiwyg"
   ],
   "scripts": {
+    "prepack": "gulp build",
     "start": "gulp watch"
   }
 }
