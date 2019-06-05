@@ -1,6 +1,6 @@
 # Changelog
 
-## Version [2.0.0](https://github.com/sab-international/rich-text-editor/compare/v2.0.0...v2.1.0)
+## Version [2.1.0](https://github.com/sab-international/rich-text-editor/compare/v2.0.0...v2.1.0)
 - Updated the package dependencies.
 
 ## Version [2.0.0](https://github.com/sab-international/rich-text-editor/compare/v1.4.0...v2.0.0)
