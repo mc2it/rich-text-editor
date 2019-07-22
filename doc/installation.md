@@ -5,13 +5,13 @@ Before installing **SAB Rich Text Editor**, you need to make sure you have [Node
 and [npm](https://www.npmjs.com), the Node.js package manager, up and running.
 
 !!! warning
-    SAB Rich Text Editor requires Node.js >= **12.4.0**.
+    SAB Rich Text Editor requires Node.js >= **12.6.0**.
 
 You can verify if you're already good to go with the following commands:
 
 ```shell
 node --version
-# v12.4.0
+# v12.6.0
 
 npm --version
 # 6.9.0
