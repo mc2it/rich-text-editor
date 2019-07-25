@@ -55,8 +55,8 @@
     "webpack-cli": "^3.3.6"
   },
   "engines": {
-    "node": ">=12.6.0",
-    "npm": ">=6.9.0"
+    "node": ">=12.7.0",
+    "npm": ">=6.10.0"
   },
   "keywords": [
     "ckeditor5",
