@@ -7,7 +7,8 @@
   "name": "@sab-international/rich-text-editor",
   "repository": "github:sab-international/rich-text-editor",
   "type": "module",
-  "version": "2.1.0",
+  "types": "lib/index.d.ts",
+  "version": "2.2.0",
   "author": {
     "email": "contact@sabcomputer.com",
     "name": "SAB International",
@@ -40,22 +41,29 @@
     "@ckeditor/ckeditor5-theme-lark": "^14.1.1"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-dev-utils": "^12.0.3",
-    "@ckeditor/ckeditor5-dev-webpack-plugin": "^8.0.3",
+    "@ckeditor/ckeditor5-dev-utils": "^12.0.5",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^8.0.5",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-replace": "^0.0.31",
+    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "babel-minify-webpack-plugin": "^0.3.1",
     "del": "^5.0.0",
-    "eslint": "^6.1.0",
-    "esm": "^3.2.25",
+    "eslint": "^6.2.0",
     "gulp": "^4.0.2",
-    "jsdoc": "^3.6.3",
+    "gulp-replace": "^1.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^3.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6"
+    "style-loader": "^1.0.0",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   },
   "engines": {
-    "node": ">=12.7.0",
+    "node": ">=12.8.0",
     "npm": ">=6.10.0"
   },
   "keywords": [
@@ -68,7 +76,7 @@
     "wysiwyg"
   ],
   "scripts": {
-    "prepack": "gulp build",
+    "prepack": "gulp",
     "start": "gulp watch"
   }
 }
