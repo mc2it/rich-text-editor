@@ -3,7 +3,7 @@ import CKEditorPlugin from '@ckeditor/ckeditor5-dev-webpack-plugin';
 import BabelMinifyPlugin from 'babel-minify-webpack-plugin';
 import {resolve} from 'path';
 
-export default {
+module.exports = {
   entry: resolve(__dirname, '../lib/index.js'),
   mode: 'production',
   module: {
