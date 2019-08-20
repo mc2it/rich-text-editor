@@ -16,7 +16,7 @@ Then call the `RichTextEditor.create()` method:
 <script>
   RichTextEditor
     .create(document.querySelector('#editor'))
-    .catch(error => console.error(error));
+    .catch(console.error);
 </script>
 ```
 

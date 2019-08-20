@@ -1,5 +1,11 @@
 # Changelog
 
+## Version [2.2.0](https://github.com/sab-international/rich-text-editor/compare/v2.1.0...v2.2.0)
+- Due to strong user demand, restored the [TypeScript](https://www.typescriptlang.org) source code.
+- Raised the [Node.js](https://nodejs.org) constraint.
+- Replaced the [JSDoc](https://jsdoc.app) documentation generator by [TypeDoc](https://typedoc.org).
+- Updated the package dependencies.
+
 ## Version [2.1.0](https://github.com/sab-international/rich-text-editor/compare/v2.0.0...v2.1.0)
 - Updated the package dependencies.
 
