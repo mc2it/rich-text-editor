@@ -1,3 +1,5 @@
+declare module '@ckeditor/ckeditor5-editor-classic/src/classiceditor' { export default class ClassicEditor {} }
+
 declare module '@ckeditor/ckeditor5-alignment/src/alignment' { export default class Alignment {} }
 declare module '@ckeditor/ckeditor5-autoformat/src/autoformat' { export default class Autoformat {} }
 declare module '@ckeditor/ckeditor5-basic-styles/src/bold' { export default class Bold {} }
@@ -7,7 +9,6 @@ declare module '@ckeditor/ckeditor5-basic-styles/src/underline' { export default
 declare module '@ckeditor/ckeditor5-core/src/plugin' { export default class Plugin {} }
 declare module '@ckeditor/ckeditor5-remove-format/src/removeformat' { export default class RemoveFormat {} }
 declare module '@ckeditor/ckeditor5-remove-format/src/removeformatui' { export default class RemoveFormatLinks {} }
-declare module '@ckeditor/ckeditor5-editor-classic/src/classiceditor' { export default class ClassicEditor {} }
 declare module '@ckeditor/ckeditor5-essentials/src/essentials' { export default class Essentials {} }
 declare module '@ckeditor/ckeditor5-font/src/fontbackgroundcolor' { export default class FontBackgroundColor {} }
 declare module '@ckeditor/ckeditor5-font/src/fontcolor' { export default class FontColor {} }
