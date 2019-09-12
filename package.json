@@ -45,7 +45,7 @@
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^8.0.5",
     "@types/gulp": "^4.0.6",
     "@types/gulp-replace": "^0.0.31",
-    "@types/node": "^12.7.4",
+    "@types/node": "^12.7.5",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
     "babel-minify-webpack-plugin": "^0.3.1",
@@ -58,7 +58,7 @@
     "style-loader": "^1.0.0",
     "ts-node": "^8.3.0",
     "typedoc": "^0.15.0",
-    "typescript": "^3.6.2",
+    "typescript": "^3.6.3",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8"
   },
