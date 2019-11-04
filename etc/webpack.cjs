@@ -1,7 +1,7 @@
 const utils = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
-const BabelMinifyPlugin = require('babel-minify-webpack-plugin');
 const {resolve} = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: resolve(__dirname, '../lib/index.js'),
@@ -19,7 +19,10 @@ module.exports = {
     ]
   },
   optimization: {
-    minimizer: [new BabelMinifyPlugin({}, {comments: false})]
+    minimizer: [new TerserPlugin({
+      extractComments: false,
+      terserOptions: {output: {comments: false}}
+    })]
   },
   output: {
     filename: 'editor.js',

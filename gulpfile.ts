@@ -23,7 +23,7 @@ task('build:fix', () => src('lib/**/*.js')
   .pipe(replace(/(export|import)\s+(.+)\s+from\s+'(@ckeditor\/[^']+)'/g, "$1 $2 from '$3.js'"))
   .pipe(dest('lib')));
 
-task('build:dist', () => _exec('webpack', ['--config=etc/webpack.js']));
+task('build:dist', () => _exec('webpack', ['--config=etc/webpack.cjs']));
 task('build:js', () => _exec('tsc', ['--project', 'src/tsconfig.json']));
 task('build', series('build:js', 'build:fix', 'build:dist'));
 
