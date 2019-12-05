@@ -1,5 +1,5 @@
 # MIT License
-Copyright &copy; 2018 - 2019 SAB International
+Copyright &copy; 2018 - 2020 SAB International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
