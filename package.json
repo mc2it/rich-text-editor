@@ -70,6 +70,10 @@
     "build/",
     "lib/"
   ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/cedx"
+  },
   "keywords": [
     "ckeditor5",
     "ckeditor5-build",
