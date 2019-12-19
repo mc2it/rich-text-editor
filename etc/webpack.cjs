@@ -1,10 +1,10 @@
 const utils = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
-const {resolve} = require('path');
+const {join} = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: resolve(__dirname, '../lib/index.js'),
+  entry: join(__dirname, '../lib/index.js'),
   mode: 'production',
   module: {
     rules: [
@@ -29,7 +29,7 @@ module.exports = {
     library: 'RichTextEditor',
     libraryExport: 'RichTextEditor',
     libraryTarget: 'window',
-    path: resolve(__dirname, '../build')
+    path: join(__dirname, '../build')
   },
   performance: {hints: false},
   plugins: [
