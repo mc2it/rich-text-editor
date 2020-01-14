@@ -8,7 +8,7 @@
   "repository": "github:sab-international/rich-text-editor",
   "type": "module",
   "types": "lib/index.d.ts",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "author": {
     "email": "contact@sabcomputer.com",
     "name": "SAB International",
@@ -54,7 +54,6 @@
     "raw-loader": "^4.0.0",
     "style-loader": "^1.1.2",
     "terser-webpack-plugin": "^2.3.2",
-    "ts-node": "^8.6.2",
     "typedoc": "^0.16.2",
     "typescript": "^3.7.4",
     "webpack": "^4.41.5",
