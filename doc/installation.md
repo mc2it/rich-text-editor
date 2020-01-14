@@ -32,7 +32,7 @@ npm install @sab-international/rich-text-editor
 ### 2. Import it
 Now in your [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) or [TypeScript](https://www.typescriptlang.org) code, you can use:
 
-```ts
+```js
 import {RichTextEditor} from '@sab-international/rich-text-editor';
 ```
 
