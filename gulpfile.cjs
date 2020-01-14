@@ -5,24 +5,15 @@ const {dest, series, src, task, watch} = require('gulp');
 const replace = require('gulp-replace');
 const {delimiter, normalize, resolve} = require('path');
 
-/**
- * The file patterns providing the list of source files.
- * @type {string[]}
- */
-const sources = ['src/**/*.ts'];
-
 // Initialize the build system.
 const _path = 'PATH' in process.env ? process.env.PATH : '';
 const _vendor = resolve('node_modules/.bin');
 if (!_path.includes(_vendor)) process.env.PATH = `${_vendor}${delimiter}${_path}`;
 
 /** Builds the project. */
-task('build:fix', () => src('lib/**/*.js')
-  .pipe(replace(/(export|import)\s+(.+)\s+from\s+'(\.[^']+)'/g, "$1 $2 from '$3.js'"))
-  .pipe(replace(/(export|import)\s+(.+)\s+from\s+'(@ckeditor\/[^']+)'/g, "$1 $2 from '$3.js'"))
-  .pipe(dest('lib')));
-
+const esmRegex = /(export|import)\s+(.+)\s+from\s+'(\.[^']+|@ckeditor\/[^']+)'/g;
 task('build:dist', () => _exec('webpack', ['--config=etc/webpack.cjs']));
+task('build:fix', () => src('lib/**/*.js').pipe(replace(esmRegex, "$1 $2 from '$3.js'")).pipe(dest('lib')));
 task('build:js', () => _exec('tsc', ['--project', 'src/tsconfig.json']));
 task('build', series('build:js', 'build:fix', 'build:dist'));
 
@@ -38,10 +29,10 @@ task('doc', async () => {
 });
 
 /** Fixes the coding standards issues. */
-task('fix', () => _exec('eslint', ['--config=etc/eslint.yaml', '--fix', ...sources]));
+task('fix', () => _exec('eslint', ['--config=etc/eslint.yaml', '--fix', 'src/**/*.ts']));
 
 /** Performs the static analysis of source code. */
-task('lint', () => _exec('eslint', ['--config=etc/eslint.yaml', ...sources]));
+task('lint', () => _exec('eslint', ['--config=etc/eslint.yaml', 'src/**/*.ts']));
 
 /** Upgrades the project to the latest revision. */
 task('upgrade', async () => {
