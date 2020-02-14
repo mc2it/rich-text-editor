@@ -3,7 +3,7 @@ site_description: A customized build of CKEditor, a rich text editor.
 site_author: SAB International - contact@sabcomputer.com
 site_url: https://dev.sabcomputer.com/rich-text-editor
 
-docs_dir: ../doc
+docs_dir: .
 site_dir: ../web
 
 repo_name: GitHub
