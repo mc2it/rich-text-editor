@@ -11,7 +11,7 @@ You can verify if you're already good to go with the following commands:
 
 ```shell
 node --version
-# v13.9.0
+# v13.10.1
 
 npm --version
 # 6.13.7
@@ -49,4 +49,7 @@ To install it, add this code snippet to the `<head>` of your HTML document:
 
 <!-- UNPKG -->
 <script src="https://unpkg.com/@sab-international/rich-text-editor/build/editor.js"></script>
+
+<!-- SAB International -->
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 ```

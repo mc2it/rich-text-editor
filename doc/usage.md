@@ -48,6 +48,9 @@ These files are located in the `build/i18n` folder of this package.
 
 <!-- UNPKG -->
 <script src="https://unpkg.com/@sab-international/rich-text-editor/build/i18n/[lang].js"></script>
+
+<!-- SAB International -->
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/[lang].js"></script>
 ```
 
 For example:
@@ -60,6 +63,10 @@ For example:
 <!-- UNPKG -->
 <script src="https://unpkg.com/@sab-international/rich-text-editor/build/editor.js"></script>
 <script src="https://unpkg.com/@sab-international/rich-text-editor/build/i18n/en.js"></script>
+
+<!-- SAB International -->
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
 ```
 
 Next, you can configure the editor to use one of the loaded language:
