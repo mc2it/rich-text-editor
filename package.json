@@ -43,9 +43,9 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^12.0.9",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^8.0.9",
-    "@types/node": "^13.7.7",
-    "@typescript-eslint/eslint-plugin": "^2.22.0",
-    "@typescript-eslint/parser": "^2.22.0",
+    "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
     "gulp": "^4.0.2",
