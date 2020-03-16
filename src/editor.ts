@@ -71,7 +71,7 @@ export class RichTextEditor extends ClassicEditor {
     },
     toolbar: [
       'heading', '|',
-      'bold', 'italic', 'underline', 'strikethrough', 'link', 'code', '|',
+      'bold', 'italic', 'underline', 'strikethrough', 'link', '|',
       'fontColor', 'fontBackgroundColor', '|',
       'removeFormat', '|',
       'undo', 'redo', '|',
