@@ -36,9 +36,6 @@ Now in your [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 import {RichTextEditor} from '@sab-international/rich-text-editor';
 ```
 
-### 3. Use it
-See the [usage information](usage.md).
-
 ## Installing from a content delivery network
 This library is also available as a ready-made bundle.
 To install it, add this code snippet to the `<head>` of your HTML document:

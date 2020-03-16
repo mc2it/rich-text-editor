@@ -62,6 +62,11 @@ declare module '@ckeditor/ckeditor5-heading/src/heading' {
   export default class Heading extends Plugin {}
 }
 
+declare module '@ckeditor/ckeditor5-horizontal-line/src/horizontalline' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class HorizontalLine extends Plugin {}
+}
+
 declare module '@ckeditor/ckeditor5-image/src/image' {
   import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
   export default class Image extends Plugin {}
@@ -85,6 +90,11 @@ declare module '@ckeditor/ckeditor5-image/src/imagetoolbar' {
 declare module '@ckeditor/ckeditor5-link/src/link' {
   import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
   export default class Link extends Plugin {}
+}
+
+declare module '@ckeditor/ckeditor5-list/src/todolist' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class TodoList extends Plugin {}
 }
 
 declare module '@ckeditor/ckeditor5-list/src/list' {
@@ -127,7 +137,22 @@ declare module '@ckeditor/ckeditor5-table/src/table' {
   export default class Table extends Plugin {}
 }
 
+declare module '@ckeditor/ckeditor5-table/src/tablecellproperties' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class TableCellProperties extends Plugin {}
+}
+
+declare module '@ckeditor/ckeditor5-table/src/tableproperties' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class TableProperties extends Plugin {}
+}
+
 declare module '@ckeditor/ckeditor5-table/src/tabletoolbar' {
   import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
   export default class TableToolbar extends Plugin {}
+}
+
+declare module '@ckeditor/ckeditor5-typing/src/texttransformation' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class TextTransformation extends Plugin {}
 }
