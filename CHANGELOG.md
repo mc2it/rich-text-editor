@@ -1,5 +1,11 @@
 # Changelog
 
+## Version [2.5.0](https://github.com/sab-international/rich-text-editor/compare/v2.4.0...v2.5.0)
+- Enabled the [horizontal line](https://ckeditor.com/docs/ckeditor5/latest/features/horizontal-line.html) feature.
+- Enabled the [paste from Google Docs](https://ckeditor.com/docs/ckeditor5/latest/features/pasting/paste-from-google-docs.html) feature.
+- Enabled the [to-do lists ](https://ckeditor.com/docs/ckeditor5/latest/features/todo-lists.html) feature.
+- Updated the package dependencies.
+
 ## Version [2.4.0](https://github.com/sab-international/rich-text-editor/compare/v2.3.0...v2.4.0)
 - Updated the package dependencies.
 
