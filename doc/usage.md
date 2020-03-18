@@ -23,18 +23,21 @@ Then call the `RichTextEditor.create()` method:
 This code snippet will turn the `<textarea id="editor">` into a rich text editor.
 
 ## Features
-- Essentials: `Clipboard`, `Enter`, `ShiftEnter`, `Typing` and `Undo`.
 - [Autoformatting](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html)
+- [Automatic text transformation](https://ckeditor.com/docs/ckeditor5/latest/features/text-transformation.html)
 - [Basic text styles](https://ckeditor.com/docs/ckeditor5/latest/features/basic-styles.html): `Bold`, `Italic`, `Strikethrough` and `Underline`.
 - [Font](https://ckeditor.com/docs/ckeditor5/latest/features/font.html): `FontColor` and `FontBackgroundColor`.
 - [Headings](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html)
-- [Images](https://ckeditor.com/docs/ckeditor5/latest/features/image.html): `Image`, `ImageCaption`, `ImageStyle` and `ImageToolbar`.
+- [Horizontal line](https://ckeditor.com/docs/ckeditor5/latest/features/horizontal-line.html)
+- [Images](https://ckeditor.com/docs/ckeditor5/latest/features/image.html): `Image`, `ImageCaption`, `ImageResize`, `ImageStyle` and `ImageToolbar`.
+- [Link](https://ckeditor.com/docs/ckeditor5/latest/features/link.html)
 - [Media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html): `MediaEmbed` and `MediaEmbedToolbar`.
-- [Paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/paste-from-word.html)
+- [Paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/pasting/paste-from-word.html)
 - [Remove format](https://ckeditor.com/docs/ckeditor5/latest/features/remove-format.html)
-- [Tables](https://ckeditor.com/docs/ckeditor5/latest/features/table.html): `Table` and `TableToolbar`.
+- [Tables](https://ckeditor.com/docs/ckeditor5/latest/features/table.html): `Table`, `TableCellProperties`, `TableProperties` and `TableToolbar`.
 - [Text alignment](https://ckeditor.com/docs/ckeditor5/latest/features/text-alignment.html)
-- Other editing features: `Link`, `List` and `Paragraph`.
+- [To-do lists](https://ckeditor.com/docs/ckeditor5/latest/features/todo-lists.html)
+- and more...
 
 ## Localization
 By default, the editor will display in **French**. This is the language built into the `editor.js` file.
