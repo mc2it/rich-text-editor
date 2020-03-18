@@ -77,6 +77,11 @@ declare module '@ckeditor/ckeditor5-image/src/imagecaption' {
   export default class ImageCaption extends Plugin {}
 }
 
+declare module '@ckeditor/ckeditor5-image/src/imageresize' {
+  import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+  export default class ImageResize extends Plugin {}
+}
+
 declare module '@ckeditor/ckeditor5-image/src/imagestyle' {
   import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
   export default class ImageStyle extends Plugin {}

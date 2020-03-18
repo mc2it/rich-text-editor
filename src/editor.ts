@@ -13,6 +13,7 @@ import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import Link from '@ckeditor/ckeditor5-link/src/link';
@@ -42,7 +43,7 @@ export class RichTextEditor extends ClassicEditor {
     FontBackgroundColor, FontColor,
     Heading,
     HorizontalLine,
-    Image, ImageCaption, ImageStyle, ImageToolbar,
+    Image, ImageCaption, ImageResize, ImageStyle, ImageToolbar,
     Link,
     List, TodoList,
     MediaEmbed, MediaEmbedToolbar,
@@ -59,6 +60,7 @@ export class RichTextEditor extends ClassicEditor {
       options: ['left', 'center', 'right']
     },
     image: {
+      resizeUnit: 'px',
       styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
       toolbar: ['imageStyle:full', 'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight']
     },
