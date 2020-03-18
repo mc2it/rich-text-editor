@@ -4,8 +4,8 @@
 - Enabled the [automatic text transformation](https://ckeditor.com/docs/ckeditor5/latest/features/text-transformation.html) feature.
 - Enabled the [horizontal line](https://ckeditor.com/docs/ckeditor5/latest/features/horizontal-line.html) feature.
 - Enabled the [paste from Google Docs](https://ckeditor.com/docs/ckeditor5/latest/features/pasting/paste-from-google-docs.html) feature.
-- Enabled the [special characters](https://ckeditor.com/docs/ckeditor5/latest/features/special-characters.html) feature.
 - Enabled the [to-do lists](https://ckeditor.com/docs/ckeditor5/latest/features/todo-lists.html) feature.
+- Enabled the image resizing tools.
 - Enbaled the table and cell styling tools.
 - Updated the package dependencies.
 
