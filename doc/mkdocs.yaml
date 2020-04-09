@@ -17,7 +17,7 @@ google_analytics:
 
 extra:
   social:
-    - {type: globe, link: 'http://www.sabcomputer.com'}
+    - {type: globe, link: 'https://www.sabcomputer.com'}
     - {type: github, link: 'https://github.com/sab-international'}
     - {type: facebook, link: 'https://www.facebook.com/sabinternational34'}
     - {type: twitter, link: 'https://twitter.com/SABDistribution'}
