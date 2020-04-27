@@ -1,7 +1,7 @@
 site_name: SAB Rich Text Editor
 site_description: A customized build of CKEditor, a rich text editor.
 site_author: SAB International - contact@sabcomputer.com
-site_url: https://dev.sabcomputer.com/rich-text-editor
+site_url: https://docs.sabcomputer.com/rich-text-editor
 
 docs_dir: ../doc
 site_dir: ../www
