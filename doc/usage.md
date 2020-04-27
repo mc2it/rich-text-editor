@@ -1,5 +1,7 @@
-path: blob/master
+---
+path: src/branch/master
 source: src/editor.ts
+---
 
 # Usage
 This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor](https://ckeditor.com/ckeditor-5)'s classic editor. It extends from the [`ClassicEditor`](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) class provided by this project, so its usage is basically the same.

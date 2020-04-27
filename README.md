@@ -6,8 +6,8 @@ A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text e
 > This library is packaged as [ECMAScript modules](https://nodejs.org/api/esm.html).
 
 ## Documentation
-- [User guide](https://dev.sabcomputer.com/rich-text-editor)
-- [API reference](https://dev.sabcomputer.com/rich-text-editor/api)
+- [User guide](https://docs.sabcomputer.com/rich-text-editor)
+- [API reference](https://api.sabcomputer.com/rich-text-editor)
 
 ## Development
 - [Git repository](https://github.com/sab-international/rich-text-editor)
@@ -16,4 +16,4 @@ A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text e
 - [Submit an issue](https://github.com/sab-international/rich-text-editor/issues)
 
 ## License
-[SAB Rich Text Editor](https://dev.sabcomputer.com/rich-text-editor) is distributed under the MIT License.
+[SAB Rich Text Editor](https://docs.sabcomputer.com/rich-text-editor) is distributed under the MIT License.
