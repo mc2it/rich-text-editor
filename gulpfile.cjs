@@ -33,9 +33,8 @@ task('fix', () => _exec('eslint', ['--config=etc/eslint.yaml', '--fix', 'src/**/
 task('lint', () => _exec('eslint', ['--config=etc/eslint.yaml', 'src/**/*.ts']));
 
 /** Publishes the package to the registry. */
-task('publish:github', () => _exec('npm', ['publish', '--registry=https://npm.pkg.github.com']));
 task('publish:npm', () => _exec('npm', ['publish', '--registry=https://registry.npmjs.org']));
-task('publish', series('clean', 'publish:github', 'publish:npm'));
+task('publish', series('clean', 'publish:npm'));
 
 /** Upgrades the project to the latest revision. */
 task('upgrade', async () => {

@@ -11,7 +11,6 @@ A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text e
 
 ## Development
 - [Git repository](https://github.com/sab-international/rich-text-editor)
-- [GitHub package](https://github.com/sab-international/rich-text-editor/packages)
 - [npm package](https://www.npmjs.com/package/@sab-international/rich-text-editor)
 - [Submit an issue](https://github.com/sab-international/rich-text-editor/issues)
 
