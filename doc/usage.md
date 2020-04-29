@@ -80,7 +80,7 @@ Next, you can configure the editor to use one of the loaded language:
 <script>
   RichTextEditor
     .create(document.querySelector('#editor'), {language: 'en'})
-    .catch(error => console.error(error));
+    .catch(console.error);
 </script>
 ```
 
