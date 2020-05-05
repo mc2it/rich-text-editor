@@ -61,7 +61,7 @@
     "webpack-cli": "^3.3.11"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.1.0"
   },
   "files": [
     "build/",
