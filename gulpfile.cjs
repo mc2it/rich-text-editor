@@ -14,7 +14,7 @@ task('build:js', () => _exec('tsc', ['--project', 'src/tsconfig.json']));
 task('build', series('build:js', 'build:dist'));
 
 /** Deletes all generated files and reset any saved state. */
-task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'web']));
+task('clean', () => del(['build', 'doc/api', 'lib', 'var/**/*', 'www']));
 
 /** Builds the documentation. */
 task('doc', async () => {
