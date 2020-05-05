@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.8.0](https://github.com/sab-international/rich-text-editor/compare/v2.7.0...v2.8.0)
+- Updated the package dependencies.
+
 ## Version [2.7.0](https://github.com/sab-international/rich-text-editor/compare/v2.6.0...v2.7.0)
 - Raised the [Node.js](https://nodejs.org) constraint.
 - Updated the documentation.
