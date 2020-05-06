@@ -3,7 +3,7 @@
   "description": "A customized build of CKEditor, a rich text editor.",
   "homepage": "https://docs.sabcomputer.com/rich-text-editor",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/index.cjs",
   "name": "@sab-international/rich-text-editor",
   "repository": "github:sab-international/rich-text-editor",
   "type": "module",
@@ -61,7 +61,11 @@
     "webpack-cli": "^3.3.11"
   },
   "engines": {
-    "node": ">=14.1.0"
+    "node": ">=14.0.0"
+  },
+  "exports": {
+    "import": "lib/index.mjs",
+    "require": "lib/index.cjs"
   },
   "files": [
     "build/",
