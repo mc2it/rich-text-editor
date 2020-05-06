@@ -8,7 +8,7 @@ function Update-File {
     [Parameter(Mandatory = $true, Position = 2)] [String] $replacement
   )
 
-  (Get-Content $file -Encoding UTF8) -replace $pattern, $replacement | Out-File $file -Encoding UTF8
+  (Get-Content $file) -replace $pattern, $replacement | Out-File $file
 }
 
 $version = (Get-Content haxelib.json | ConvertFrom-Json).version
