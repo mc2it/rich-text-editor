@@ -1,6 +1,8 @@
 # Changelog
 
 ## Version [3.0.0](https://github.com/sab-international/rich-text-editor/compare/v2.7.0...v3.0.0)
+- Breaking change: ported the source code to [Haxe](https://haxe.org).
+- Breaking change: removed the [media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html) feature.
 - Updated the package dependencies.
 
 ## Version [2.7.0](https://github.com/sab-international/rich-text-editor/compare/v2.6.0...v2.7.0)

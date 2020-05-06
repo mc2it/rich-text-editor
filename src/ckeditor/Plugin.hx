@@ -51,12 +51,6 @@ extern class Link extends Plugin {}
 @:jsRequire('@ckeditor/ckeditor5-list/src/list.js', 'default')
 extern class List extends Plugin {}
 
-@:jsRequire('@ckeditor/ckeditor5-media-embed/src/mediaembed.js', 'default')
-extern class MediaEmbed extends Plugin {}
-
-@:jsRequire('@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js', 'default')
-extern class MediaEmbedToolbar extends Plugin {}
-
 @:jsRequire('@ckeditor/ckeditor5-paragraph/src/paragraph.js', 'default')
 extern class Paragraph extends Plugin {}
 

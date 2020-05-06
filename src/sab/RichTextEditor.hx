@@ -18,8 +18,6 @@ import ckeditor.Plugin.ImageToolbar;
 import ckeditor.Plugin.Italic;
 import ckeditor.Plugin.Link;
 import ckeditor.Plugin.List;
-import ckeditor.Plugin.MediaEmbed;
-import ckeditor.Plugin.MediaEmbedToolbar;
 import ckeditor.Plugin.Paragraph;
 import ckeditor.Plugin.PasteFromOffice;
 import ckeditor.Plugin.RemoveFormat;
@@ -48,7 +46,6 @@ import ckeditor.Plugin.Underline;
     Image, ImageCaption, ImageResize, ImageStyle, ImageToolbar,
     Link,
     List, TodoList,
-    MediaEmbed, MediaEmbedToolbar,
     Paragraph,
     PasteFromOffice,
     RemoveFormat, RemoveFormatLinks,
@@ -81,7 +78,7 @@ import ckeditor.Plugin.Underline;
       'undo', 'redo', '|',
       'bulletedList', 'numberedList', 'todoList', '|',
       'alignment:left', 'alignment:center', 'alignment:right', '|',
-      'horizontalLine', 'insertTable', 'mediaEmbed'
+      'horizontalLine', 'insertTable'
     ],
     typing: {
       transformations: {
