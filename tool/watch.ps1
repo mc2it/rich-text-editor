@@ -1,8 +1,10 @@
 #!/usr/bin/env pwsh
 Set-Location (Split-Path $PSScriptRoot)
+[Console]::TreatControlCAsInput = $true
 
 $action = {
-  Write-Host "The file '$($Event.SourceEventArgs.Name)' was $($Event.SourceEventArgs.ChangeType)..." 
+  $changeType = [String] $Event.SourceEventArgs.ChangeType
+  Write-Host "'$($Event.SourceEventArgs.Name)' was $($changeType.ToLower()): build the project..." 
   tool/build.ps1
 }
 
