@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: join(__dirname, '../lib/index.mjs'),
-  mode: 'production',
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
       {test: /\.svg$/, use: 'raw-loader'},

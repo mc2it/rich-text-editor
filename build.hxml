@@ -1,5 +1,4 @@
 --class-path src
---dce full
 --define js-es=6
 --js lib/editor.cjs
 sab.RichTextEditor
