@@ -5,9 +5,6 @@
 
 A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
-!!! info
-    This library is packaged as [ECMAScript modules](https://nodejs.org/api/esm.html).
-
 ## Quick start
 Install the latest version of **SAB Rich Text Editor** with [npm](https://www.npmjs.com):
 

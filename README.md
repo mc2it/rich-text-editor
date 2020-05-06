@@ -3,8 +3,6 @@
 
 A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
-> This library is packaged as [ECMAScript modules](https://nodejs.org/api/esm.html).
-
 ## Documentation
 - [User guide](https://docs.sabcomputer.com/rich-text-editor)
 - [API reference](https://api.sabcomputer.com/rich-text-editor)
