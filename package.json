@@ -8,7 +8,7 @@
   "repository": "github:sab-international/rich-text-editor",
   "type": "module",
   "types": "lib/index.d.ts",
-  "version": "2.8.0",
+  "version": "3.0.0",
   "author": {
     "email": "contact@sabcomputer.com",
     "name": "SAB International",
@@ -75,13 +75,8 @@
     "ckeditor5",
     "ckeditor5-build",
     "editor",
-    "esm",
     "rte",
     "text",
     "wysiwyg"
-  ],
-  "scripts": {
-    "prepack": "gulp",
-    "start": "gulp watch"
-  }
+  ]
 }
