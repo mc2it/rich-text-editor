@@ -5,7 +5,7 @@ import Plugin from '@ckeditor/ckeditor5-core/src/plugin.js';
 export declare class RichTextEditor extends ClassicEditor {
 
   /** The set of supported plug-ins. */
-  static readonly builtinPlugins: Plugin[];
+  static readonly builtinPlugins: Array<typeof Plugin>;
 
   /** The default editor settings. */
   static readonly defaultConfig: Record<string, any>;
