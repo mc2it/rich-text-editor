@@ -4,8 +4,9 @@ Set-Location (Split-Path $PSScriptRoot)
 
 $action = {
   $changeType = [String] $Event.SourceEventArgs.ChangeType
-  Write-Host "'$($Event.SourceEventArgs.Name)' was $($changeType.ToLower()): build the project..." 
+  Write-Host "'$($Event.SourceEventArgs.Name)' was $($changeType.ToLower()): building the project..." 
   tool/build.ps1
+  Write-Host 'Done.'
 }
 
 $watcher = New-Object System.IO.FileSystemWatcher (Resolve-Path src).Path

@@ -37,7 +37,7 @@ import ckeditor.Plugin.Underline;
 @:expose class RichTextEditor extends ClassicEditor {
 
   /** The set of supported plug-ins. */
-  static var builtinPlugins: Array<Class<Plugin>> = [
+  static var builtinPlugins(default, never): Array<Class<Plugin>> = [
     Alignment,
     Autoformat,
     Bold, Italic, Strikethrough, Underline,
@@ -57,7 +57,7 @@ import ckeditor.Plugin.Underline;
   ];
 
   /** The default editor settings. */
-  static var defaultConfig = {
+  static var defaultConfig(default, never) = {
     alignment: {
       options: ['left', 'center', 'right']
     },
