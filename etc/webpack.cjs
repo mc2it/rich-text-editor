@@ -4,7 +4,7 @@ const {join} = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: join(__dirname, '../lib/index.js'),
+  entry: join(__dirname, '../lib/index.mjs'),
   mode: 'production',
   module: {
     rules: [
