@@ -1,6 +1,7 @@
 package sab;
 
 import ckeditor.ClassicEditor;
+import ckeditor.Plugin;
 import ckeditor.Plugin.Alignment;
 import ckeditor.Plugin.Autoformat;
 import ckeditor.Plugin.Bold;
@@ -21,7 +22,6 @@ import ckeditor.Plugin.MediaEmbed;
 import ckeditor.Plugin.MediaEmbedToolbar;
 import ckeditor.Plugin.Paragraph;
 import ckeditor.Plugin.PasteFromOffice;
-import ckeditor.Plugin.Plugin;
 import ckeditor.Plugin.RemoveFormat;
 import ckeditor.Plugin.RemoveFormatLinks;
 import ckeditor.Plugin.Strikethrough;
