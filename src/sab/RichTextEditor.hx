@@ -31,11 +31,11 @@ import ckeditor.Plugin.TextTransformation;
 import ckeditor.Plugin.TodoList;
 import ckeditor.Plugin.Underline;
 
-/** An implementation of a rich text editor. */
+/** An implementation of a rich text editor. **/
 @:expose class RichTextEditor extends ClassicEditor {
 
-  /** The set of supported plug-ins. */
-  static var builtinPlugins(default, never): Array<Class<Plugin>> = [
+  /** The set of supported plug-ins. **/
+  public static var builtinPlugins(default, never): Array<Class<Plugin>> = [
     Alignment,
     Autoformat,
     Bold, Italic, Strikethrough, Underline,
@@ -53,8 +53,8 @@ import ckeditor.Plugin.Underline;
     TextTransformation
   ];
 
-  /** The default editor settings. */
-  static var defaultConfig(default, never) = {
+  /** The default editor settings. **/
+  public static var defaultConfig(default, never) = {
     alignment: {
       options: ['left', 'center', 'right']
     },

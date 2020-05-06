@@ -1,4 +1,10 @@
 --class-path src
+sab.RichTextEditor
+
+--each
+--define doc-gen
+--xml var/api.xml
+
+--next
 --define js-es=6
 --js lib/editor.cjs
-sab.RichTextEditor

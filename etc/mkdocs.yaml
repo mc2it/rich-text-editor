@@ -24,9 +24,6 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: 'https://linkedin.com/company/sab-international-sarl'
 
-extra_css:
-  - css/mkdocs.css
-
 markdown_extensions:
   - admonition
   - codehilite
@@ -51,5 +48,5 @@ theme:
     repo: fontawesome/brands/git-alt
   name: material
   palette:
-    accent: yellow
-    primary: yellow
+    accent: indigo
+    primary: indigo

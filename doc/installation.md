@@ -18,7 +18,22 @@ npm --version
 ```
 
 !!! info
-    If you plan to play with the package sources, you will also need [Gulp](https://gulpjs.com) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
+    If you plan to play with the package sources, you will also need [Haxe](https://haxe.org) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
+
+## Installing from a content delivery network
+This library is available as a ready-made bundle.
+To install it, add this code snippet to the `<head>` of your HTML document:
+
+```html
+<!-- jsDelivr -->
+<script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
+
+<!-- UNPKG -->
+<script src="https://unpkg.com/@sab-international/rich-text-editor/build/editor.js"></script>
+
+<!-- SAB International -->
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
+```
 
 ## Installing with npm package manager
 
@@ -33,20 +48,9 @@ npm install @sab-international/rich-text-editor
 Now in your [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) or [TypeScript](https://www.typescriptlang.org) code, you can use:
 
 ```js
+// CommonJS module.
+const {RichTextEditor} = require('@sab-international/rich-text-editor');
+
+// ECMAScript module.
 import {RichTextEditor} from '@sab-international/rich-text-editor';
-```
-
-## Installing from a content delivery network
-This library is also available as a ready-made bundle.
-To install it, add this code snippet to the `<head>` of your HTML document:
-
-```html
-<!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
-
-<!-- UNPKG -->
-<script src="https://unpkg.com/@sab-international/rich-text-editor/build/editor.js"></script>
-
-<!-- SAB International -->
-<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 ```
