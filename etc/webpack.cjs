@@ -1,4 +1,4 @@
-const utils = require('@ckeditor/ckeditor5-dev-utils');
+const {styles} = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
 const {join} = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -11,8 +11,8 @@ module.exports = {
       {test: /\.svg$/, use: 'raw-loader'},
       {test: /\.css$/, use: [
         {loader: 'style-loader', options: {injectType: 'singletonStyleTag'}},
-        {loader: 'postcss-loader', options: utils.styles.getPostCssConfig({
-          minify: true,
+        {loader: 'postcss-loader', options: styles.getPostCssConfig({
+          minify: process.env.NODE_ENV == 'production',
           themeImporter: {themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')}
         })}
       ]}

@@ -1,10 +1,11 @@
 ---
 path: blob/master
-source: src/editor.ts
+source: src/sab/RichTextEditor.hx
 ---
 
 # Usage
-This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor](https://ckeditor.com/ckeditor-5)'s classic editor. It extends from the [`ClassicEditor`](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) class provided by this project, so its usage is basically the same.
+This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor's classic editor](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
+It extends from the [`ClassicEditor` class](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) provided by that project, so its usage is basically the same.
 
 In your HTML page, add an element that **SAB Rich Text Editor** should make editable:
 
@@ -23,23 +24,6 @@ Then call the `RichTextEditor.create()` method:
 ```
 
 This code snippet will turn the `<textarea id="editor">` into a rich text editor.
-
-## Features
-- [Autoformatting](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html)
-- [Automatic text transformation](https://ckeditor.com/docs/ckeditor5/latest/features/text-transformation.html)
-- [Basic text styles](https://ckeditor.com/docs/ckeditor5/latest/features/basic-styles.html): `Bold`, `Italic`, `Strikethrough` and `Underline`.
-- [Font](https://ckeditor.com/docs/ckeditor5/latest/features/font.html): `FontColor` and `FontBackgroundColor`.
-- [Headings](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html)
-- [Horizontal line](https://ckeditor.com/docs/ckeditor5/latest/features/horizontal-line.html)
-- [Images](https://ckeditor.com/docs/ckeditor5/latest/features/image.html): `Image`, `ImageCaption`, `ImageResize`, `ImageStyle` and `ImageToolbar`.
-- [Link](https://ckeditor.com/docs/ckeditor5/latest/features/link.html)
-- [Media embed](https://ckeditor.com/docs/ckeditor5/latest/features/media-embed.html): `MediaEmbed` and `MediaEmbedToolbar`.
-- [Paste from Office](https://ckeditor.com/docs/ckeditor5/latest/features/pasting/paste-from-word.html)
-- [Remove format](https://ckeditor.com/docs/ckeditor5/latest/features/remove-format.html)
-- [Tables](https://ckeditor.com/docs/ckeditor5/latest/features/table.html): `Table`, `TableCellProperties`, `TableProperties` and `TableToolbar`.
-- [Text alignment](https://ckeditor.com/docs/ckeditor5/latest/features/text-alignment.html)
-- [To-do lists](https://ckeditor.com/docs/ckeditor5/latest/features/todo-lists.html)
-- and more...
 
 ## Localization
 By default, the editor will display in **French**. This is the language built into the `editor.js` file.
