@@ -9,6 +9,7 @@
 *.json text
 *.md text
 *.mjs text
+*.ps1 text
 *.txt text
 *.yaml text
 *.yml text

@@ -4,8 +4,8 @@ Set-Location (Split-Path $PSScriptRoot)
 [Console]::TreatControlCAsInput = $true
 
 $action = {
-  $changeType = [String] $Event.SourceEventArgs.ChangeType
-  Write-Host "'$($Event.SourceEventArgs.Name)' was $($changeType.ToLower()): starting a new build..." 
+  $changeType = [String] $EventArgs.ChangeType
+  Write-Host "'$($EventArgs.Name)' was $($changeType.ToLower()): starting a new build..."
   $timeSpan = Measure-Command { tool/build.ps1 }
   Write-Host "> Finished the build after $($timeSpan.TotalSeconds) seconds."
 }
@@ -14,7 +14,7 @@ $watcher = New-Object System.IO.FileSystemWatcher (Resolve-Path src).Path
 $watcher.EnableRaisingEvents = $true
 $watcher.IncludeSubdirectories = $true
 
-foreach ($event in @('Changed', 'Created', 'Deleted', 'Renamed')) {
+foreach ($event in 'Changed', 'Created', 'Deleted', 'Renamed') {
   Register-ObjectEvent $watcher $event -Action $action | Out-Null
 }
 
