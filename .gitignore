@@ -14,4 +14,3 @@
 /npm-debug.log
 /package-lock.json
 /lib/editor.*
-/share/*.private.env.json
