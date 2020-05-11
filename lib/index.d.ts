@@ -1,5 +1,5 @@
-import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.js';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin.js';
+import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.js';
 
 /** An implementation of a rich text editor. */
 export declare class RichTextEditor extends ClassicEditor {
