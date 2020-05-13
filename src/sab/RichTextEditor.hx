@@ -32,7 +32,9 @@ import ckeditor.Plugin.TodoList;
 import ckeditor.Plugin.Underline;
 
 /** An implementation of a rich text editor. **/
-@:expose class RichTextEditor extends ClassicEditor {
+@:expose
+@:require(js)
+class RichTextEditor extends ClassicEditor {
 
   /** The set of supported plug-ins. **/
   public static final builtinPlugins: Array<Class<Plugin>> = [
