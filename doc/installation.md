@@ -4,7 +4,7 @@
 **SAB Rich Text Editor** is hosted on several content delivery networks (CDN).
 To install it, add one of these code snippets to the `<head>` of your HTML document:
 
-```html
+``` html
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
 
@@ -21,39 +21,39 @@ and [npm](https://www.npmjs.com), the Node.js package manager, up and running.
 
 You can verify if you're already good to go with the following commands:
 
-```shell
+``` shell
 node --version
-# v14.2.0
+# v14.3.0
 
 npm --version
-# 6.14.4
+# 6.14.5
 ```
 
 ### 1. Install it
 From a command prompt, run:
 
-```shell
+``` shell
 npm install @sab-international/rich-text-editor
 ```
 
 ### 2. Import it
 Add this code snippet to the `<head>` of your HTML document:
 
-```html
+``` html
 <script src="node_modules/@sab-international/rich-text-editor/build/editor.js"></script>
 ```
 
 You can also create your own bundle by importing the `RichTextEditor` class into
 your [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) code:
 
-```js
+``` js
 // CommonJS module.
-const {RichTextEditor} = require('@sab-international/rich-text-editor');
+const {RichTextEditor} = require("@sab-international/rich-text-editor");
 
 // ECMAScript module.
-import {RichTextEditor} from '@sab-international/rich-text-editor';
+import {RichTextEditor} from "@sab-international/rich-text-editor";
 ```
 
 !!! tip
-    To build the bundle, you will need to use the [`webpack` module bundler](https://webpack.js.org).  
-    See the [`etc/webpack.cjs` configuration file](https://github.com/sab-international/rich-text-editor/blob/master/etc/webpack.cjs) located in this package as a starting point.
+	To build the bundle, you will need to use the [`webpack` module bundler](https://webpack.js.org).  
+	See the [`etc/webpack.js` configuration file](https://github.com/sab-international/rich-text-editor/blob/master/etc/webpack.js) located in this package as a starting point.

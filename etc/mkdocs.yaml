@@ -8,21 +8,21 @@ site_dir: ../www
 
 repo_name: github.com
 repo_url: https://github.com/sab-international/rich-text-editor
-edit_uri: ''
+edit_uri: ""
 
 copyright: Copyright &copy; 2018 - 2020 SAB International
 extra:
   social:
     - icon: fontawesome/solid/globe
-      link: 'https://www.sabcomputer.com'
+      link: "https://www.sabcomputer.com"
     - icon: fontawesome/brands/github
-      link: 'https://github.com/sab-international'
+      link: "https://github.com/sab-international"
     - icon: fontawesome/brands/facebook
-      link: 'https://www.facebook.com/sabinternational34'
+      link: "https://www.facebook.com/sabinternational34"
     - icon: fontawesome/brands/twitter
-      link: 'https://twitter.com/SABDistribution'
+      link: "https://twitter.com/SABDistribution"
     - icon: fontawesome/brands/linkedin
-      link: 'https://linkedin.com/company/sab-international-sarl'
+      link: "https://twitter.com/SABDistribution"
 
 markdown_extensions:
   - admonition

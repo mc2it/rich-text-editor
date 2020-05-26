@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>SAB Rich Text Editor</title>
-    <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
-    <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>SAB Rich Text Editor</title>
+		<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
+		<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
 
-    <style>
-      html { height: 100%; }
-      body { min-height: 100%; }
-      .ck-content { min-height: 400px; }
-    </style>
-  </head>
+		<style>
+			html { height: 100%; }
+			body { min-height: 100%; }
+			.ck-content { min-height: 400px; }
+		</style>
+	</head>
 
-  <body>
-    <textarea id="editor" title="Rich text editor"></textarea>
+	<body>
+		<textarea id="editor" title="Rich text editor"></textarea>
 
-    <script>
-      RichTextEditor
-        .create(document.querySelector('#editor'), {language: 'en'})
-        .catch(console.error);
-    </script>
-  </body>
+		<script>
+			RichTextEditor
+				.create(document.querySelector("#editor"), {language: "en"})
+				.catch(console.error);
+		</script>
+	</body>
 </html>

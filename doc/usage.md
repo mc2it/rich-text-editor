@@ -9,17 +9,17 @@ It extends from the [`ClassicEditor` class](https://ckeditor.com/docs/ckeditor5/
 
 In your HTML page, add an element that **SAB Rich Text Editor** should make editable:
 
-```html
+``` html
 <textarea id="editor"></textarea>
 ```
 
 Then call the `RichTextEditor.create()` method:
 
-```html
+``` html
 <script>
-  RichTextEditor
-    .create(document.querySelector('#editor'))
-    .catch(console.error);
+	RichTextEditor
+		.create(document.querySelector("#editor"))
+		.catch(console.error);
 </script>
 ```
 
@@ -31,7 +31,7 @@ By default, the editor will display in **French**. This is the language built in
 In order to change the language of the editor UI, you need to load additional language file(s).
 These files are located in the `build/i18n` folder of this package.
 
-```html
+``` html
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/i18n/[lang].js"></script>
 
@@ -44,7 +44,7 @@ These files are located in the `build/i18n` folder of this package.
 
 For example:
 
-```html
+``` html
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/i18n/en.js"></script>
@@ -60,11 +60,11 @@ For example:
 
 Next, you can configure the editor to use one of the loaded language:
 
-```html
+``` html
 <script>
-  RichTextEditor
-    .create(document.querySelector('#editor'), {language: 'en'})
-    .catch(console.error);
+	RichTextEditor
+		.create(document.querySelector("#editor"), {language: "en"})
+		.catch(console.error);
 </script>
 ```
 
