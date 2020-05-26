@@ -1,6 +1,6 @@
 --class-path src
---define doc-gen
+--define analyzer-optimize
 --define js-es=6
---js lib/editor.cjs
---xml var/api.xml
+--js lib/editor.js
+
 sab.RichTextEditor
