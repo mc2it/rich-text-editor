@@ -12,7 +12,7 @@ extern class Autoformat extends Plugin {}
 @:jsRequire("@ckeditor/ckeditor5-basic-styles/src/bold.js", "default")
 extern class Bold extends Plugin {}
 
-@:jsRequire("@ckeditor/ckeditor5-essentials/src/essentials.js", "default") 
+@:jsRequire("@ckeditor/ckeditor5-essentials/src/essentials.js", "default")
 extern class Essentials extends Plugin {}
 
 @:jsRequire("@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js", "default")

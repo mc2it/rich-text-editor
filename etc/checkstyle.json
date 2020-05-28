@@ -1,0 +1,79 @@
+{
+	"defaultSeverity": "ERROR",
+	"checks": [
+		{"type": "BlockBreakingConditional"},
+		{"type": "ConditionalCompilation"},
+		{"type": "EmptyBlock"},
+		{"type": "RightCurly"},
+
+		{"type": "ArrowFunction", "props": {"allowCurlyBody": true}},
+		{"type": "DefaultComesLast"},
+		{"type": "HiddenField"},
+		{"type": "MultipleVariableDeclarations"},
+		{"type": "NestedControlFlow"},
+		{"type": "NestedForDepth"},
+		{"type": "NestedIfDepth"},
+		{"type": "NestedTryDepth"},
+		{"type": "NullableParameter"},
+		{"type": "ReturnCount"},
+		{"type": "SimplifyBooleanExpression"},
+		{"type": "SimplifyBooleanReturn"},
+		{"type": "Trace"},
+		{"type": "UnusedLocalVar"},
+
+		{"type": "DocCommentStyle"},
+		{"type": "TODOComment"},
+
+		{"type": "EmptyPackage"},
+		{"type": "Interface"},
+		{"type": "UnnecessaryConstructor"},
+
+		{"type": "UnusedImport"},
+
+		{"type": "ArrayLiteral"},
+		{"type": "ERegLiteral"},
+		{"type": "HexadecimalLiteral"},
+		{"type": "StringLiteral"},
+
+		{"type": "RedundantAccessMeta"},
+		{"type": "RedundantAllowMeta"},
+
+		{"type": "CyclomaticComplexity"},
+
+		{"type": "Final"},
+		{"type": "ModifierOrder"},
+		{"type": "PublicAccessor"},
+		{"type": "RedundantModifier"},
+
+		{"type": "CatchParameterName"},
+		{"type": "ListenerName"},
+		{"type": "LocalVariableName"},
+		{"type": "MemberName"},
+		{"type": "MethodName", "props": {"format": "^([a-z][a-zA-Z0-9]*|__init__)$"}},
+		{"type": "ParameterName"},
+		{"type": "TypeName"},
+
+		{"type": "FileLength"},
+		{"type": "LineLength"},
+		{"type": "MethodCount"},
+		{"type": "MethodLength"},
+		{"type": "ParameterNumber"},
+
+		{"type": "Anonymous"},
+		{"type": "AvoidIdentifier"},
+
+		{"type": "ArrayAccess"},
+		{"type": "EmptyLines"},
+		{"type": "ExtendedEmptyLines"},
+		{"type": "IndentationCharacter"},
+		{"type": "OperatorWhitespace"},
+		{"type": "OperatorWrap"},
+		{"type": "SeparatorWhitespace"},
+		{"type": "SeparatorWrap"},
+		{"type": "Spacing"},
+		{"type": "TabForAligning"},
+		{"type": "TrailingWhitespace"},
+		{"type": "WhitespaceAfter"},
+		{"type": "WhitespaceAround"}
+	]
+}
