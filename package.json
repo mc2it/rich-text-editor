@@ -72,6 +72,7 @@
 		"wysiwyg"
 	],
 	"scripts": {
+		"build": "webpack --config=etc/webpack.js",
 		"prepack": "pwsh tool/dist.ps1"
 	}
 }
