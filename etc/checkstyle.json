@@ -4,7 +4,6 @@
 		{"type": "BlockBreakingConditional"},
 		{"type": "ConditionalCompilation"},
 		{"type": "EmptyBlock"},
-		{"type": "RightCurly"},
 
 		{"type": "ArrowFunction", "props": {"allowCurlyBody": true}},
 		{"type": "DefaultComesLast"},
@@ -31,7 +30,6 @@
 		{"type": "UnusedImport"},
 
 		{"type": "ArrayLiteral"},
-		{"type": "ERegLiteral"},
 		{"type": "HexadecimalLiteral"},
 		{"type": "StringLiteral"},
 
