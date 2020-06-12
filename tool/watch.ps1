@@ -6,7 +6,7 @@ Set-Location (Split-Path $PSScriptRoot)
 $action = {
 	$changeType = [String] $EventArgs.ChangeType
 	Write-Host "'$($EventArgs.Name)' was $($changeType.ToLower()): starting a new build..."
-	$timeSpan = Measure-Command { tool/build.ps1 }
+	$timeSpan = Measure-Command { tool/build.ps1 2>&1 | Out-Host }
 	Write-Host "> Finished the build after $($timeSpan.TotalSeconds) seconds."
 }
 
