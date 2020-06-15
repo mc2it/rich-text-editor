@@ -1,4 +1,4 @@
-package ckeditor;
+package js.npm.ckeditor;
 
 @:jsRequire("@ckeditor/ckeditor5-core/src/plugin.js", "default")
 extern class Plugin {}

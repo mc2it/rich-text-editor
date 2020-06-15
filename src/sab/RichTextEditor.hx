@@ -1,35 +1,7 @@
 package sab;
 
-import ckeditor.ClassicEditor;
-import ckeditor.Plugin;
-import ckeditor.Plugin.Alignment;
-import ckeditor.Plugin.Autoformat;
-import ckeditor.Plugin.Bold;
-import ckeditor.Plugin.Essentials;
-import ckeditor.Plugin.FontBackgroundColor;
-import ckeditor.Plugin.FontColor;
-import ckeditor.Plugin.Heading;
-import ckeditor.Plugin.HorizontalLine;
-import ckeditor.Plugin.Image;
-import ckeditor.Plugin.ImageCaption;
-import ckeditor.Plugin.ImageResize;
-import ckeditor.Plugin.ImageStyle;
-import ckeditor.Plugin.ImageToolbar;
-import ckeditor.Plugin.Italic;
-import ckeditor.Plugin.Link;
-import ckeditor.Plugin.List;
-import ckeditor.Plugin.Paragraph;
-import ckeditor.Plugin.PasteFromOffice;
-import ckeditor.Plugin.RemoveFormat;
-import ckeditor.Plugin.RemoveFormatLinks;
-import ckeditor.Plugin.Strikethrough;
-import ckeditor.Plugin.Table;
-import ckeditor.Plugin.TableCellProperties;
-import ckeditor.Plugin.TableProperties;
-import ckeditor.Plugin.TableToolbar;
-import ckeditor.Plugin.TextTransformation;
-import ckeditor.Plugin.TodoList;
-import ckeditor.Plugin.Underline;
+import js.npm.ckeditor.ClassicEditor;
+import js.npm.ckeditor.Plugin;
 
 /** An implementation of a rich text editor. **/
 @:expose
