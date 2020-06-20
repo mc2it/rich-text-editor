@@ -2,4 +2,4 @@
 --define analyzer-optimize
 --define js-es=6
 --js lib/editor.js
-sab.RichTextEditor
+sab_rte.RichTextEditor

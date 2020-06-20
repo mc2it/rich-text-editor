@@ -1,7 +1,22 @@
-package sab;
+package sab_rte;
 
-import js.npm.ckeditor.ClassicEditor;
-import js.npm.ckeditor.Plugin;
+import js.npm.ckeditor.alignment.*;
+import js.npm.ckeditor.autoformat.*;
+import js.npm.ckeditor.basic_styles.*;
+import js.npm.ckeditor.core.*;
+import js.npm.ckeditor.editor_classic.*;
+import js.npm.ckeditor.essentials.*;
+import js.npm.ckeditor.font.*;
+import js.npm.ckeditor.heading.*;
+import js.npm.ckeditor.horizontal_line.*;
+import js.npm.ckeditor.image.*;
+import js.npm.ckeditor.link.*;
+import js.npm.ckeditor.list.*;
+import js.npm.ckeditor.paragraph.*;
+import js.npm.ckeditor.paste_from_office.*;
+import js.npm.ckeditor.remove_format.*;
+import js.npm.ckeditor.table.*;
+import js.npm.ckeditor.typing.*;
 
 /** An implementation of a rich text editor. **/
 @:expose

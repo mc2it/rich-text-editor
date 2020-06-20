@@ -1,7 +1,6 @@
-package js.npm.ckeditor;
+package js.npm.ckeditor.editor_classic;
 
-@:jsRequire("@ckeditor/ckeditor5-core/src/editor/editor.js", "default")
-extern class Editor {}
+import js.npm.ckeditor.core.Editor;
 
 @:jsRequire("@ckeditor/ckeditor5-editor-classic/src/classiceditor.js", "default")
 extern class ClassicEditor extends Editor {}
