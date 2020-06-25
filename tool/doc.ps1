@@ -14,7 +14,7 @@ haxelib run dox `
 	--input-path var `
 	--output-path doc/api `
 	--title "SAB Rich Text Editor" `
-	--toplevel-package sab
+	--toplevel-package sab_rte
 
 Copy-Item doc/img/favicon.ico doc/api
 mkdocs build --config-file=etc/mkdocs.yaml
