@@ -8,7 +8,7 @@
 	"repository": "github:sab-international/rich-text-editor",
 	"type": "commonjs",
 	"types": "./lib/index.d.ts",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"author": {
 		"email": "contact@sabcomputer.com",
 		"name": "SAB International",
