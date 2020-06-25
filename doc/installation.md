@@ -56,4 +56,4 @@ import {RichTextEditor} from "@sab-international/rich-text-editor";
 
 !!! tip
 	To build the bundle, you will need to use the [`webpack` module bundler](https://webpack.js.org).  
-	See the [`etc/webpack.js` configuration file](https://github.com/sab-international/rich-text-editor/blob/master/etc/webpack.js) located in this package as a starting point.
+	See the [`etc/webpack.js` configuration file](https://github.com/sab-international/rich-text-editor/blob/main/etc/webpack.js) located in this package as a starting point.

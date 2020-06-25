@@ -1,6 +1,6 @@
 ---
-path: blob/master
-source: src/sab/RichTextEditor.hx
+path: blob/main
+source: src/sab_rte/RichTextEditor.hx
 ---
 
 # Usage
