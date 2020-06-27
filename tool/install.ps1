@@ -7,4 +7,4 @@ haxelib install checkstyle
 haxelib install dox
 haxelib install all --always
 
-npm install --ignore-scripts --production=false
+npm install --production=false
