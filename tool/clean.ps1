@@ -6,4 +6,4 @@ foreach ($item in "build", "doc/api", "lib/editor.*", "www") {
 	if (Test-Path $item) { Remove-Item $item -Force -Recurse }
 }
 
-Get-ChildItem var -Exclude .gitkeep | Remove-Item -Force -Recurse
+Remove-Item var/* -Exclude .gitkeep -Force -Recurse
