@@ -22,24 +22,24 @@
 		}
 	],
 	"dependencies": {
-		"@ckeditor/ckeditor5-alignment": "^20.0.0",
-		"@ckeditor/ckeditor5-autoformat": "^20.0.0",
-		"@ckeditor/ckeditor5-basic-styles": "^20.0.0",
-		"@ckeditor/ckeditor5-core": "^20.0.0",
-		"@ckeditor/ckeditor5-editor-classic": "^20.0.0",
-		"@ckeditor/ckeditor5-essentials": "^20.0.0",
-		"@ckeditor/ckeditor5-font": "^20.0.0",
-		"@ckeditor/ckeditor5-heading": "^20.0.0",
-		"@ckeditor/ckeditor5-horizontal-line": "^20.0.0",
-		"@ckeditor/ckeditor5-image": "^20.0.0",
-		"@ckeditor/ckeditor5-link": "^20.0.0",
-		"@ckeditor/ckeditor5-list": "^20.0.0",
-		"@ckeditor/ckeditor5-paragraph": "^20.0.0",
-		"@ckeditor/ckeditor5-paste-from-office": "^20.0.0",
-		"@ckeditor/ckeditor5-remove-format": "^20.0.0",
-		"@ckeditor/ckeditor5-table": "^20.0.0",
-		"@ckeditor/ckeditor5-theme-lark": "^20.0.0",
-		"@ckeditor/ckeditor5-typing": "^20.0.0"
+		"@ckeditor/ckeditor5-alignment": "^21.0.0",
+		"@ckeditor/ckeditor5-autoformat": "^21.0.0",
+		"@ckeditor/ckeditor5-basic-styles": "^21.0.0",
+		"@ckeditor/ckeditor5-core": "^21.0.0",
+		"@ckeditor/ckeditor5-editor-classic": "^21.0.0",
+		"@ckeditor/ckeditor5-essentials": "^21.0.0",
+		"@ckeditor/ckeditor5-font": "^21.0.0",
+		"@ckeditor/ckeditor5-heading": "^21.0.0",
+		"@ckeditor/ckeditor5-horizontal-line": "^21.0.0",
+		"@ckeditor/ckeditor5-image": "^21.0.0",
+		"@ckeditor/ckeditor5-link": "^21.0.0",
+		"@ckeditor/ckeditor5-list": "^21.0.0",
+		"@ckeditor/ckeditor5-paragraph": "^21.0.0",
+		"@ckeditor/ckeditor5-paste-from-office": "^21.0.0",
+		"@ckeditor/ckeditor5-remove-format": "^21.0.0",
+		"@ckeditor/ckeditor5-table": "^21.0.0",
+		"@ckeditor/ckeditor5-theme-lark": "^21.0.0",
+		"@ckeditor/ckeditor5-typing": "^21.0.0"
 	},
 	"devDependencies": {
 		"@ckeditor/ckeditor5-dev-utils": "^23.0.0",
@@ -47,12 +47,12 @@
 		"postcss-loader": "^3.0.0",
 		"raw-loader": "^4.0.1",
 		"style-loader": "^1.2.1",
-		"terser-webpack-plugin": "^3.0.7",
-		"webpack": "^4.43.0",
+		"terser-webpack-plugin": "^4.1.0",
+		"webpack": "^4.44.1",
 		"webpack-cli": "^3.3.12"
 	},
 	"engines": {
-		"node": ">=14.5.0"
+		"node": ">=14.8.0"
 	},
 	"exports": {
 		"import": "./lib/index.mjs",
