@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.2.0](https://github.com/sab-international/rich-text-editor/compare/v3.1.0...v3.2.0)
+- Updated the package dependencies.
+
 ## Version [3.1.0](https://github.com/sab-international/rich-text-editor/compare/v3.0.0...v3.1.0)
 - Updated the [CKEditor](https://ckeditor.com/ckeditor-5) externs.
 - Updated the package dependencies.
