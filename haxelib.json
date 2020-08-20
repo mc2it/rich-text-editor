@@ -4,7 +4,7 @@
 	"description": "A customized build of CKEditor, a rich text editor.",
 	"license": "MIT",
 	"name": "sab_rte",
-	"releasenote": "Ported the source code to Haxe.",
+	"releasenote": "Updated the package dependencies.",
 	"tags": ["ckeditor5", "ckeditor5-build", "editor", "html-editor", "js", "rich-text-editor", "rte", "wysiwyg"],
 	"url": "https://docs.sabcomputer.com/rich-text-editor",
 	"version": "3.2.0"
