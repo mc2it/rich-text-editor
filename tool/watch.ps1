@@ -24,4 +24,4 @@ while ($true) {
 	Start-Sleep -Milliseconds 200
 }
 
-Get-EventSubscriber | Unregister-Event
+Get-EventSubscriber | Unregister-Event -Force
