@@ -23,7 +23,7 @@ You can verify if you're already good to go with the following commands:
 
 ``` shell
 node --version
-# v14.10.0
+# v14.11.0
 
 npm --version
 # 6.14.8
