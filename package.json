@@ -44,11 +44,11 @@
 	"devDependencies": {
 		"@ckeditor/ckeditor5-dev-utils": "^23.5.1",
 		"@ckeditor/ckeditor5-dev-webpack-plugin": "^23.5.1",
-		"postcss-loader": "^4.0.1",
+		"postcss-loader": "^4.0.2",
 		"raw-loader": "^4.0.1",
 		"style-loader": "^1.2.1",
-		"terser-webpack-plugin": "^4.1.0",
-		"webpack": "^4.44.1",
+		"terser-webpack-plugin": "^4.2.1",
+		"webpack": "^4.44.2",
 		"webpack-cli": "^3.3.12"
 	},
 	"engines": {
