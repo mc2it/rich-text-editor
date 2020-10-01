@@ -1,7 +1,6 @@
 #!/usr/bin/env pwsh
 Set-StrictMode -Version Latest
 Set-Location (Split-Path $PSScriptRoot)
-[Console]::TreatControlCAsInput = $true
 
 $action = {
 	$changeType = [String] $EventArgs.ChangeType
@@ -18,10 +17,13 @@ foreach ($event in "Changed", "Created", "Deleted", "Renamed") {
 	Register-ObjectEvent $watcher $event -Action $action | Out-Null
 }
 
-$console = $Host.UI.RawUI;
-while ($true) {
-	if ($console.KeyAvailable -and ($console.ReadKey("AllowCtrlC,IncludeKeyUp,NoEcho").Character -eq 3)) { break }
-	Start-Sleep -Milliseconds 200
+try {
+	tool/build.ps1
+	do { Wait-Event -Timeout 1 } while ($true)
 }
 
-Get-EventSubscriber | Unregister-Event -Force
+finally {
+	$watcher.EnableRaisingEvents = $false
+	$watcher.Dispose()
+	Get-EventSubscriber | Unregister-Event -Force
+}
