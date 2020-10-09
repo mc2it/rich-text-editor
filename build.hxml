@@ -1,4 +1,5 @@
 --class-path src
+--dce full
 --define analyzer-optimize
 --define js-es=6
 --js lib/editor.js
