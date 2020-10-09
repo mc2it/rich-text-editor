@@ -1,5 +1,5 @@
 # SAB Rich Text Editor
-![Runtime](https://badgen.net/npm/node/@sab-international/rich-text-editor) ![Release](https://badgen.net/npm/v/@sab-international/rich-text-editor) ![License](https://badgen.net/npm/license/@sab-international/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@sab-international/rich-text-editor) ![Dependencies](https://badgen.net/david/dep/cedx/which.js)
+![Runtime](https://badgen.net/npm/node/@sab-international/rich-text-editor) ![Release](https://badgen.net/npm/v/@sab-international/rich-text-editor) ![License](https://badgen.net/npm/license/@sab-international/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@sab-international/rich-text-editor)
 
 A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor.
 
