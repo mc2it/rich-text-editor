@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.3.0](https://github.com/sab-international/rich-text-editor/compare/v3.2.0...v3.3.0)
+- Updated the package dependencies.
+
 ## Version [3.2.0](https://github.com/sab-international/rich-text-editor/compare/v3.1.0...v3.2.0)
 - Updated the package dependencies.
 
