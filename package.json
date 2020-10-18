@@ -52,7 +52,7 @@
 		"webpack-cli": "^3.3.12"
 	},
 	"engines": {
-		"node": ">=14.13.0"
+		"node": ">=14.14.0"
 	},
 	"exports": {
 		"import": "./lib/index.mjs",
