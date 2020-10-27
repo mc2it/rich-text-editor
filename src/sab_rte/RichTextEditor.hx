@@ -1,4 +1,4 @@
-package sab_rte;
+package mc2it_rte;
 
 import js.npm.ckeditor.alignment.*;
 import js.npm.ckeditor.autoformat.*;
