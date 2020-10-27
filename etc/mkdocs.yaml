@@ -1,23 +1,23 @@
-site_name: SAB Rich Text Editor
+site_name: MC2IT Rich Text Editor
 site_description: A customized build of CKEditor, a rich text editor.
-site_author: SAB International - contact@sabcomputer.com
+site_author: MC2IT - contact@sabcomputer.com
 site_url: https://docs.sabcomputer.com/rich-text-editor
 
 docs_dir: ../doc
 site_dir: ../www
 
 repo_name: github.com
-repo_url: https://github.com/sab-international/rich-text-editor
+repo_url: https://github.com/mc2it/rich-text-editor
 edit_uri: ""
 
-copyright: Copyright &copy; 2018 - 2020 SAB International
+copyright: Copyright &copy; 2018 - 2020 MC2IT
 extra:
   social:
     - icon: fontawesome/solid/globe
       link: "https://www.sabcomputer.com"
-      name: SAB International
+      name: MC2IT
     - icon: fontawesome/brands/github
-      link: "https://github.com/sab-international"
+      link: "https://github.com/mc2it"
       name: GitHub
     - icon: fontawesome/brands/facebook
       link: "https://www.facebook.com/sabinternational34"

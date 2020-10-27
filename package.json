@@ -1,17 +1,17 @@
 {
-	"bugs": "https://github.com/sab-international/rich-text-editor/issues",
+	"bugs": "https://github.com/mc2it/rich-text-editor/issues",
 	"description": "A customized build of CKEditor, a rich text editor.",
 	"homepage": "https://docs.sabcomputer.com/rich-text-editor",
 	"license": "MIT",
 	"main": "./lib/index.js",
 	"name": "@mc2it/rich-text-editor",
-	"repository": "github:sab-international/rich-text-editor",
+	"repository": "github:mc2it/rich-text-editor",
 	"type": "commonjs",
 	"types": "./lib/index.d.ts",
 	"version": "3.3.0",
 	"author": {
 		"email": "contact@sabcomputer.com",
-		"name": "SAB International",
+		"name": "MC2IT",
 		"url": "https://www.sabcomputer.com"
 	},
 	"contributors": [

@@ -1,5 +1,5 @@
-# SAB Rich Text Editor
-![Runtime](https://badgen.net/npm/node/@sab-international/rich-text-editor) ![Release](https://badgen.net/npm/v/@sab-international/rich-text-editor) ![License](https://badgen.net/npm/license/@sab-international/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@sab-international/rich-text-editor)
+# MC2IT Rich Text Editor
+![Runtime](https://badgen.net/npm/node/@mc2it/rich-text-editor) ![Release](https://badgen.net/npm/v/@mc2it/rich-text-editor) ![License](https://badgen.net/npm/license/@mc2it/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@mc2it/rich-text-editor)
 
 ![Screenshot](img/screenshot.jpg)
 

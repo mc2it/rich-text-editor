@@ -1,6 +1,6 @@
 {
 	"classPath": "src/",
-	"contributors": ["SABInternational", "cedx"],
+	"contributors": ["mc2it", "cedx"],
 	"description": "A customized build of CKEditor, a rich text editor.",
 	"license": "MIT",
 	"name": "mc2it_rte",

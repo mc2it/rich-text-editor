@@ -1,13 +1,13 @@
 ---
 path: blob/main
-source: src/sab_rte/RichTextEditor.hx
+source: src/mc2it_rte/RichTextEditor.hx
 ---
 
 # Usage
 This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor's classic editor](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
 It extends from the [`ClassicEditor` class](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) provided by that project, so its usage is basically the same.
 
-In your HTML page, add an element that **SAB Rich Text Editor** should make editable:
+In your HTML page, add an element that **MC2IT Rich Text Editor** should make editable:
 
 ``` html
 <textarea id="editor"></textarea>
@@ -33,12 +33,12 @@ These files are located in the `build/i18n` folder of this package.
 
 ``` html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/i18n/[lang].js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
 
 <!-- UNPKG -->
-<script src="https://unpkg.com/@sab-international/rich-text-editor/build/i18n/[lang].js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
 
-<!-- SAB International -->
+<!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/[lang].js"></script>
 ```
 
@@ -46,14 +46,14 @@ For example:
 
 ``` html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/editor.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@sab-international/rich-text-editor/build/i18n/en.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/editor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/en.js"></script>
 
 <!-- UNPKG -->
-<script src="https://unpkg.com/@sab-international/rich-text-editor/build/editor.js"></script>
-<script src="https://unpkg.com/@sab-international/rich-text-editor/build/i18n/en.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/editor.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/en.js"></script>
 
-<!-- SAB International -->
+<!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
 ```
