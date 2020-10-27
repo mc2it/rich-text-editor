@@ -23,10 +23,10 @@ You can verify if you're already good to go with the following commands:
 
 ``` shell
 node --version
-# v14.14.0
+# v15.0.1
 
 npm --version
-# 6.14.8
+# 7.0.3
 ```
 
 ### 1. Install it
