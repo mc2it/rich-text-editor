@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine;
+package js.npm.ckeditor.engine.conversion;
 
 import haxe.extern.EitherType;
 

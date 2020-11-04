@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine;
+package js.npm.ckeditor.engine.model;
 
 import haxe.extern.EitherType;
 
@@ -6,11 +6,21 @@ import haxe.extern.EitherType;
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/schema.js", "default")
 extern class Schema {
 
+	/** Checks whether the given node (`child`) can be a child of the given context. **/
+	function checkChild(context: SchemaContextDefinition, child: EitherType<Node, String>): Bool;
+
 	/** Registers a schema item. **/
 	function register(itemName: String, definition: SchemaItemDefinition): Void;
 }
 
-/** A definition of a `Schema` item. **/
+/** A schema context: a list of ancestors of a given position in the document. **/
+@:jsRequire("@ckeditor/ckeditor5-engine/src/model/schema.js", "SchemaContext")
+extern class SchemaContext {}
+
+/** The definition of a `Schema` context. **/
+typedef SchemaContextDefinition = EitherType<Node, EitherType<Position, EitherType<SchemaContext, EitherType<String, Array<EitherType<Node, String>>>>>>;
+
+/** The definition of a `Schema` item. **/
 typedef SchemaItemDefinition = {
 
 	/** Defines allowed attributes of the given item. **/
