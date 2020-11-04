@@ -1,9 +1,11 @@
 package mc2it_rte;
 
+import js.lib.Promise;
 import js.npm.ckeditor.alignment.*;
 import js.npm.ckeditor.autoformat.*;
 import js.npm.ckeditor.basic_styles.*;
 import js.npm.ckeditor.core.*;
+import js.npm.ckeditor.core.editor.*;
 import js.npm.ckeditor.editor_classic.*;
 import js.npm.ckeditor.essentials.*;
 import js.npm.ckeditor.font.*;
@@ -17,6 +19,7 @@ import js.npm.ckeditor.paste_from_office.*;
 import js.npm.ckeditor.remove_format.*;
 import js.npm.ckeditor.table.*;
 import js.npm.ckeditor.typing.*;
+import mc2it_rte.timestamp.Timestamp;
 
 /** An implementation of a rich text editor. **/
 @:expose class RichTextEditor extends ClassicEditor {
@@ -37,7 +40,8 @@ import js.npm.ckeditor.typing.*;
 		PasteFromOffice,
 		RemoveFormat, RemoveFormatLinks,
 		Table, TableCellProperties, TableProperties, TableToolbar,
-		TextTransformation
+		TextTransformation,
+		Timestamp
 	];
 
 	/** The default editor settings. **/
@@ -73,4 +77,8 @@ import js.npm.ckeditor.typing.*;
 			}
 		}
 	};
+
+	/** Creates a new rich text editor. **/
+	static function create(sourceElementOrData, ?config: EditorConfig): Promise<RichTextEditor>
+		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);
 }
