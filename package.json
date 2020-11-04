@@ -8,7 +8,7 @@
 	"repository": "github:mc2it/rich-text-editor",
 	"type": "commonjs",
 	"types": "./lib/index.d.ts",
-	"version": "4.0.0",
+	"version": "1.0.0",
 	"author": {
 		"email": "contact@sabcomputer.com",
 		"name": "MC2IT",

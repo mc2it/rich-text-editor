@@ -1,5 +1,7 @@
 package js.npm.ckeditor.utils;
 
+import haxe.extern.EitherType;
+
 /** The widget plugin. **/
 @:jsRequire("@ckeditor/ckeditor5-utils/src/locale.js", "default")
 extern class Locale {
@@ -15,4 +17,7 @@ extern class Locale {
 
 	/** The text direction of the editor UI language. **/
 	final uiLanguageDirection: String;
+
+	/** Translates the given message to the UI language. **/
+	function t(message: String, ?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>): String;
 }
