@@ -1,6 +1,8 @@
 package js.npm.ckeditor.core;
 
-/** The base class for CKEditor plugin classes. **/
+import js.npm.ckeditor.core.editor.Editor;
+
+/** The base class for CKEditor plugins. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/plugin.js", "default")
 extern class Plugin {
 
