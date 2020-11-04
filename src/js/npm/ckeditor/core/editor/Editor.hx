@@ -1,7 +1,9 @@
 package js.npm.ckeditor.core.editor;
 
+import haxe.extern.EitherType;
 import haxe.extern.Rest;
 import js.lib.Promise;
+import js.npm.ckeditor.engine.controller.EditingController;
 import js.npm.ckeditor.engine.conversion.Conversion;
 import js.npm.ckeditor.engine.model.Model;
 import js.npm.ckeditor.utils.Locale;
@@ -15,6 +17,9 @@ extern class Editor {
 
 	/** The conversion manager through which you can register model-to-view and view-to-model converters. **/
 	final conversion: Conversion;
+
+	/** The editing controller. **/
+	final editing: EditingController;
 
 	/** The locale instance. **/
 	final locale: Locale;
@@ -36,4 +41,7 @@ extern class Editor {
 
 	/** Sets the data in the editor. **/
 	function setData(data: String): Void;
+
+	/** Translates the given message to the UI language. **/
+	function t(message: String, ?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>): String;
 }

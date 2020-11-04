@@ -1,6 +1,7 @@
 package js.npm.ckeditor.widget;
 
 import haxe.extern.EitherType;
+import js.npm.ckeditor.engine.model.Model;
 import js.npm.ckeditor.engine.view.DowncastWriter;
 import js.npm.ckeditor.engine.view.Element;
 import js.npm.ckeditor.engine.view.Node;
@@ -14,4 +15,7 @@ extern class Utils {
 
 	/** Converts the given `element` to a widget. **/
 	static function toWidget(element: Element, writer: DowncastWriter, ?options: {?hasSelectionHandle: Bool, ?label: EitherType<String, () -> String>}): Element;
+
+	/** Maps view positions to correct model positions when implementing a widget which renders non-empty view element for an empty model element. **/
+	static function viewToModelPositionOutsideModelElement(model: Model, viewElementMatcher: Element -> Bool): (String, Dynamic) -> Void;
 }
