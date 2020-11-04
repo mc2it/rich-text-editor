@@ -19,9 +19,7 @@ import js.npm.ckeditor.table.*;
 import js.npm.ckeditor.typing.*;
 
 /** An implementation of a rich text editor. **/
-@:expose
-@:require(js)
-class RichTextEditor extends ClassicEditor {
+@:expose class RichTextEditor extends ClassicEditor {
 
 	/** The set of supported plug-ins. **/
 	public static final builtinPlugins: Array<Class<Plugin>> = [
