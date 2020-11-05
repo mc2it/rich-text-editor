@@ -1,6 +1,7 @@
 package mc2it_rte.timestamp;
 
 import js.lib.Date;
+import js.lib.intl.DateTimeFormat;
 import js.npm.ckeditor.core.Plugin;
 import js.npm.ckeditor.engine.conversion.DowncastHelpers;
 import js.npm.ckeditor.engine.conversion.UpcastHelpers;
@@ -28,10 +29,17 @@ import js.npm.ckeditor.widget.Widget;
 
 	/** Helper method for the downcast converters. **/
 	function createTimestampView(modelItem: ModelElement, viewWriter: DowncastWriter) {
+		final dateFormat = new DateTimeFormat(editor.locale.contentLanguage, {
+			day: Numeric,
+			hour: Numeric,
+			minute: Numeric,
+			month: Long,
+			year: Numeric,
+		});
+
 		final timestamp = modelItem.hasAttribute("value") ? modelItem.getAttribute("value") : Date.now();
 		final timestampView = viewWriter.createContainerElement("span", {"class": "timestamp", "data-value": timestamp});
-
-		final innerText = viewWriter.createText(new Date(timestamp).toLocaleString(editor.locale.contentLanguage));
+		final innerText = viewWriter.createText(dateFormat.format(new Date(timestamp)));
 		viewWriter.insert(viewWriter.createPositionAt(timestampView, 0), innerText);
 		return timestampView;
 	}
