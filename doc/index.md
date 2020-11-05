@@ -1,5 +1,7 @@
 # MC2IT Rich Text Editor
-![Runtime](https://badgen.net/npm/node/@mc2it/rich-text-editor) ![Release](https://badgen.net/npm/v/@mc2it/rich-text-editor) ![License](https://badgen.net/npm/license/@mc2it/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@mc2it/rich-text-editor)
+![Haxe](https://badgen.net/badge/haxe/%3E%3D4.1.0/green) ![Haxelib](https://badgen.net/haxelib/v/mc2it_rte) ![Downloads](https://badgen.net/haxelib/d/mc2it_rte)  
+![Node.js](https://badgen.net/npm/node/@mc2it/rich-text-editor) ![npm](https://badgen.net/npm/v/@mc2it/rich-text-editor) ![Types](https://badgen.net/npm/types/@mc2it/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@mc2it/rich-text-editor)  
+![License](https://badgen.net/badge/license/MIT/blue)
 
 ![Screenshot](img/screenshot.jpg)
 
