@@ -41,6 +41,7 @@ nav:
   - Overview: index.md
   - Installation: installation.md
   - Usage: usage.md
+  - Demo: demo.md #https://static.sabcomputer.com/js/rich-text-editor
   - About:
       - License: about/license.md
       - See also: about/see_also.md
