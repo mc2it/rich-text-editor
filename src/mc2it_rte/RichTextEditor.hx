@@ -1,5 +1,7 @@
 package mc2it_rte;
 
+import haxe.extern.EitherType;
+import js.html.HtmlElement;
 import js.lib.Promise;
 import js.npm.ckeditor.alignment.*;
 import js.npm.ckeditor.autoformat.*;
@@ -76,6 +78,6 @@ import mc2it_rte.timestamp.Timestamp;
 	};
 
 	/** Creates a new rich text editor. **/
-	static function create(sourceElementOrData, ?config: EditorConfig): Promise<RichTextEditor>
+	static function create(sourceElementOrData: EitherType<HtmlElement, String>, ?config: EditorConfig): Promise<RichTextEditor>
 		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);
 }

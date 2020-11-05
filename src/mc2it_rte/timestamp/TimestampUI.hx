@@ -10,7 +10,7 @@ import js.npm.ckeditor.utils.TranslationService;
 
 	/** Initializes this plugin. **/
 	public function init() {
-		TranslationService.add("fr", {Timestamp: "Horodatage"});
+		TranslationService.add("fr", {"Timestamp": "Horodatage"});
 		(cast editor: EditorWithUI).ui.componentFactory.add("timestamp", locale -> {
 			final buttonView = new ButtonView(locale);
 			buttonView.bind("isEnabled").to(editor.commands.get("timestamp"));
