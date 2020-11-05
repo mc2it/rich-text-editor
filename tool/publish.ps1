@@ -3,6 +3,11 @@ Set-StrictMode -Version Latest
 Set-Location (Split-Path $PSScriptRoot)
 
 tool/dist.ps1
+
+$files = "*.md", "haxelib.json", "build", "src"
+Compress-Archive $files var/haxelib.zip -Force
+
+haxelib submit var/haxelib.zip
 npm publish
 
 $version = (Get-Content haxelib.json | ConvertFrom-Json).version
