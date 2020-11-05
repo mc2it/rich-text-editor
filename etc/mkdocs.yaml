@@ -33,6 +33,7 @@ markdown_extensions:
   - admonition
   - codehilite
   - meta
+  - pymdownx.tabbed
   - toc:
       permalink: true
 

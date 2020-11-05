@@ -70,3 +70,9 @@ Next, you can configure the editor to use one of the loaded language:
 
 ## Advanced usage
 For other uses and detailed instructions, you should look at the [official CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest).
+
+!!! info "Haxe externs"
+	This library provides partial [extern definitions](https://haxe.org/manual/lf-externs.html)
+	for the CKEditor packages. These externs are located in the `js.npm.ckeditor` namespace, and can be used
+	to create [CKEditor plugins](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/plugins.html)
+	using [Haxe](https://haxe.org).

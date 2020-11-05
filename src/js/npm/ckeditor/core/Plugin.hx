@@ -4,9 +4,12 @@ import js.npm.ckeditor.core.editor.Editor;
 import js.npm.ckeditor.utils.EmitterMixin.Emitter;
 import js.npm.ckeditor.utils.ObservableMixin.Observable;
 
+/** An array of loaded plugins. **/
+typedef LoadedPlugins = Array<PluginInterface>;
+
 /** The base class for CKEditor plugins. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/plugin.js", "default")
-extern class Plugin implements Observable {
+extern class Plugin implements PluginInterface implements Observable {
 
 	/** The editor instance. **/
 	final editor: Editor;
@@ -26,3 +29,6 @@ extern class Plugin implements Observable {
 	/** Creates and sets the value of an observable property. **/
 	function set(name: EitherType<String, DynamicAccess<Any>>, ?value: Any): Void;
 }
+
+/** The base interface for CKEditor plugins. **/
+extern interface PluginInterface {}

@@ -15,45 +15,52 @@ To install it, add one of these code snippets to the `<head>` of your HTML docum
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 ```
 
-## Installing with npm package manager
-Before installing **MC2IT Rich Text Editor**, you need to make sure you have [Node.js](https://nodejs.org)
-and [npm](https://www.npmjs.com), the Node.js package manager, up and running.
+## Installing with a package manager
+Before installing **MC2IT Rich Text Editor** with a package manager, you need to make sure you have either [Haxe](https://haxe.org) or [Node.js](https://nodejs.org) up and running.
 
 You can verify if you're already good to go with the following commands:
 
-``` shell
-node --version
-# v15.0.1
+=== "Haxe"
+		:::shell
+		haxe --version
+		# 4.1.4
 
-npm --version
-# 7.0.3
-```
+		haxelib version
+		# 4.0.2
 
-### 1. Install it
-From a command prompt, run:
+=== "JavaScript"
+		:::shell
+		node --version
+		# v15.1.0
 
-``` shell
-npm install @mc2it/rich-text-editor
-```
+		npm --version
+		# 7.0.8
 
-### 2. Import it
-Add this code snippet to the `<head>` of your HTML document:
+Now, you can continue with the procedure:
 
-``` html
-<script src="node_modules/@mc2it/rich-text-editor/build/editor.js"></script>
-```
+=== "Haxe"
+	From a command prompt, run:
 
-You can also create your own bundle by importing the `RichTextEditor` class into
-your [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) code:
+		:::shell
+		haxelib newrepo
+		haxelib install mc2it_rte
 
-``` js
-// CommonJS module.
-const {RichTextEditor} = require("@mc2it/rich-text-editor");
+	Then, add this code snippet to the `<head>` of your HTML document:
 
-// ECMAScript module.
-import {RichTextEditor} from "@mc2it/rich-text-editor";
-```
+		:::html
+		<script src=".haxelib/mc2it_rte/[version]/build/editor.js"></script>
 
-!!! tip
-	To build the bundle, you will need to use the [`webpack` module bundler](https://webpack.js.org).  
-	See the [`etc/webpack.js` configuration file](https://github.com/mc2it/rich-text-editor/blob/main/etc/webpack.js) located in this package as a starting point.
+	!!! tip
+		Replace `[version]` with the current version number of the package
+		(using commas instead of dots: `1,0,0` in place of `1.0.0`).
+
+=== "JavaScript"
+	From a command prompt, run:
+
+		:::shell
+		npm install @mc2it/rich-text-editor
+
+	Then, add this code snippet to the `<head>` of your HTML document:
+
+		:::html
+		<script src="node_modules/@mc2it/rich-text-editor/build/editor.js"></script>
