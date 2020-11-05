@@ -4,7 +4,7 @@
 	"description": "A customized build of CKEditor, a rich text editor.",
 	"license": "MIT",
 	"name": "mc2it_rte",
-	"releasenote": "Updated the package dependencies.",
+	"releasenote": "Forces the editor language in order to avoid an issue with the timestamp plugin.",
 	"tags": ["ckeditor5", "ckeditor5-build", "editor", "html-editor", "js", "rich-text-editor", "rte", "wysiwyg"],
 	"url": "https://docs.sabcomputer.com/rich-text-editor",
 	"version": "1.0.1"
