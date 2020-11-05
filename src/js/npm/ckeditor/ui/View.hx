@@ -1,6 +1,5 @@
 package js.npm.ckeditor.ui;
 
-import haxe.DynamicAccess;
 import js.npm.ckeditor.utils.EmitterMixin.Emitter;
 import js.npm.ckeditor.utils.ObservableMixin.Observable;
 import js.npm.ckeditor.utils.Locale;

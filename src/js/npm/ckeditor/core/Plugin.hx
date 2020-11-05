@@ -1,6 +1,5 @@
 package js.npm.ckeditor.core;
 
-import haxe.DynamicAccess;
 import js.npm.ckeditor.core.editor.Editor;
 import js.npm.ckeditor.utils.EmitterMixin.Emitter;
 import js.npm.ckeditor.utils.ObservableMixin.Observable;

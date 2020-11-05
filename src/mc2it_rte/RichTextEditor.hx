@@ -38,7 +38,7 @@ import mc2it_rte.timestamp.Timestamp;
 		List, TodoList,
 		Paragraph,
 		PasteFromOffice,
-		RemoveFormat, RemoveFormatLinks,
+		RemoveFormat,
 		Table, TableCellProperties, TableProperties, TableToolbar,
 		TextTransformation,
 		Timestamp

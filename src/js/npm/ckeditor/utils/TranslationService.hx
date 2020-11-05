@@ -1,7 +1,5 @@
 package js.npm.ckeditor.utils;
 
-import haxe.DynamicAccess;
-
 /** The internationalization message interface. **/
 typedef Message = {
 

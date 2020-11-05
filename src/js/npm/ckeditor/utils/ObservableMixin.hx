@@ -1,6 +1,5 @@
 package js.npm.ckeditor.utils;
 
-import haxe.DynamicAccess;
 import js.npm.ckeditor.utils.EmitterMixin.Emitter;
 
 /** An interface which adds "observable properties" and data binding functionality. **/

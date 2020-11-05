@@ -1,7 +1,5 @@
 package js.npm.ckeditor.engine.view;
 
-import haxe.DynamicAccess;
-
 /** A view upcast writer. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/upcastwriter.js", "default")
 extern class UpcastWriter {
