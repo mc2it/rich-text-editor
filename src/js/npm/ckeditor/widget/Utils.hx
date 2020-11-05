@@ -1,12 +1,11 @@
 package js.npm.ckeditor.widget;
 
-import haxe.extern.EitherType;
 import js.npm.ckeditor.engine.model.Model;
 import js.npm.ckeditor.engine.view.DowncastWriter;
 import js.npm.ckeditor.engine.view.Element;
 import js.npm.ckeditor.engine.view.Node;
 
-/** A set of helper functions. **/
+/** A set of helper functions for widgets. **/
 @:jsRequire("@ckeditor/ckeditor5-widget/src/utils.js")
 extern class Utils {
 

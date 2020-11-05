@@ -1,7 +1,5 @@
 package js.npm.ckeditor.engine.model;
 
-import haxe.extern.EitherType;
-
 /** The model's schema. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/schema.js", "default")
 extern class Schema {

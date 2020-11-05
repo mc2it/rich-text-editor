@@ -1,6 +1,5 @@
 package js.npm.ckeditor.engine.conversion;
 
-import haxe.extern.EitherType;
 import js.npm.ckeditor.engine.model.Element as ModelElement;
 import js.npm.ckeditor.engine.view.Element as ViewElement;
 import js.npm.ckeditor.engine.view.ElementDefinition;

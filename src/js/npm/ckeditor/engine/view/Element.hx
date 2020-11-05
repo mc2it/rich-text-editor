@@ -1,7 +1,5 @@
 package js.npm.ckeditor.engine.view;
 
-import haxe.extern.Rest;
-
 /** A view element. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/element.js", "default")
 extern class Element extends Node {

@@ -1,7 +1,5 @@
 package js.npm.ckeditor.engine.conversion;
 
-import haxe.extern.EitherType;
-
 /** A utility class that helps add converters to upcast and downcast dispatchers. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/conversion.js", "default")
 extern class Conversion {

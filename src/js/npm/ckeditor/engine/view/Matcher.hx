@@ -1,7 +1,6 @@
 package js.npm.ckeditor.engine.view;
 
 import haxe.DynamicAccess;
-import haxe.extern.EitherType;
 
 /** A view matcher. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/matcher.js", "default")

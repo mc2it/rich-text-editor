@@ -1,7 +1,5 @@
 package js.npm.ckeditor.core;
 
-import haxe.extern.Rest;
-
 /** The base class for CKEditor commands. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/commandcollection.js", "default")
 extern class CommandCollection {

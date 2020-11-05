@@ -1,6 +1,5 @@
 package js.npm.ckeditor.engine.model;
 
-import haxe.extern.EitherType;
 import js.npm.ckeditor.engine.model.Selection.Selectable;
 
 /** The editor's data model. **/

@@ -1,6 +1,5 @@
 package js.npm.ckeditor.engine.view;
 
-import haxe.extern.EitherType;
 import haxe.DynamicAccess;
 
 /** A view downcast writer. **/

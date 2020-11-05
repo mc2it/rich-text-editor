@@ -1,7 +1,5 @@
 package js.npm.ckeditor.core.editor;
 
-import haxe.extern.EitherType;
-
 /** The CKEditor configuration options. **/
 typedef EditorConfig = {
 

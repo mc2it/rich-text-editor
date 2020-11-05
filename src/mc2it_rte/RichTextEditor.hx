@@ -56,10 +56,7 @@ import mc2it_rte.timestamp.Timestamp;
 		},
 		language: "fr",
 		table: {
-			contentToolbar: [
-				"tableColumn", "tableRow", "mergeTableCells",
-				"tableProperties", "tableCellProperties"
-			]
+			contentToolbar: ["tableColumn", "tableRow", "mergeTableCells", "tableProperties", "tableCellProperties"]
 		},
 		toolbar: [
 			"heading", "|",
@@ -69,7 +66,7 @@ import mc2it_rte.timestamp.Timestamp;
 			"undo", "redo", "|",
 			"bulletedList", "numberedList", "todoList", "|",
 			"alignment:left", "alignment:center", "alignment:right", "|",
-			"horizontalLine", "insertTable"
+			"horizontalLine", "timestamp", "insertTable"
 		],
 		typing: {
 			transformations: {

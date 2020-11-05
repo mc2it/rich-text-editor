@@ -1,12 +1,11 @@
 package js.npm.ckeditor.core.editor;
 
-import haxe.extern.EitherType;
-import haxe.extern.Rest;
 import js.lib.Promise;
 import js.npm.ckeditor.engine.controller.EditingController;
 import js.npm.ckeditor.engine.conversion.Conversion;
 import js.npm.ckeditor.engine.model.Model;
 import js.npm.ckeditor.utils.Locale;
+import js.npm.ckeditor.utils.TranslationService.Message;
 
 /** The class representing a basic, generic editor. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/editor/editor.js", "default")
@@ -43,5 +42,5 @@ extern class Editor {
 	function setData(data: String): Void;
 
 	/** Translates the given message to the UI language. **/
-	function t(message: String, ?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>): String;
+	function t(message: EitherType<String, Message>, ?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>): String;
 }
