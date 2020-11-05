@@ -78,6 +78,9 @@ import mc2it_rte.timestamp.Timestamp;
 	};
 
 	/** Creates a new rich text editor. **/
-	static function create(sourceElementOrData: EitherType<HtmlElement, String>, ?config: EditorConfig): Promise<RichTextEditor>
+	static function create(sourceElementOrData: EitherType<HtmlElement, String>, ?config: EditorConfig): Promise<RichTextEditor> {
+		if (config == null) config = {language: "fr"};
+		else if (config.language == null) config.language = "fr";
 		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);
+	}
 }
