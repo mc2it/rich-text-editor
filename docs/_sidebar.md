@@ -1,6 +1,6 @@
 - [Installation](installation.md)
 - [Usage](usage.md)
 - [Demo](demo.md)
-- A propos
-	- [Licence](about/license.md)
-	- [Voir également](about/see_also.md)
+- About
+	- [License](about/license.md)
+	- [See also](about/see_also.md)
