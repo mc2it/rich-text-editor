@@ -1,21 +1,16 @@
----
-path: blob/main
-source: src/mc2it_rte/RichTextEditor.hx
----
-
 # Usage
 This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor's classic editor](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
-It extends from the [`ClassicEditor` class](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) provided by that project, so its usage is basically the same.
+It extends from the [ClassicEditor` class provided by this project, so its usage is basically the same.
 
 In your HTML page, add an element that **MC2IT Rich Text Editor** should make editable:
 
-``` html
+```html
 <textarea id="editor"></textarea>
 ```
 
 Then call the `RichTextEditor.create()` method:
 
-``` html
+```html
 <script>
 	RichTextEditor
 		.create(document.querySelector("#editor"))
@@ -31,36 +26,36 @@ By default, the editor will display in **French**. This is the language built in
 In order to change the language of the editor UI, you need to load additional language file(s).
 These files are located in the `build/i18n` folder of this package.
 
-``` html
+```html
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
 
-<!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
-
 <!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/[lang].js"></script>
+
+<!-- UNPKG -->
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
 ```
 
 For example:
 
-``` html
+```html
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/editor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/en.js"></script>
 
-<!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/editor.js"></script>
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/en.js"></script>
-
 <!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
+
+<!-- UNPKG -->
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/editor.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/en.js"></script>
 ```
 
 Next, you can configure the editor to use one of the loaded language:
 
-``` html
+```html
 <script>
 	RichTextEditor
 		.create(document.querySelector("#editor"), {language: "en"})
@@ -71,8 +66,7 @@ Next, you can configure the editor to use one of the loaded language:
 ## Advanced usage
 For other uses and detailed instructions, you should look at the [official CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest).
 
-!!! info "Haxe externs"
-	This library provides partial [extern definitions](https://haxe.org/manual/lf-externs.html)
-	for the CKEditor packages. These externs are located in the `js.npm.ckeditor` namespace, and can be used
-	to create [CKEditor plugins](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/plugins.html)
-	using [Haxe](https://haxe.org).
+?> This library provides partial [extern definitions](https://haxe.org/manual/lf-externs.html)
+for the CKEditor packages. These externs are located in the `js.npm.ckeditor` namespace, and can be used
+to create [CKEditor plugins](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/plugins.html)
+using [Haxe](https://haxe.org).
