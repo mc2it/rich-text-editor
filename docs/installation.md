@@ -23,7 +23,6 @@ You can verify if you're already good to go with the following commands:
 <!-- tabs:start -->
 
 #### **Haxe**
-
 ```shell
 haxe --version
 # 4.1.4
@@ -33,7 +32,6 @@ haxelib version
 ```
 
 #### **JavaScript**
-
 ```shell
 node --version
 # v15.3.0
@@ -49,7 +47,6 @@ Now, you can continue with the procedure:
 <!-- tabs:start -->
 
 #### **Haxe**
-
 From a command prompt, run:
 
 ```shell
@@ -66,7 +63,6 @@ Then, add this code snippet to the `<head>` of your HTML document:
 ?> Replace `[version]` with the current version number of the package (using commas instead of dots: `1,0,0` in place of `1.0.0`).
 
 #### **JavaScript**
-
 From a command prompt, run:
 
 ```shell
