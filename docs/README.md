@@ -5,8 +5,8 @@
 
 ![Screenshot](img/screenshot.jpg)
 
-A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
-for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+> A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
+> for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Features
 - [Autoformatting](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html)
