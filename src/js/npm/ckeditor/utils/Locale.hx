@@ -2,7 +2,7 @@ package js.npm.ckeditor.utils;
 
 import js.npm.ckeditor.utils.TranslationService.Message;
 
-/** The widget plugin. **/
+/** Represents the localization services. **/
 @:jsRequire("@ckeditor/ckeditor5-utils/src/locale.js", "default")
 extern class Locale {
 
