@@ -1,6 +1,6 @@
 # Usage
 This package supplies a single class, `RichTextEditor`, which is a custom build of the [CKEditor's classic editor](https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html).
-It extends from the [ClassicEditor` class provided by this project, so its usage is basically the same.
+It extends from the `ClassicEditor` class provided by this project, so its usage is basically the same.
 
 In your HTML page, add an element that **MC2IT Rich Text Editor** should make editable:
 
@@ -66,7 +66,7 @@ Next, you can configure the editor to use one of the loaded language:
 ## Advanced usage
 For other uses and detailed instructions, you should look at the [official CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest).
 
-?> This library provides partial [extern definitions](https://haxe.org/manual/lf-externs.html)
+?> This library provides partial [Haxe extern definitions](https://haxe.org/manual/lf-externs.html)
 for the CKEditor packages. These externs are located in the `js.npm.ckeditor` namespace, and can be used
 to create [CKEditor plugins](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/plugins.html)
 using [Haxe](https://haxe.org).
