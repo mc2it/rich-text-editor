@@ -3,10 +3,10 @@
 ![Node.js](https://badgen.net/npm/node/@mc2it/rich-text-editor) ![npm](https://badgen.net/npm/v/@mc2it/rich-text-editor) ![Types](https://badgen.net/npm/types/@mc2it/rich-text-editor) ![Downloads](https://badgen.net/npm/dt/@mc2it/rich-text-editor)  
 ![License](https://badgen.net/badge/license/MIT/blue)
 
-![Screenshot](img/screenshot.jpg)
-
 > A customized build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
 > for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+
+![Screenshot](img/screenshot.jpg)
 
 ## Features
 - [Autoformatting](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html)
