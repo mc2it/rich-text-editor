@@ -1,6 +1,6 @@
 package js.npm.ckeditor.core;
 
-/** The base class for CKEditor commands. **/
+/** A collection of commands. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/commandcollection.js", "default")
 extern class CommandCollection {
 

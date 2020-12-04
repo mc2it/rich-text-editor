@@ -4,7 +4,7 @@ import js.npm.ckeditor.engine.model.Element as ModelElement;
 import js.npm.ckeditor.engine.view.Element as ViewElement;
 import js.npm.ckeditor.engine.view.Matcher.MatcherPattern;
 
-/** A utility class that helps add converters to upcast and downcast dispatchers. **/
+/** A utility class that helps add converters to upcast dispatchers. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/upcasthelpers.js", "default")
 extern class UpcastHelpers extends ConversionHelpers {
 

@@ -1,6 +1,6 @@
 package js.npm.ckeditor.utils;
 
-/** Emitter/listener interface. **/
+/** The emitter/listener interface. **/
 extern interface Emitter {
 
 	/** Registers a callback function to be executed when an event is fired in a specific (emitter) object. **/
