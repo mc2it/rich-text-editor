@@ -7,7 +7,7 @@ haxe --define doc-gen --xml var/api.xml build.hxml
 haxelib run dox `
 	--define description "A customized build of CKEditor, a rich text editor." `
 	--define source-path "https://github.com/mc2it/rich-text-editor/blob/main/src" `
-	--define themeColor 0x4051b5 `
+	--define themeColor 0x165898 `
 	--define version $version `
 	--define website "https://www.sabcomputer.com" `
 	--input-path var `
