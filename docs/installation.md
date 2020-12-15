@@ -34,10 +34,10 @@ haxelib version
 #### **JavaScript**
 ```shell
 node --version
-# v15.3.0
+# v15.4.0
 
 npm --version
-# 7.0.14
+# 7.0.15
 ```
 
 <!-- tabs:end -->
