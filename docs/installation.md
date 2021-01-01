@@ -25,7 +25,7 @@ You can verify if you're already good to go with the following commands:
 #### **Haxe**
 ```shell
 haxe --version
-# 4.1.4
+# 4.1.5
 
 haxelib version
 # 4.0.2
@@ -34,10 +34,10 @@ haxelib version
 #### **JavaScript**
 ```shell
 node --version
-# v15.4.0
+# v15.5.0
 
 npm --version
-# 7.0.15
+# 7.3.0
 ```
 
 <!-- tabs:end -->
