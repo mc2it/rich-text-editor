@@ -22,10 +22,10 @@ import js.npm.ckeditor.utils.TranslationService;
 
 			listenTo(buttonView, "execute", () -> {
 				editor.execute("timestamp");
-				editor.editing.view.focus();
+				editor.focus();
 			});
 
-			return buttonView;
+			buttonView;
 		});
 	}
 }
