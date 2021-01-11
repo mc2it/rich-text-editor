@@ -10,6 +10,8 @@ haxelib run dox `
 	--define themeColor 0x165898 `
 	--define version $version `
 	--define website "https://www.sabcomputer.com" `
+	--include "^js\.npm\." `
+	--include "^mc2it_rte\." `
 	--input-path var `
 	--output-path docs/api `
 	--title "MC2IT Rich Text Editor"
