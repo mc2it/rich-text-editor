@@ -34,7 +34,7 @@ haxelib version
 #### **JavaScript**
 ```shell
 node --version
-# v15.5.0
+# v15.5.1
 
 npm --version
 # 7.3.0
