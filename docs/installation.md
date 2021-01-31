@@ -50,7 +50,6 @@ Now, you can continue with the procedure:
 From a command prompt, run:
 
 ```shell
-haxelib newrepo
 haxelib install mc2it_rte
 ```
 
