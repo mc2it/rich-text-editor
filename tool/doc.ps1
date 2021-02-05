@@ -9,7 +9,7 @@ haxelib run dox `
 	--define source-path "https://github.com/mc2it/rich-text-editor/blob/main/src" `
 	--define themeColor 0x165898 `
 	--define version $version `
-	--define website "https://www.sabcomputer.com" `
+	--define website "https://mc2it.github.io/rich-text-editor" `
 	--include "^js\.npm\." `
 	--include "^mc2it_rte\." `
 	--input-path var `
