@@ -1,11 +1,11 @@
 {
 	"bugs": "https://github.com/mc2it/rich-text-editor/issues",
 	"description": "A customized build of CKEditor, a rich text editor.",
-	"homepage": "https://docs.sabcomputer.com/rich-text-editor",
+	"homepage": "https://mc2it.github.io/rich-text-editor",
 	"license": "MIT",
 	"main": "./lib/index.js",
 	"name": "@mc2it/rich-text-editor",
-	"repository": "github:mc2it/rich-text-editor",
+	"repository": "mc2it/rich-text-editor",
 	"type": "commonjs",
 	"version": "1.0.1",
 	"author": {

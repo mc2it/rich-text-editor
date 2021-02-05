@@ -7,8 +7,8 @@
 > for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Documentation
-- [User guide](https://docs.sabcomputer.com/rich-text-editor)
-- [API reference](https://api.sabcomputer.com/rich-text-editor)
+- [User guide](https://mc2it.github.io/rich-text-editor)
+- [API reference](https://mc2it.github.io/rich-text-editor/api)
 
 ## Packages
 - Haxe: `mc2it_rte` on [Haxelib](https://lib.haxe.org/p/mc2it_rte)
@@ -19,4 +19,4 @@
 - [Submit an issue](https://github.com/mc2it/rich-text-editor/issues)
 
 ## License
-[MC2IT Rich Text Editor](https://docs.sabcomputer.com/rich-text-editor) is distributed under the MIT License.
+[MC2IT Rich Text Editor](https://mc2it.github.io/rich-text-editor) is distributed under the MIT License.
