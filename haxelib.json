@@ -5,7 +5,16 @@
 	"license": "MIT",
 	"name": "mc2it_rte",
 	"releasenote": "Forces the editor language in order to avoid an issue with the timestamp plugin.",
-	"tags": ["ckeditor5", "ckeditor5-build", "editor", "html-editor", "js", "rich-text-editor", "rte", "wysiwyg"],
+	"tags": [
+		"ckeditor5",
+		"ckeditor5-build",
+		"editor",
+		"html-editor",
+		"js",
+		"rich-text-editor",
+		"rte",
+		"wysiwyg"
+	],
 	"url": "https://mc2it.github.io/rich-text-editor",
 	"version": "1.0.1"
 }

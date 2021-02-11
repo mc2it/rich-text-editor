@@ -2,9 +2,11 @@
 Set-StrictMode -Version Latest
 Set-Location (Split-Path $PSScriptRoot)
 
+if (Test-Path docs/api) { Remove-Item docs/api -Force -Recurse }
+
 $version = (Get-Content haxelib.json | ConvertFrom-Json).version
 haxe --define doc-gen --xml var/api.xml build.hxml
-haxelib run dox `
+lix run dox `
 	--define description "A customized build of CKEditor, a rich text editor." `
 	--define source-path "https://github.com/mc2it/rich-text-editor/blob/main/src" `
 	--define themeColor 0x165898 `
