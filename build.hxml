@@ -3,5 +3,5 @@
 --define analyzer-optimize
 --define js-es=6
 --define no-deprecation-warnings
---js var/editor.js
+--js var/bundle.js
 mc2it_rte.RichTextEditor

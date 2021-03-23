@@ -2,8 +2,5 @@
 Set-StrictMode -Version Latest
 Set-Location (Split-Path $PSScriptRoot)
 
-foreach ($item in "build", "lib/editor.*") {
-	if (Test-Path $item) { Remove-Item $item -Force -Recurse }
-}
-
+if (Test-Path build) { Remove-Item build -Force -Recurse }
 Remove-Item var/* -Exclude .gitkeep -Force -Recurse
