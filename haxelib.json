@@ -4,7 +4,7 @@
 	"description": "A customized build of CKEditor, a rich text editor.",
 	"license": "MIT",
 	"name": "mc2it_rte",
-	"releasenote": "Forces the editor language in order to avoid an issue with the timestamp plugin.",
+	"releasenote": "Updated the package dependencies.",
 	"tags": [
 		"ckeditor5",
 		"ckeditor5-build",
