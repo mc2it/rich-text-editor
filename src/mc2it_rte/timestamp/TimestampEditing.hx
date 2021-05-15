@@ -1,7 +1,5 @@
 package mc2it_rte.timestamp;
 
-import js.lib.Date;
-import js.lib.intl.DateTimeFormat;
 import js.ckeditor.core.Plugin;
 import js.ckeditor.engine.conversion.DowncastHelpers;
 import js.ckeditor.engine.conversion.UpcastHelpers;
@@ -10,6 +8,8 @@ import js.ckeditor.engine.view.DowncastWriter;
 import js.ckeditor.engine.view.Element as ViewElement;
 import js.ckeditor.widget.Utils;
 import js.ckeditor.widget.Widget;
+import js.lib.Date;
+import js.lib.intl.DateTimeFormat;
 
 /** The editing layer of the timestamp plugin. **/
 @:keep class TimestampEditing extends Plugin {

@@ -1,8 +1,6 @@
 package mc2it_rte;
 
 import haxe.extern.EitherType;
-import js.html.HtmlElement;
-import js.lib.Promise;
 import js.ckeditor.alignment.*;
 import js.ckeditor.autoformat.*;
 import js.ckeditor.basic_styles.*;
@@ -21,6 +19,8 @@ import js.ckeditor.paste_from_office.*;
 import js.ckeditor.remove_format.*;
 import js.ckeditor.table.*;
 import js.ckeditor.typing.*;
+import js.html.HtmlElement;
+import js.lib.Promise;
 import mc2it_rte.timestamp.Timestamp;
 
 /** An implementation of a rich text editor. **/

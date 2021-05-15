@@ -1,11 +1,11 @@
 package js.ckeditor.core.editor;
 
-import js.lib.Promise;
 import js.ckeditor.engine.controller.EditingController;
 import js.ckeditor.engine.conversion.Conversion;
 import js.ckeditor.engine.model.Model;
 import js.ckeditor.utils.Locale;
 import js.ckeditor.utils.TranslationService.Message;
+import js.lib.Promise;
 
 /** The class representing a basic, generic editor. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/editor/editor.js", "default")

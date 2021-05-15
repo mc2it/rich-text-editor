@@ -1,7 +1,7 @@
 package js.ckeditor.core.editor;
 
-import js.html.HtmlElement;
 import js.ckeditor.ui.ComponentFactory;
+import js.html.HtmlElement;
 
 /** A class providing the minimal interface that is required to successfully bootstrap any editor UI. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/editor/editorui.js", "default")
