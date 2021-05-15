@@ -5,7 +5,7 @@ Set-Location (Split-Path $PSScriptRoot)
 if (Test-Path docs/api) { Remove-Item docs/api -Force -Recurse }
 
 $version = (Get-Content haxelib.json | ConvertFrom-Json).version
-haxe --define doc-gen --xml var/api.xml build.hxml
+haxe --define doc-gen --no-output --xml var/api.xml build.hxml
 lix run dox `
 	--define description "A customized build of CKEditor, a rich text editor." `
 	--define source-path "https://github.com/mc2it/rich-text-editor/blob/main/src" `
