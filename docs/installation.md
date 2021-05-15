@@ -5,14 +5,7 @@
 To install it, add one of these code snippets to the `<head>` of your HTML document:
 
 ```html
-<!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/editor.js"></script>
-
-<!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
-
-<!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/editor.js"></script>
 ```
 
 ## Installing with a package manager
