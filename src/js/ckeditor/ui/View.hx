@@ -1,8 +1,8 @@
-package js.npm.ckeditor.ui;
+package js.ckeditor.ui;
 
-import js.npm.ckeditor.utils.EmitterMixin.Emitter;
-import js.npm.ckeditor.utils.ObservableMixin.Observable;
-import js.npm.ckeditor.utils.Locale;
+import js.ckeditor.utils.EmitterMixin.Emitter;
+import js.ckeditor.utils.ObservableMixin.Observable;
+import js.ckeditor.utils.Locale;
 
 /** The basic view class, which represents an HTML element created out of a template. **/
 @:jsRequire("@ckeditor/ckeditor5-ui/src/view.js", "default")

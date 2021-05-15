@@ -1,6 +1,6 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
-import js.npm.ckeditor.engine.model.Selection.Selectable;
+import js.ckeditor.engine.model.Selection.Selectable;
 
 /** The editor's data model. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/model.js", "default")

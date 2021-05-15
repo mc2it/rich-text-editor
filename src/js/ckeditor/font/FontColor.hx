@@ -1,6 +1,6 @@
-package js.npm.ckeditor.font;
+package js.ckeditor.font;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The font color plugin. **/
 @:jsRequire("@ckeditor/ckeditor5-font/src/fontcolor.js", "default")

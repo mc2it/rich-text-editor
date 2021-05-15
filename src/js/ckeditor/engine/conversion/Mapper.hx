@@ -1,6 +1,6 @@
-package js.npm.ckeditor.engine.conversion;
+package js.ckeditor.engine.conversion;
 
-import js.npm.ckeditor.utils.EmitterMixin.Emitter;
+import js.ckeditor.utils.EmitterMixin.Emitter;
 
 /** Maps elements, positions and markers between the view and the model. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/mapper.js", "default")

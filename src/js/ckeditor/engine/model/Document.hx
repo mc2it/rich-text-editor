@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** The data model's document. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/document.js", "default")

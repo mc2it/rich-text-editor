@@ -1,4 +1,4 @@
-package js.npm.ckeditor.core;
+package js.ckeditor.core;
 
 /** A collection of commands. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/commandcollection.js", "default")

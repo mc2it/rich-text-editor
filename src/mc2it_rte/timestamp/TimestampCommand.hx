@@ -1,8 +1,8 @@
 package mc2it_rte.timestamp;
 
 import js.lib.Date;
-import js.npm.ckeditor.core.Command;
-import js.npm.ckeditor.engine.model.Element;
+import js.ckeditor.core.Command;
+import js.ckeditor.engine.model.Element;
 
 /** Inserts the current date and time. **/
 @:keep class TimestampCommand extends Command {

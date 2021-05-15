@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** The model's schema. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/schema.js", "default")

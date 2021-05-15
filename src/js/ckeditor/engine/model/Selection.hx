@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** An entity that is used to set selection. **/
 typedef Selectable = EitherType<DocumentSelection, EitherType<Node, EitherType<Position, EitherType<Range, Selection>>>>;

@@ -1,4 +1,4 @@
-package js.npm.ckeditor.ui.button;
+package js.ckeditor.ui.button;
 
 /** The button view class. **/
 @:jsRequire("@ckeditor/ckeditor5-ui/src/button/buttonview.js", "default")

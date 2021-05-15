@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.conversion;
+package js.ckeditor.engine.conversion;
 
 /** A utility class that helps add converters to upcast and downcast dispatchers. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/conversion.js", "default")

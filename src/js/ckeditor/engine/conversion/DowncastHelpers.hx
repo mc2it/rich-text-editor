@@ -1,8 +1,8 @@
-package js.npm.ckeditor.engine.conversion;
+package js.ckeditor.engine.conversion;
 
-import js.npm.ckeditor.engine.model.Element as ModelElement;
-import js.npm.ckeditor.engine.view.Element as ViewElement;
-import js.npm.ckeditor.engine.view.ElementDefinition;
+import js.ckeditor.engine.model.Element as ModelElement;
+import js.ckeditor.engine.view.Element as ViewElement;
+import js.ckeditor.engine.view.ElementDefinition;
 
 /** A utility class that helps add converters to downcast dispatchers. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/downcasthelpers.js", "default")

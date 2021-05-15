@@ -1,4 +1,4 @@
-package js.npm.ckeditor.utils;
+package js.ckeditor.utils;
 
 /** The emitter/listener interface. **/
 extern interface Emitter {

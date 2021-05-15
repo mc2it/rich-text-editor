@@ -2,14 +2,14 @@ package mc2it_rte.timestamp;
 
 import js.lib.Date;
 import js.lib.intl.DateTimeFormat;
-import js.npm.ckeditor.core.Plugin;
-import js.npm.ckeditor.engine.conversion.DowncastHelpers;
-import js.npm.ckeditor.engine.conversion.UpcastHelpers;
-import js.npm.ckeditor.engine.model.Element as ModelElement;
-import js.npm.ckeditor.engine.view.DowncastWriter;
-import js.npm.ckeditor.engine.view.Element as ViewElement;
-import js.npm.ckeditor.widget.Utils;
-import js.npm.ckeditor.widget.Widget;
+import js.ckeditor.core.Plugin;
+import js.ckeditor.engine.conversion.DowncastHelpers;
+import js.ckeditor.engine.conversion.UpcastHelpers;
+import js.ckeditor.engine.model.Element as ModelElement;
+import js.ckeditor.engine.view.DowncastWriter;
+import js.ckeditor.engine.view.Element as ViewElement;
+import js.ckeditor.widget.Utils;
+import js.ckeditor.widget.Widget;
 
 /** The editing layer of the timestamp plugin. **/
 @:keep class TimestampEditing extends Plugin {

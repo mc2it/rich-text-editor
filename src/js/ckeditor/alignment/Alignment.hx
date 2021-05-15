@@ -1,6 +1,6 @@
-package js.npm.ckeditor.alignment;
+package js.ckeditor.alignment;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The text alignment plugin. **/
 @:jsRequire("@ckeditor/ckeditor5-alignment/src/alignment.js", "default")

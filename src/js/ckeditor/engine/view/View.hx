@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.view;
+package js.ckeditor.engine.view;
 
 /** The editor's view controller class. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/view.js", "default")

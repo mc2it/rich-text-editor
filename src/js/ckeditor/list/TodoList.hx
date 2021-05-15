@@ -1,6 +1,6 @@
-package js.npm.ckeditor.list;
+package js.ckeditor.list;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The to-do list feature. **/
 @:jsRequire("@ckeditor/ckeditor5-list/src/todolist.js", "default")

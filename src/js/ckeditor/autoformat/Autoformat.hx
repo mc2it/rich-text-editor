@@ -1,6 +1,6 @@
-package js.npm.ckeditor.autoformat;
+package js.ckeditor.autoformat;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** Enables a set of predefined autoformatting actions. **/
 @:jsRequire("@ckeditor/ckeditor5-autoformat/src/autoformat.js", "default")

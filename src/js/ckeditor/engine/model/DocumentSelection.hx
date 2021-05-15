@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** A special selection which is used as the document's selection. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/documentselection.js", "default")

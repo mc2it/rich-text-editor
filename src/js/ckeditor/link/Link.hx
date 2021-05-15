@@ -1,6 +1,6 @@
-package js.npm.ckeditor.link;
+package js.ckeditor.link;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The link plugin. **/
 @:jsRequire("@ckeditor/ckeditor5-link/src/link.js", "default")

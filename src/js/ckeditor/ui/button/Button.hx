@@ -1,4 +1,4 @@
-package js.npm.ckeditor.ui.button;
+package js.ckeditor.ui.button;
 
 /** The button interface. **/
 extern interface Button {

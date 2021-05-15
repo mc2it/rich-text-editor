@@ -1,8 +1,8 @@
-package js.npm.ckeditor.engine.conversion;
+package js.ckeditor.engine.conversion;
 
-import js.npm.ckeditor.engine.model.Element as ModelElement;
-import js.npm.ckeditor.engine.view.Element as ViewElement;
-import js.npm.ckeditor.engine.view.Matcher.MatcherPattern;
+import js.ckeditor.engine.model.Element as ModelElement;
+import js.ckeditor.engine.view.Element as ViewElement;
+import js.ckeditor.engine.view.Matcher.MatcherPattern;
 
 /** A utility class that helps add converters to upcast dispatchers. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/conversion/upcasthelpers.js", "default")

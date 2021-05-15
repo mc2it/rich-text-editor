@@ -1,8 +1,8 @@
-package js.npm.ckeditor.core;
+package js.ckeditor.core;
 
-import js.npm.ckeditor.core.editor.Editor;
-import js.npm.ckeditor.utils.EmitterMixin.Emitter;
-import js.npm.ckeditor.utils.ObservableMixin.Observable;
+import js.ckeditor.core.editor.Editor;
+import js.ckeditor.utils.EmitterMixin.Emitter;
+import js.ckeditor.utils.ObservableMixin.Observable;
 
 /** An array of loaded plugins. **/
 typedef LoadedPlugins = Array<PluginInterface>;

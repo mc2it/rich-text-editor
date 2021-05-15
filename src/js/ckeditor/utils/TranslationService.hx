@@ -1,4 +1,4 @@
-package js.npm.ckeditor.utils;
+package js.ckeditor.utils;
 
 /** The internationalization message interface. **/
 typedef Message = {

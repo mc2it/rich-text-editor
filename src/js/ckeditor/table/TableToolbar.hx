@@ -1,6 +1,6 @@
-package js.npm.ckeditor.table;
+package js.ckeditor.table;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The table toolbar class. **/
 @:jsRequire("@ckeditor/ckeditor5-table/src/tabletoolbar.js", "default")

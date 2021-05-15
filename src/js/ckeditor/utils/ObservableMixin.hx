@@ -1,6 +1,6 @@
-package js.npm.ckeditor.utils;
+package js.ckeditor.utils;
 
-import js.npm.ckeditor.utils.EmitterMixin.Emitter;
+import js.ckeditor.utils.EmitterMixin.Emitter;
 
 /** An interface which adds "observable properties" and data binding functionality. **/
 extern interface Observable extends Emitter {

@@ -1,8 +1,8 @@
-package js.npm.ckeditor.core;
+package js.ckeditor.core;
 
-import js.npm.ckeditor.core.editor.Editor;
-import js.npm.ckeditor.utils.EmitterMixin.Emitter;
-import js.npm.ckeditor.utils.ObservableMixin.Observable;
+import js.ckeditor.core.editor.Editor;
+import js.ckeditor.utils.EmitterMixin.Emitter;
+import js.ckeditor.utils.ObservableMixin.Observable;
 
 /** The base class for CKEditor commands. **/
 @:jsRequire("@ckeditor/ckeditor5-core/src/command.js", "default")

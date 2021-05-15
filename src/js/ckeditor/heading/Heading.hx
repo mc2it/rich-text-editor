@@ -1,6 +1,6 @@
-package js.npm.ckeditor.heading;
+package js.ckeditor.heading;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The headings feature. **/
 @:jsRequire("@ckeditor/ckeditor5-heading/src/heading.js", "default")

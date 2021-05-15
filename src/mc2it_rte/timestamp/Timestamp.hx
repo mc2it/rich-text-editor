@@ -1,6 +1,6 @@
 package mc2it_rte.timestamp;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** Inserts the current date and time. **/
 @:keep class Timestamp extends Plugin {

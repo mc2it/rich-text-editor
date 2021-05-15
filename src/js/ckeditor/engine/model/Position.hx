@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** A position in the model tree. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/position.js", "default")

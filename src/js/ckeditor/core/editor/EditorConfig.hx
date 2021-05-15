@@ -1,4 +1,4 @@
-package js.npm.ckeditor.core.editor;
+package js.ckeditor.core.editor;
 
 /** The CKEditor configuration options. **/
 typedef EditorConfig = {

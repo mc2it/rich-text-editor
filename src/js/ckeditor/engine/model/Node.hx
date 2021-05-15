@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** A model node. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/node.js", "default")

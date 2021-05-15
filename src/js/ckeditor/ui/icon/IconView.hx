@@ -1,4 +1,4 @@
-package js.npm.ckeditor.ui.icon;
+package js.ckeditor.ui.icon;
 
 /** The icon view class. **/
 @:jsRequire("@ckeditor/ckeditor5-ui/src/icon/iconview.js", "default")

@@ -1,6 +1,6 @@
-package js.npm.ckeditor.basic_styles;
+package js.ckeditor.basic_styles;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The strikethrough feature. **/
 @:jsRequire("@ckeditor/ckeditor5-basic-styles/src/strikethrough.js", "default")

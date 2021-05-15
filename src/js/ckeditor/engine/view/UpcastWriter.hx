@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.view;
+package js.ckeditor.engine.view;
 
 /** A view upcast writer. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/upcastwriter.js", "default")

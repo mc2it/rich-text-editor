@@ -1,6 +1,6 @@
-package js.npm.ckeditor.utils;
+package js.ckeditor.utils;
 
-import js.npm.ckeditor.utils.TranslationService.Message;
+import js.ckeditor.utils.TranslationService.Message;
 
 /** Represents the localization services. **/
 @:jsRequire("@ckeditor/ckeditor5-utils/src/locale.js", "default")

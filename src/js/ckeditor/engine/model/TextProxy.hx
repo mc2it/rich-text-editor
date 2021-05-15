@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.model;
+package js.ckeditor.engine.model;
 
 /** Represents a part of a text node. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/model/textproxy.js", "default")

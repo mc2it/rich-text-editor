@@ -1,6 +1,6 @@
-package js.npm.ckeditor.widget;
+package js.ckeditor.widget;
 
-import js.npm.ckeditor.core.Plugin;
+import js.ckeditor.core.Plugin;
 
 /** The widget plugin. **/
 @:jsRequire("@ckeditor/ckeditor5-widget/src/widget.js", "default")

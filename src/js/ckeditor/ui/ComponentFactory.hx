@@ -1,6 +1,6 @@
-package js.npm.ckeditor.ui;
+package js.ckeditor.ui;
 
-import js.npm.ckeditor.utils.Locale;
+import js.ckeditor.utils.Locale;
 
 /** A helper class implementing the UI component (view) factory. **/
 @:jsRequire("@ckeditor/ckeditor5-ui/src/componentfactory.js", "default")

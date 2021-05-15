@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.view;
+package js.ckeditor.engine.view;
 
 /** A view element. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/view/element.js", "default")

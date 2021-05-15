@@ -1,4 +1,4 @@
-package js.npm.ckeditor.engine.view;
+package js.ckeditor.engine.view;
 
 /** A plain object that describes a view element in a way that a concrete, exact view element could be created from that description. **/
 typedef ElementDefinition = EitherType<String, {

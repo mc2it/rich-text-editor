@@ -1,7 +1,7 @@
-package js.npm.ckeditor.engine.controller;
+package js.ckeditor.engine.controller;
 
-import js.npm.ckeditor.engine.conversion.Mapper;
-import js.npm.ckeditor.engine.view.View;
+import js.ckeditor.engine.conversion.Mapper;
+import js.ckeditor.engine.view.View;
 
 /** The controller for the editing pipeline. **/
 @:jsRequire("@ckeditor/ckeditor5-engine/src/controller/editingcontroller.js", "default")
