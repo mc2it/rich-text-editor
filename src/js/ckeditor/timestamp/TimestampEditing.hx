@@ -1,4 +1,4 @@
-package mc2it_rte.timestamp;
+package js.ckeditor.timestamp;
 
 import js.ckeditor.core.Plugin;
 import js.ckeditor.engine.conversion.DowncastHelpers;

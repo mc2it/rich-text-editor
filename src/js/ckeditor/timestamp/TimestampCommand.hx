@@ -1,11 +1,11 @@
-package mc2it_rte.timestamp;
+package js.ckeditor.timestamp;
 
 import js.ckeditor.core.Command;
 import js.ckeditor.engine.model.Element;
 import js.lib.Date;
 
 /** Inserts the current date and time. **/
-class TimestampCommand extends Command {
+@:keep class TimestampCommand extends Command {
 
 	/** Executes this command. **/
 	public function execute(?arguments: {value: Float}) {

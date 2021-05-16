@@ -4,9 +4,9 @@
 		"path": "RELATIVE_TO_SOURCE",
 		"Interface": ["js/npm/ckeditor/ui/button/Button"],
 		"LineLength": [
-			"js/npm/ckeditor/core/editor/Editor",
-			"js/npm/ckeditor/utils/Locale",
-			"mc2it_rte/timestamp/TimestampUI:init"
+			"js/ckeditor/core/editor/Editor",
+			"js/ckeditor/timestamp/TimestampUI:init",
+			"js/ckeditor/utils/Locale"
 		]
 	},
 	"checks": [
@@ -33,7 +33,7 @@
 		{"type": "TODOComment"},
 
 		{"type": "EmptyPackage"},
-		{"type": "Interface"},
+		{"type": "Interface", "props": {"allowProperties": true}},
 		{"type": "UnnecessaryConstructor"},
 
 		{"type": "UnusedImport"},
