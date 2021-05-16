@@ -5,7 +5,7 @@ import js.ckeditor.engine.model.Element;
 import js.lib.Date;
 
 /** Inserts the current date and time. **/
-@:keep class TimestampCommand extends Command {
+class TimestampCommand extends Command {
 
 	/** Executes this command. **/
 	public function execute(?arguments: {value: Float}) {
