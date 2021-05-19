@@ -1,0 +1,5 @@
+--class-path src
+--dce full
+--define analyzer-optimize
+--main mc2it_rte.Program
+--neko run.n

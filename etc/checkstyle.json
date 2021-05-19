@@ -2,11 +2,10 @@
 	"defaultSeverity": "ERROR",
 	"exclude": {
 		"path": "RELATIVE_TO_SOURCE",
-		"Interface": ["js/npm/ckeditor/ui/button/Button"],
 		"LineLength": [
-			"js/ckeditor/core/editor/Editor",
-			"js/ckeditor/timestamp/TimestampUI:init",
-			"js/ckeditor/utils/Locale"
+			"ckeditor/core/editor/Editor",
+			"ckeditor/timestamp/TimestampUI:init",
+			"ckeditor/utils/Locale"
 		]
 	},
 	"checks": [
