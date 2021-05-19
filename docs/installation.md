@@ -49,7 +49,7 @@ haxelib install mc2it_rte
 Then, add this code snippet to the `<head>` of your HTML document:
 
 ```html
-<script src=".haxelib/mc2it_rte/[version]/build/editor.js"></script>
+<script src=".haxelib/mc2it_rte/[version]/lib/editor.js"></script>
 ```
 
 ?> Replace `[version]` with the current version number of the package (using commas instead of dots: `1,0,1` in place of `1.0.1`).
@@ -64,7 +64,7 @@ npm install @mc2it/rich-text-editor
 Then, add this code snippet to the `<head>` of your HTML document:
 
 ```html
-<script src="node_modules/@mc2it/rich-text-editor/build/editor.js"></script>
+<script src="node_modules/@mc2it/rich-text-editor/lib/editor.js"></script>
 ```
 
 <!-- tabs:end -->

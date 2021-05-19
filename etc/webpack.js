@@ -4,7 +4,7 @@ const {join} = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-	entry: join(__dirname, "../src/js/index.js"),
+	entry: join(__dirname, "../src/index.js"),
 	mode: process.env.NODE_ENV,
 	module: {
 		rules: [
@@ -32,7 +32,7 @@ module.exports = {
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",
-		path: join(__dirname, "../build")
+		path: join(__dirname, "../lib")
 	},
 	performance: {hints: false},
 	plugins: [

@@ -24,33 +24,33 @@ This code snippet will turn the `<textarea id="editor">` into a rich text editor
 By default, the editor will display in **French**. This is the language built into the `editor.js` file.
 
 In order to change the language of the editor UI, you need to load additional language file(s).
-These files are located in the `build/i18n` folder of this package.
+These files are located in the `lib/i18n` folder of this package.
 
 ```html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/i18n/[lang].js"></script>
 
 <!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/[lang].js"></script>
 
 <!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/[lang].js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/lib/i18n/[lang].js"></script>
 ```
 
 For example:
 
 ```html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/editor.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/build/i18n/en.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/editor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/i18n/en.js"></script>
 
 <!-- MC2IT -->
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
 
 <!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/editor.js"></script>
-<script src="https://unpkg.com/@mc2it/rich-text-editor/build/i18n/en.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/lib/editor.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/lib/i18n/en.js"></script>
 ```
 
 Next, you can configure the editor to use one of the loaded language:
@@ -67,6 +67,6 @@ Next, you can configure the editor to use one of the loaded language:
 For other uses and detailed instructions, you should look at the [official CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest).
 
 ?> This library provides partial [Haxe extern definitions](https://haxe.org/manual/lf-externs.html)
-for the CKEditor packages. These externs are located in the `js.ckeditor` namespace, and can be used
+for the CKEditor packages. These externs are located in the `ckeditor` namespace, and can be used
 to create [CKEditor plugins](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/plugins.html)
 using [Haxe](https://haxe.org).
