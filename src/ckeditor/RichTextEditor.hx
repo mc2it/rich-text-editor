@@ -19,8 +19,7 @@ import ckeditor.remove_format.*;
 import ckeditor.table.*;
 import ckeditor.timestamp.*;
 import ckeditor.typing.*;
-import haxe.extern.EitherType;
-import js.html.HtmlElement;
+import js.html.Element;
 import js.lib.Promise;
 
 /** An implementation of a rich text editor. **/
@@ -78,7 +77,7 @@ import js.lib.Promise;
 	};
 
 	/** Creates a new rich text editor. **/
-	static function create(sourceElementOrData: EitherType<HtmlElement, String>, ?config: EditorConfig): Promise<RichTextEditor> {
+	static function create(sourceElementOrData: EitherType<Element, String>, ?config: EditorConfig): Promise<RichTextEditor> {
 		if (config == null) config = {language: "fr"};
 		else if (config.language == null) config.language = "fr";
 		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);

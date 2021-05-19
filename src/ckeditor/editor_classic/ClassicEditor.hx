@@ -3,7 +3,7 @@ package ckeditor.editor_classic;
 import ckeditor.core.editor.Editor;
 import ckeditor.core.editor.EditorConfig;
 import ckeditor.core.editor.EditorWithUI;
-import js.html.HtmlElement;
+import js.html.Element;
 import js.lib.Promise;
 
 /** The classic editor implementation. **/
@@ -14,5 +14,5 @@ extern class ClassicEditor extends Editor implements EditorWithUI {
 	final ui: ClassicEditorUI;
 
 	/** Creates a new classic editor. **/
-	static function create(sourceElementOrData: EitherType<HtmlElement, String>, ?config: EditorConfig): Promise<ClassicEditor>;
+	static function create(sourceElementOrData: EitherType<Element, String>, ?config: EditorConfig): Promise<ClassicEditor>;
 }
