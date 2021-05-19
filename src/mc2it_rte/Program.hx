@@ -1,5 +1,10 @@
 package mc2it_rte;
 
+import tink.Cli;
+import tink.cli.Rest;
+
+using tink.CoreApi;
+
 /** TODO **/
 @:noDoc class Program {
 

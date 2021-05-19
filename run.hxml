@@ -1,5 +1,7 @@
 --class-path src
 --dce full
 --define analyzer-optimize
+--library tink_cli
+--library tink_core
 --main mc2it_rte.Program
 --neko run.n
