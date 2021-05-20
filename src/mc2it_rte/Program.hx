@@ -1,15 +1,22 @@
 package mc2it_rte;
 
+import mc2it_rte.cli.CopyCommand;
+import mc2it_rte.cli.LibpathCommand;
 import tink.Cli;
-import tink.cli.Rest;
 
-using tink.CoreApi;
-
-/** TODO **/
+/** Command line interface of MC2IT Rich Text Editor. **/
 @:noDoc class Program {
+
+	/** Copy the library assets to a given directory. **/
+	@:command
+	public final copy = new CopyCommand();
 
 	/** Output usage information. **/
 	public var help = false;
+
+	/** Print the path to the library assets. **/
+	@:command
+	public final libpath = new LibpathCommand();
 
 	/** Output the version number. **/
 	public var version = false;
@@ -20,18 +27,10 @@ using tink.CoreApi;
 	/** Application entry point. **/
 	public static function main() Cli.process(Sys.args(), new Program()).handle(Cli.exit);
 
-	/** <output> : The path to the output directory. **/
+	// Runs this command.
 	@:defaultCommand
-	public function run(rest: Rest<String>): Promise<Noise> {
-		if (help || version) {
-			Sys.println(help ? Cli.getDoc(this) : Version.getPackageVersion());
-			return Noise;
-		}
-
-		final requiredArgs = 1;
-		if (rest.length < requiredArgs || (Sys.getEnv("HAXELIB_RUN") == "1" && rest.length < requiredArgs + 1))
-			return new Error(BadRequest, "You must provide the path of the output directory.");
-
+	public function run() {
+		Sys.println(version ? Version.getPackageVersion() : Cli.getDoc(this));
 		return Noise;
 	}
 }
