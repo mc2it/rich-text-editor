@@ -28,7 +28,7 @@ module.exports = {
 		})]
 	},
 	output: {
-		filename: "editor.js",
+		filename: "mc2it_rte.js",
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",

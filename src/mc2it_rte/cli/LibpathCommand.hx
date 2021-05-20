@@ -18,6 +18,6 @@ class LibpathCommand {
 	@:defaultCommand
 	public function run() {
 		Sys.println(help ? Cli.getDoc(this) : Path.join([Sys.getCwd(), "lib"]).replace("/", Sys.systemName() == "Windows" ? "\\" : "/"));
-		return Noise;
+		return Promise.NOISE;
 	}
 }

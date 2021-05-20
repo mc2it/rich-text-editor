@@ -31,6 +31,6 @@ import tink.Cli;
 	@:defaultCommand
 	public function run() {
 		Sys.println(version ? Version.getPackageVersion() : Cli.getDoc(this));
-		return Noise;
+		return Promise.NOISE;
 	}
 }
