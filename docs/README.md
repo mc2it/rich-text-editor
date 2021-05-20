@@ -21,3 +21,7 @@
 - [Text alignment](https://ckeditor.com/docs/ckeditor5/latest/features/text-alignment.html)
 - [To-do lists](https://ckeditor.com/docs/ckeditor5/latest/features/todo-lists.html)
 - and more...
+
+## Installation
+- [From a content delivery network](cdn.md).
+- [Using a package manager](cli.md).
