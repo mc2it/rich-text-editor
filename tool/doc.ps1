@@ -12,7 +12,8 @@ lix run dox `
 	--define themeColor 0x165898 `
 	--define version $version `
 	--define website "https://mc2it.github.io/rich-text-editor" `
-	--include "^js\.npm\." `
+	--exclude "^mc2it_rte\.cli\." `
+	--include "^ckeditor\." `
 	--include "^mc2it_rte\." `
 	--input-path var `
 	--output-path docs/api `

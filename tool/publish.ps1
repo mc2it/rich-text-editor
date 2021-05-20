@@ -4,7 +4,7 @@ Set-Location (Split-Path $PSScriptRoot)
 
 tool/dist.ps1
 
-$files = "*.md", "haxelib.json", "lib", "src"
+$files = "*.md", "haxelib.json", "lib", "src", "run.n"
 Compress-Archive $files var/haxelib.zip -Force
 
 haxelib submit var/haxelib.zip
