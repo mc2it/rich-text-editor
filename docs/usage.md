@@ -21,7 +21,7 @@ Then call the `RichTextEditor.create()` method:
 This code snippet will turn the `<textarea id="editor">` into a rich text editor.
 
 ## Localization
-By default, the editor will display in **French**. This is the language built into the `editor.js` file.
+By default, the editor will display in **French**. This is the language built into the `mc2it_rte.js` file.
 
 In order to change the language of the editor UI, you need to load additional language file(s).
 These files are located in the `lib/i18n` folder of this package.
@@ -41,15 +41,15 @@ For example:
 
 ```html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/editor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/mc2it_rte.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mc2it/rich-text-editor/lib/i18n/en.js"></script>
 
 <!-- MC2IT -->
-<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/editor.js"></script>
+<script src="https://static.sabcomputer.com/js/rich-text-editor/latest/mc2it_rte.js"></script>
 <script src="https://static.sabcomputer.com/js/rich-text-editor/latest/i18n/en.js"></script>
 
 <!-- UNPKG -->
-<script src="https://unpkg.com/@mc2it/rich-text-editor/lib/editor.js"></script>
+<script src="https://unpkg.com/@mc2it/rich-text-editor/lib/mc2it_rte.js"></script>
 <script src="https://unpkg.com/@mc2it/rich-text-editor/lib/i18n/en.js"></script>
 ```
 

@@ -28,17 +28,24 @@ class CopyCommand {
 		if (rest.length < requiredArgs || (Sys.getEnv("HAXELIB_RUN") == "1" && rest.length < requiredArgs + 1))
 			return new Error(BadRequest, "You must provide the path of the output directory.");
 
-		final libPath = Path.join([Sys.getCwd(), "lib"]);
-		var code = File.getContent(Path.join([libPath, "mc2it_rte.js"]));
-		for (language in getLanguageFiles()) code += File.getContent(Path.join([libPath, 'i18n/$language.js']));
+		final code = [File.getContent(Path.join([Sys.getCwd(), "lib/mc2it_rte.js"]))]
+			.concat(getLanguageFiles().map(File.getContent))
+			.join("\n");
 
 		FileSystem.createDirectory(rest[0]);
 		File.saveContent(Path.join([rest[0], "mc2it_rte.js"]), code);
 		return Noise;
 	}
 
-	/** Returns the paths of the files corresponding to the selected languages. **/
+	/** Returns the file paths corresponding to the provided languages. **/
 	function getLanguageFiles() {
-		return [];
+		if (languages.length == 0) return [];
+
+		final i18nPath = Path.join([Sys.getCwd(), "lib/i18n"]);
+		final files = languages == "all"
+			? FileSystem.readDirectory(i18nPath).map(file -> file.withoutExtension())
+			: languages.split(",").map(language -> language.toLowerCase());
+
+		return files.map(file -> Path.join([i18nPath, '$file.js'])).filter(FileSystem.exists);
 	}
 }
