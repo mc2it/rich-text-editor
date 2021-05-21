@@ -24,16 +24,16 @@ class BuildCommand {
 	public function run(rest: Rest<String>): Promise<Noise> {
 		if (help) return { Sys.println(Cli.getDoc(this)); Noise; };
 
+		final haxelibRun = Sys.getEnv("HAXELIB_RUN") == "1";
 		final requiredArgs = 1;
-		if (rest.length < requiredArgs || (Sys.getEnv("HAXELIB_RUN") == "1" && rest.length < requiredArgs + 1))
+		if (rest.length < requiredArgs || (haxelibRun && rest.length < requiredArgs + 1))
 			return new Error(BadRequest, "You must provide the path of the output file.");
 
-		final content = [File.getContent(Path.join([Sys.getCwd(), "lib/mc2it_rte.js"]))]
-			.concat(getLanguageFiles().map(File.getContent))
-			.join("\n");
+		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
+		FileSystem.createDirectory(Path.directory(output));
 
-		FileSystem.createDirectory(Path.directory(rest[0]));
-		File.saveContent(rest[0], content);
+		final files = [File.getContent(Path.join([Sys.getCwd(), "lib/mc2it_rte.js"]))].concat(getLanguageFiles().map(File.getContent));
+		File.saveContent(output, files.join("\n"));
 		return Noise;
 	}
 
