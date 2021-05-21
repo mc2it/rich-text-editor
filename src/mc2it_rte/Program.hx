@@ -1,11 +1,16 @@
 package mc2it_rte;
 
+import mc2it_rte.cli.BuildCommand;
 import mc2it_rte.cli.CopyCommand;
 import mc2it_rte.cli.LibpathCommand;
 import tink.Cli;
 
 /** Command line interface of MC2IT Rich Text Editor. **/
 @:noDoc class Program {
+
+	/** Create a custom build to a given file. **/
+	@:command
+	public final build = new BuildCommand();
 
 	/** Copy the library assets to a given directory. **/
 	@:command
