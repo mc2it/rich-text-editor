@@ -5,8 +5,10 @@ import mc2it_rte.cli.CopyCommand;
 import mc2it_rte.cli.LibpathCommand;
 import tink.Cli;
 
+using tink.CoreApi;
+
 /** Command line interface of MC2IT Rich Text Editor. **/
-@:noDoc class Program {
+class Program {
 
 	/** Create a custom build to a given file. **/
 	@:command

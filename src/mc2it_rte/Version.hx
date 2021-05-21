@@ -9,7 +9,7 @@ import sys.io.Process;
 #end
 
 /** Provides information about the program version. **/
-@:noDoc class Version {
+class Version {
 
 	/** Gets the hash of the current Git commit. **/
 	macro public static function getGitCommitHash(): ExprOf<String> {
