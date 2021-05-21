@@ -7,12 +7,11 @@ if (Test-Path docs/api) { Remove-Item docs/api -Force -Recurse }
 $version = (Get-Content haxelib.json | ConvertFrom-Json).version
 haxe --define doc-gen --no-output --xml var/api.xml build.hxml
 lix run dox `
-	--define description "A customized build of CKEditor, a rich text editor." `
+	--define description "A custom build of CKEditor, a rich text editor." `
 	--define source-path "https://github.com/mc2it/rich-text-editor/blob/main/src" `
 	--define themeColor 0x165898 `
 	--define version $version `
 	--define website "https://mc2it.github.io/rich-text-editor" `
-	--exclude "^mc2it_rte\.cli\." `
 	--include "^ckeditor\." `
 	--include "^mc2it_rte\." `
 	--input-path var `
