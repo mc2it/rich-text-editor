@@ -54,6 +54,6 @@
 		"node": ">=16.0.0"
 	},
 	"scripts": {
-		"build": "webpack --config=etc/webpack.js"
+		"postinstall": "lix download"
 	}
 }
