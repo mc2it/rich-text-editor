@@ -46,6 +46,6 @@ class BuildCommand {
 			? FileSystem.readDirectory(i18nDir).map(file -> file.withoutExtension())
 			: languages.split(",").map(language -> language.toLowerCase());
 
-		return fileNames.map(fileName -> Path.join([i18nDir, '$fileName.js'])).filter(FileSystem.exists);
+		return fileNames.map(fileName -> Path.join([i18nDir, fileName.withExtension("js")])).filter(FileSystem.exists);
 	}
 }
