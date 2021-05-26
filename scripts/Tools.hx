@@ -1,5 +1,12 @@
+import haxe.crypto.Crc32;
 import haxe.io.Path.*;
+import haxe.zip.Entry;
+import haxe.zip.Writer;
 import sys.FileSystem.*;
+import sys.io.File.*;
+
+using Lambda;
+using haxe.zip.Tools;
 
 /** Recursively deletes all files in the specified `directory`. **/
 function cleanDirectory(directory: String) for (entry in readDirectory(directory).filter(entry -> entry != ".gitkeep")) {
@@ -8,9 +15,15 @@ function cleanDirectory(directory: String) for (entry in readDirectory(directory
 	else deleteFile(path);
 }
 
-/** TODO **/
+/** Creates a ZIP archive from the specified file system entities. **/
 function compress(sources: Array<String>, destination: String) {
-	// TODO
+	final output = write(destination);
+	final writer = new Writer(output);
+
+	var entries: Array<Entry> = [];
+	for (source in sources) entries = entries.concat(isDirectory(source) ? compressDirectory(source) : [compressFile(source)]);
+	writer.write(entries.list());
+	output.close();
 }
 
 /** Recursively deletes the specified `directory`. **/
@@ -19,26 +32,30 @@ function removeDirectory(directory: String) {
 	deleteDirectory(directory);
 }
 
-/* TODO
-function compressFile(path: String, deleteSource = true) {
-	final bytes = File.getBytes(path);
+/** Compresses the content of the specified `directory` in ZIP format. **/
+private function compressDirectory(directory: String) {
+	var entries: Array<Entry> = [];
+	for (entry in readDirectory(directory)) {
+		final path = join([directory, entry]);
+		entries = entries.concat(isDirectory(path) ? compressDirectory(path) : [compressFile(path)]);
+	}
+
+	return entries;
+}
+
+/** Compresses the specified `file` in ZIP format. **/
+private function compressFile(file: String) {
+	final bytes = getBytes(file);
 	final entry: Entry = {
 		compressed: false,
 		crc32: Crc32.make(bytes),
 		data: bytes,
 		dataSize: bytes.length,
-		fileName: path.withoutDirectory(),
+		fileName: file,
 		fileSize: bytes.length,
-		fileTime: Date.now()
+		fileTime: stat(file).mtime
 	};
 
-	final entries = new List<Entry>();
 	entry.compress(9);
-	entries.push(entry);
-
-	final output = File.write('${path.withoutExtension()}.zip');
-	new Writer(output).write(entries);
-	output.close();
-
-	if (deleteSource) FileSystem.deleteFile(path);
-}*/
+	return entry;
+}
