@@ -13,27 +13,13 @@ Before installing **MC2IT Rich Text Editor** with a package manager, you need to
 
 You can verify if you're already good to go with the following commands:
 
-<!-- tabs:start -->
-
-#### **Haxe**
 ```shell
 haxe --version
-# 4.2.1
+# 4.2.2
 
 haxelib version
 # 4.0.2
 ```
-
-#### **JavaScript**
-```shell
-node --version
-# v15.12.0
-
-npm --version
-# 7.6.3
-```
-
-<!-- tabs:end -->
 
 Now, you can continue with the procedure:
 
