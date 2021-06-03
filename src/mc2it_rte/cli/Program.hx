@@ -1,11 +1,4 @@
-package mc2it_rte;
-
-import mc2it_rte.cli.BuildCommand;
-import mc2it_rte.cli.CopyCommand;
-import mc2it_rte.cli.LibpathCommand;
-import tink.Cli;
-
-using tink.CoreApi;
+package mc2it_rte.cli;
 
 /** Command line interface of MC2IT Rich Text Editor. **/
 class Program {

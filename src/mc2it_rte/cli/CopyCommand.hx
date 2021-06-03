@@ -2,8 +2,6 @@ package mc2it_rte.cli;
 
 import sys.FileSystem;
 import sys.io.File;
-import tink.Cli;
-import tink.cli.Rest;
 
 using Lambda;
 using haxe.io.Path;

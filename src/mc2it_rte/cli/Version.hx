@@ -1,4 +1,4 @@
-package mc2it_rte;
+package mc2it_rte.cli;
 
 import haxe.macro.Context;
 

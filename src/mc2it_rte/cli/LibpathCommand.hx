@@ -1,7 +1,5 @@
 package mc2it_rte.cli;
 
-import tink.Cli;
-
 using StringTools;
 using haxe.io.Path;
 
