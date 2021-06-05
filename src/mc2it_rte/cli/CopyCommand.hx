@@ -28,9 +28,9 @@ class CopyCommand {
 		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
 		FileSystem.createDirectory(Path.join([output, "i18n"]));
 
-		final libDir = Path.join([Sys.getCwd(), "lib"]);
-		final files = ["mc2it_rte.js"].concat(FileSystem.readDirectory(Path.join([libDir, "i18n"])).map(file -> 'i18n/$file'));
-		files.iter(file -> File.copy(Path.join([libDir, file]), Path.join([output, file])));
+		final input = Path.join([Sys.getCwd(), "lib"]);
+		final files = ["mc2it_rte.js"].concat(FileSystem.readDirectory(Path.join([input, "i18n"])).map(file -> 'i18n/$file'));
+		files.iter(file -> File.copy(Path.join([input, file]), Path.join([output, file])));
 		return Noise;
 	}
 }

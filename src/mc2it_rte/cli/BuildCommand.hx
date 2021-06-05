@@ -39,11 +39,11 @@ class BuildCommand {
 	function getLanguageFiles() {
 		if (languages.length == 0) return [];
 
-		final i18nDir = Path.join([Sys.getCwd(), "lib/i18n"]);
+		final input = Path.join([Sys.getCwd(), "lib/i18n"]);
 		final fileNames = languages == "all"
-			? FileSystem.readDirectory(i18nDir).map(file -> file.withoutExtension())
+			? FileSystem.readDirectory(input).map(file -> file.withoutExtension())
 			: languages.split(",").map(language -> language.toLowerCase());
 
-		return fileNames.map(fileName -> Path.join([i18nDir, fileName.withExtension("js")])).filter(FileSystem.exists);
+		return fileNames.map(fileName -> Path.join([input, fileName.withExtension("js")])).filter(FileSystem.exists);
 	}
 }
