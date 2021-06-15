@@ -28,7 +28,7 @@ import js.lib.Promise;
 class RichTextEditor extends ClassicEditor {
 
 	/** The set of supported plug-ins. **/
-	public static final builtinPlugins: Array<Class<Plugin>> = [
+	static final builtinPlugins: Array<Class<Plugin>> = [
 		Alignment,
 		Autoformat,
 		Bold, Italic, Strikethrough, Underline,
@@ -48,7 +48,7 @@ class RichTextEditor extends ClassicEditor {
 	];
 
 	/** The default editor settings. **/
-	public static final defaultConfig = {
+	static final defaultConfig = {
 		alignment: {
 			options: ["left", "center", "right"]
 		},
@@ -79,7 +79,7 @@ class RichTextEditor extends ClassicEditor {
 	};
 
 	/** Creates a new rich text editor. **/
-	static function create(sourceElementOrData: EitherType<Element, String>, ?config: EditorConfig): Promise<RichTextEditor> {
+	public static function create(sourceElementOrData: EitherType<Element, String>, ?config: EditorConfig): Promise<RichTextEditor> {
 		if (config == null) config = {language: "fr"};
 		else if (config.language == null) config.language = "fr";
 		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);
