@@ -1,9 +1,8 @@
 package mc2it_rte.cli;
 
-import haxe.macro.Context;
-
 #if macro
 import haxe.Json;
+import haxe.macro.Context;
 import sys.io.File;
 import sys.io.Process;
 #end
