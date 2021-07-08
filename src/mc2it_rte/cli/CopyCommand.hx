@@ -3,7 +3,6 @@ package mc2it_rte.cli;
 import sys.FileSystem;
 import sys.io.File;
 
-using Lambda;
 using haxe.io.Path;
 
 /** Copy the library assets to a given directory. **/
@@ -26,11 +25,22 @@ class CopyCommand {
 			return new Error(BadRequest, "You must provide the path of the output directory.");
 
 		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
-		FileSystem.createDirectory(Path.join([output, "i18n"]));
+		FileSystem.createDirectory(output);
 
 		final input = Path.join([Sys.getCwd(), "lib"]);
-		final files = ["mc2it_rte.js"].concat(FileSystem.readDirectory(Path.join([input, "i18n"])).map(file -> 'i18n/$file'));
-		files.iter(file -> File.copy(Path.join([input, file]), Path.join([output, file])));
+		File.copy(Path.join([input, "mc2it_rte.js"]), Path.join([output, "mc2it_rte.js"]))
+		copyDirectory(Path.join([input, "i18n"]), Path.join([output, "i18n"]));
 		return Noise;
+	}
+
+	/** Recursively copies all files in the specified `source` directory to a given `destination` directory. **/
+	static function copyDirectory(source: String, destination: String) for (entry in FileSystem.readDirectory(source)) {
+		final input = Path.join([source, entry]);
+		final output = Path.join([destination, entry]);
+		if (FileSystem.isDirectory(input)) copyDirectory(input, output);
+		else {
+			FileSystem.createDirectory(output.directory());
+			File.copy(input, output);
+		}
 	}
 }
