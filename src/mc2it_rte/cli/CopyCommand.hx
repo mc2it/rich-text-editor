@@ -24,12 +24,10 @@ class CopyCommand {
 		if (rest.length < requiredArgs || (haxelibRun && rest.length < requiredArgs + 1))
 			return new Error(BadRequest, "You must provide the path of the output directory.");
 
+		final input = Path.join([Sys.programPath().directory(), "lib"]);
 		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
-		FileSystem.createDirectory(output);
-
-		final input = Path.join([Sys.getCwd(), "lib"]);
-		File.copy(Path.join([input, "mc2it_rte.js"]), Path.join([output, "mc2it_rte.js"]))
 		copyDirectory(Path.join([input, "i18n"]), Path.join([output, "i18n"]));
+		File.copy(Path.join([input, "mc2it_rte.js"]), Path.join([output, "mc2it_rte.js"]));
 		return Noise;
 	}
 

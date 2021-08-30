@@ -11,7 +11,7 @@ import sys.io.Process;
 abstract class Version {
 
 	/** Gets the hash of the current Git commit. **/
-	macro public static function getGitCommitHash(): ExprOf<String> {
+	macro public static function getGitCommitHash() {
 		#if display
 			return macro $v{""};
 		#else
@@ -23,15 +23,13 @@ abstract class Version {
 	}
 
 	/** Gets the name of the Haxe target. **/
-	macro public static function getHaxeTarget(): ExprOf<String>
-		return macro $v{Context.definedValue("target.name")};
+	macro public static function getHaxeTarget() return macro $v{Context.definedValue("target.name")};
 
 	/** Gets the version of the Haxe compiler. **/
-	macro public static function getHaxeVersion(): ExprOf<String>
-		return macro $v{Context.definedValue("haxe")};
+	macro public static function getHaxeVersion() return macro $v{Context.definedValue("haxe")};
 
 	/** Gets the package version of this program. **/
-	macro public static function getPackageVersion(): ExprOf<String>
+	macro public static function getPackageVersion()
 		#if display
 			return macro $v{"0.0.0"};
 		#else
