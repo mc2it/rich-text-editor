@@ -28,9 +28,9 @@ class BuildCommand {
 			return new Error(BadRequest, "You must provide the path of the output file.");
 
 		final output = rest[0].isAbsolute() ? rest[0] : Path.join([haxelibRun ? rest[rest.length - 1] : Sys.getCwd(), rest[0]]);
-		FileSystem.createDirectory(Path.directory(output));
+		FileSystem.createDirectory(output.directory());
 
-		final files = [File.getContent(Path.join([Sys.getCwd(), "lib/mc2it_rte.js"]))].concat(getLanguageFiles().map(File.getContent));
+		final files = [File.getContent(Path.join([Sys.programPath().directory(), "lib/mc2it_rte.js"]))].concat(getLanguageFiles().map(File.getContent));
 		File.saveContent(output, files.join("\n"));
 		return Noise;
 	}
@@ -39,7 +39,7 @@ class BuildCommand {
 	function getLanguageFiles() {
 		if (languages.length == 0) return [];
 
-		final input = Path.join([Sys.getCwd(), "lib/i18n"]);
+		final input = Path.join([Sys.programPath().directory(), "lib/i18n"]);
 		final fileNames = languages == "all"
 			? FileSystem.readDirectory(input).map(file -> file.withoutExtension())
 			: languages.split(",").map(language -> language.toLowerCase());
