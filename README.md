@@ -4,6 +4,8 @@
 A custom build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
 for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
+> WARNING: this package is **abandoned** and no longer maintained.
+
 ## Documentation
 - [User guide](https://mc2it.github.io/rich-text-editor)
 - [API reference](https://mc2it.github.io/rich-text-editor)
