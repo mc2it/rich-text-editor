@@ -17,8 +17,8 @@ function main() {
 		"--define", "themeColor", "0x165898",
 		"--define", "version", getPackageVersion(),
 		"--define", "website", "https://mc2it.github.io/rich-text-editor",
-		"--include", "^ckeditor\\.",
-		"--include", "^mc2it_rte\\.",
+		"--include", "^ckeditor\\.*",
+		"--include", "^mc2it_rte\\.*",
 		"--input-path", "var",
 		"--output-path", "docs/api",
 		"--title", "MC2IT Rich Text Editor"
