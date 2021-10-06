@@ -13,11 +13,16 @@
 	</head>
 
 	<body>
-		<textarea id="editor" placeholder="Type the content here!" title="Rich text editor"></textarea>
+		<textarea id="editor"></textarea>
 
 		<script>
+			const options = {
+				language: "en",
+				placeholder: "Type the content here!"
+			};
+
 			RichTextEditor
-				.create(document.querySelector("#editor"), {language: "en"})
+				.create(document.querySelector("#editor"), options)
 				.catch(console.error);
 		</script>
 	</body>
