@@ -2,7 +2,8 @@ import Sys.*;
 
 /** Runs the script. **/
 function main() {
-	for (file in ["build", "run"]) command('haxe $file.hxml');
-	putEnv("NODE_ENV", "development");
-	command("npx webpack --config=etc/webpack.js");
+	final debug = args().contains("--debug");
+	final flag = debug ? "--debug" : "";
+	for (file in ["build", "run"]) command('haxe $flag $file.hxml');
+	command('npx webpack --config=etc/webpack.js --mode=${debug ? "development" : "production"}');
 }

@@ -29,17 +29,10 @@ import js.lib.intl.DateTimeFormat;
 
 	/** Helper method for the downcast converters. **/
 	function createTimestampView(modelItem: ModelElement, viewWriter: DowncastWriter) {
-		final dateFormat = new DateTimeFormat(editor.locale.contentLanguage, {
-			day: Numeric,
-			hour: Numeric,
-			minute: Numeric,
-			month: Long,
-			year: Numeric,
-		});
-
+		final dateFormatter = new DateTimeFormat(editor.locale.contentLanguage, cast {dateStyle: "long", timeStyle: "short"});
 		final timestamp = modelItem.hasAttribute("value") ? modelItem.getAttribute("value") : Date.now();
 		final timestampView = viewWriter.createContainerElement("span", {"class": "timestamp", "data-value": timestamp});
-		final innerText = viewWriter.createText(dateFormat.format(new Date(timestamp)));
+		final innerText = viewWriter.createText(dateFormatter.format(new Date(timestamp)));
 		viewWriter.insert(viewWriter.createPositionAt(timestampView, 0), innerText);
 		return timestampView;
 	}
