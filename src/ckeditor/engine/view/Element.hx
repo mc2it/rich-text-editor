@@ -11,7 +11,7 @@ extern class Element extends Node {
 	function getAttribute(key: String): Dynamic;
 
 	/** Returns a value indicating whether one or several classes are present. **/
-	function hasClass(className: Rest<String>): Bool;
+	function hasClass(...className: String): Bool;
 
 	/** Checks if this element has an attribute with the given `key`. **/
 	function hasAttribute(key: String): Bool;

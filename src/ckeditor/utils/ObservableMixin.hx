@@ -6,7 +6,7 @@ import ckeditor.utils.EmitterMixin.Emitter;
 extern interface Observable extends Emitter {
 
 	/** Binds observable properties to other objects implementing the `Observable` interface. **/
-	function bind(properties: Rest<String>): {
+	function bind(...properties: String): {
 		to: Rest<EitherType<String, EitherType<Observable, Function>>> -> Void,
 		toMany: (Array<Observable>, String, Function) -> Void
 	};

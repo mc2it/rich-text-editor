@@ -11,7 +11,7 @@ extern class CommandCollection {
 	function destroy(): Void;
 
 	/** Executes a command. **/
-	function execute(name: String, arguments: Rest<Any>): Dynamic;
+	function execute(name: String, ...arguments: Any): Dynamic;
 
 	/** Retrieves a command from the collection. **/
 	function get(name: String): Null<Command>;

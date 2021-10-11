@@ -12,7 +12,7 @@ extern class View implements Observable {
 	function new(?locale: Locale);
 
 	/** Binds observable properties to other objects implementing the `Observable` interface. **/
-	function bind(properties: Rest<String>): {
+	function bind(...properties: String): {
 		to: Rest<EitherType<String, EitherType<Observable, Function>>> -> Void,
 		toMany: (Array<Observable>, String, Function) -> Void
 	};

@@ -30,7 +30,7 @@ extern class Editor {
 	function destroy(): Promise<Dynamic>;
 
 	/** Executes the specified command with given parameters. **/
-	function execute(name: String, arguments: Rest<Any>): Dynamic;
+	function execute(name: String, ...arguments: Any): Dynamic;
 
 	/** Puts the focus in the editor's editing view. **/
 	function focus(): Void;
