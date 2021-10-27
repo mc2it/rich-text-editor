@@ -24,6 +24,7 @@ module.exports = {
   },
 	output: {
 		filename: "mc2it_rte.js",
+		hashFunction: "xxhash64",
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",

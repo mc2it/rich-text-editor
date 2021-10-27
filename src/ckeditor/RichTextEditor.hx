@@ -54,8 +54,8 @@ class RichTextEditor extends ClassicEditor {
 		},
 		image: {
 			resizeUnit: "px",
-			styles: ["full", "alignLeft", "alignCenter", "alignRight"],
-			toolbar: ["imageStyle:full", "imageStyle:alignLeft", "imageStyle:alignCenter", "imageStyle:alignRight"]
+			styles: ["alignLeft", "alignCenter", "alignRight"],
+			toolbar: ["imageStyle:alignLeft", "imageStyle:alignCenter", "imageStyle:alignRight"]
 		},
 		language: "fr",
 		table: {

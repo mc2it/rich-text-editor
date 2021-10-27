@@ -7,6 +7,10 @@
 			"src/ckeditor/timestamp/TimestampUI:init",
 			"src/ckeditor/utils/Locale"
 		],
+		"OperatorWhitespace": [
+			"src/ckeditor/core/CommandCollection:execute",
+			"src/ckeditor/core/editor/Editor:execute"
+		],
 		"ReturnCount": [
 			"src/mc2it_rte/cli/BuildCommand:run",
 			"src/mc2it_rte/cli/CopyCommand:run"
