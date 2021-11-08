@@ -8,7 +8,7 @@ for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-U
 
 ## Documentation
 - [User guide](https://mc2it.github.io/rich-text-editor)
-- [API reference](https://mc2it.github.io/rich-text-editor)
+- [API reference](https://mc2it.github.io/rich-text-editor/api)
 
 ## Development
 - [Git repository](https://github.com/mc2it/rich-text-editor)
