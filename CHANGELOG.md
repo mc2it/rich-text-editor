@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.2.2](https://bitbucket.org/mc2it/rich-text-editor/branches/compare/v1.2.2..v1.2.1)
+- Fixed the project URL.
+
 ## Version [1.2.1](https://bitbucket.org/mc2it/rich-text-editor/branches/compare/v1.2.1..v1.2.0)
 - Updated the documentation.
 - Updated the project URL.

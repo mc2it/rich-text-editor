@@ -4,7 +4,7 @@
 	"description": "A custom build of CKEditor, a rich text editor.",
 	"license": "MIT",
 	"name": "mc2it_rte",
-	"releasenote": "Updated the documentation, updated the project URL.",
+	"releasenote": "Fixed the project URL.",
 	"tags": ["ckeditor5", "ckeditor5-build", "editor", "html-editor", "js", "rich-text-editor", "rte", "wysiwyg"],
 	"url": "https://bitbucket.org/mc2it/rich-text-editor",
 	"version": "1.2.2"
