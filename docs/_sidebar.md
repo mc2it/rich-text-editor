@@ -1,8 +1,0 @@
-- Installation
-	- [From a content delivery network](cdn.md)
-	- [Using a package manager](cli.md)
-- [Application programming interface](api.md)
-- [Demo](demo.md)
-- About
-	- [License](about/license.md)
-	- [See also](about/see_also.md)
