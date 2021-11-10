@@ -14,4 +14,4 @@ for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-U
 - [Submit an issue](https://bitbucket.org/mc2it/rich-text-editor/issues)
 
 ## License
-[MC2IT Rich Text Editor](https://bitbucket.org/mc2it/rich-text-editor
+[MC2IT Rich Text Editor](https://bitbucket.org/mc2it/rich-text-editor)
