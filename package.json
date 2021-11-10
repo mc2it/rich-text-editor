@@ -1,7 +1,7 @@
 {
 	"bugs": "https://bitbucket.org/mc2it/rich-text-editor/issues",
 	"description": "A custom build of CKEditor, a rich text editor.",
-	"homepage": "https://bitbucket.org/rich-text-editor",
+	"homepage": "https://bitbucket.org/mc2it/rich-text-editor",
 	"license": "MIT",
 	"name": "@mc2it/rte",
 	"private": true,

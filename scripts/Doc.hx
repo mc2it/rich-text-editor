@@ -16,7 +16,7 @@ function main() {
 		"--define", "source-path", "https://bitbucket.org/mc2it/rich-text-editor/src/main/src",
 		"--define", "themeColor", "0x165898",
 		"--define", "version", getPackageVersion(),
-		"--define", "website", "https://bitbucket.org/rich-text-editor",
+		"--define", "website", "https://bitbucket.org/mc2it/rich-text-editor",
 		"--include", "^ckeditor\\.*",
 		"--include", "^mc2it_rte\\.*",
 		"--input-path", "var",
