@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"name": "@mc2it/rte",
 	"private": true,
-	"repository": "mc2it/rich-text-editor",
+	"repository": "bitbucket:mc2it/rich-text-editor",
 	"type": "commonjs",
 	"version": "1.2.2",
 	"author": {
