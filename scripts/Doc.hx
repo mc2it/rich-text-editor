@@ -15,7 +15,7 @@ function main() {
 		"--define", "description", "A custom build of CKEditor, a rich text editor.",
 		"--define", "source-path", "https://bitbucket.org/mc2it/rich-text-editor/src/main/src",
 		"--define", "themeColor", "0x165898",
-		"--define", "version", getPackageVersion(),
+		"--define", "version", packageVersion,
 		"--define", "website", "https://bitbucket.org/mc2it/rich-text-editor",
 		"--include", "^ckeditor\\.*",
 		"--include", "^mc2it_rte\\.*",
