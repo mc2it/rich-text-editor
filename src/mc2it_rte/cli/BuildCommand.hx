@@ -40,10 +40,7 @@ class BuildCommand {
 		if (languages.length == 0) return [];
 
 		final input = Path.join([Sys.programPath().directory(), "lib/i18n"]);
-		final fileNames = languages == "all"
-			? FileSystem.readDirectory(input).map(file -> file.withoutExtension())
-			: languages.split(",").map(language -> language.toLowerCase());
-
+		final fileNames = languages == "all" ? FileSystem.readDirectory(input) : languages.split(",").map(language -> language.toLowerCase());
 		return fileNames.map(fileName -> Path.join([input, fileName.withExtension("js")])).filter(FileSystem.exists);
 	}
 }
