@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.3.0](https://bitbucket.org/mc2it/rich-text-editor/branches/compare/v1.3.0..v1.2.2)
+- Updated the package dependencies.
+
 ## Version [1.2.2](https://bitbucket.org/mc2it/rich-text-editor/branches/compare/v1.2.2..v1.2.1)
 - Fixed the project URL.
 
