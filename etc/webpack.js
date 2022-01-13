@@ -1,6 +1,6 @@
-const {styles} = require("@ckeditor/ckeditor5-dev-utils");
-const CKEditorPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin");
 const {join} = require("path");
+const {styles} = require("@ckeditor/ckeditor5-dev-utils");
+const CKEditorWebpackPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin");
 
 module.exports = {
 	entry: join(__dirname, "../src/index.js"),
@@ -34,7 +34,7 @@ module.exports = {
 		hints: false
 	},
 	plugins: [
-		new CKEditorPlugin({
+		new CKEditorWebpackPlugin({
 			additionalLanguages: "all",
 			language: "fr",
 			outputDirectory: "i18n"
