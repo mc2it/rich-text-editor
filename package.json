@@ -7,7 +7,7 @@
 	"private": true,
 	"repository": "bitbucket:mc2it/rich-text-editor",
 	"type": "commonjs",
-	"version": "1.2.2",
+	"version": "1.3.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
