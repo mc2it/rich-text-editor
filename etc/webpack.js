@@ -6,22 +6,23 @@ module.exports = {
 	entry: join(__dirname, "../src/index.js"),
 	module: {
 		rules: [
+			{test: /\.svg$/, use: ["raw-loader"]},
 			{test: /\.css$/, use: [
 				{loader: "style-loader", options: {
 					attributes: {"data-cke": true},
 					injectType: "singletonStyleTag"
 				}},
-				{loader: "postcss-loader", options: styles.getPostCssConfig({
-					minify: true,
-					themeImporter: {themePath: require.resolve("@ckeditor/ckeditor5-theme-lark")}
-				})}
-			]},
-			{test: /\.svg$/, use: "raw-loader"}
+				"css-loader",
+				{loader: "postcss-loader", options: {
+					postcssOptions: styles.getPostCssConfig({
+						minify: true,
+						themeImporter: {themePath: require.resolve("@ckeditor/ckeditor5-theme-lark")}
+					})
+				}}
+			]}
 		]
 	},
-	optimization: {
-    minimize: false
-  },
+	optimization: {minimize: false},
 	output: {
 		filename: "mc2it_rte.js",
 		hashFunction: "xxhash64",
@@ -30,9 +31,7 @@ module.exports = {
 		libraryTarget: "window",
 		path: join(__dirname, "../lib")
 	},
-	performance: {
-		hints: false
-	},
+	performance: {hints: false},
 	plugins: [
 		new CKEditorWebpackPlugin({
 			additionalLanguages: "all",
