@@ -1,6 +1,6 @@
 //! --class-path src --library tink_cli
 import Sys.*;
-import Tools.removeDirectory;
+import Tools;
 import mc2it_rte.cli.Version.*;
 import sys.FileSystem.*;
 import sys.io.File.*;
