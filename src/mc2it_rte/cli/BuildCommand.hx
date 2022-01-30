@@ -2,7 +2,6 @@ package mc2it_rte.cli;
 
 import sys.FileSystem;
 import sys.io.File;
-
 using haxe.io.Path;
 
 /** Create a custom build to a given file. **/
