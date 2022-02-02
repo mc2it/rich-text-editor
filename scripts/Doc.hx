@@ -1,20 +1,19 @@
 //! --class-path src --library tink_cli
-import Sys.*;
-import mc2it_rte.cli.Version.*;
-import sys.FileSystem.*;
-import sys.io.File.*;
+import mc2it_rte.cli.Version;
+import sys.FileSystem;
+import sys.io.File;
 
 /** Runs the script. **/
 function main() {
-	if (exists("docs")) Tools.removeDirectory("docs");
+	if (FileSystem.exists("docs")) Tools.removeDirectory("docs");
 
-	command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
-	command("lix", [
+	Sys.command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
+	Sys.command("lix", [
 		"run", "dox",
 		"--define", "description", "A custom build of CKEditor, a rich text editor.",
 		"--define", "source-path", "https://bitbucket.org/mc2it/rich-text-editor/src/main/src",
 		"--define", "themeColor", "0x165898",
-		"--define", "version", packageVersion,
+		"--define", "version", Version.packageVersion,
 		"--define", "website", "https://bitbucket.org/mc2it/rich-text-editor",
 		"--include", "^ckeditor\\.*",
 		"--include", "^mc2it_rte\\.*",
@@ -23,5 +22,5 @@ function main() {
 		"--title", "MC2IT Rich Text Editor"
 	]);
 
-	copy("www/favicon.ico", "docs/favicon.ico");
+	File.copy("www/favicon.ico", "docs/favicon.ico");
 }

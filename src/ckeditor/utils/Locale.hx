@@ -19,5 +19,8 @@ extern class Locale {
 	final uiLanguageDirection: String;
 
 	/** Translates the given message to the UI language. **/
-	function t(message: EitherType<String, Message>, ?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>): String;
+	function t(
+		message: EitherType<String, Message>,
+		?values: EitherType<String, EitherType<Float, EitherType<Int, Array<EitherType<String, EitherType<Float, Int>>>>>>
+	): String;
 }

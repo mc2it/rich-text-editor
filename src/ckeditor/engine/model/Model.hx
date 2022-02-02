@@ -13,7 +13,7 @@ extern class Model {
 	final schema: Schema;
 
 	/** The primary way of changing the model. **/
-	@:overload(function(callback: Dynamic -> Any): Dynamic {})
+	@:overload(function(callback: Dynamic -> Dynamic): Dynamic {})
 	function change(callback: Dynamic -> Void): Void;
 
 	/** Inserts content at the position in the editor specified by the selection, as one would expect the paste functionality to work. **/

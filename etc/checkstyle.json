@@ -2,19 +2,9 @@
 	"defaultSeverity": "ERROR",
 	"exclude": {
 		"path": "RELATIVE_TO_PROJECT",
-		"LineLength": [
-			"src/ckeditor/core/editor/Editor",
-			"src/ckeditor/timestamp/TimestampUI:init",
-			"src/ckeditor/utils/Locale"
-		],
-		"OperatorWhitespace": [
-			"src/ckeditor/core/CommandCollection:execute",
-			"src/ckeditor/core/editor/Editor:execute"
-		],
-		"ReturnCount": [
-			"src/mc2it_rte/cli/BuildCommand:run",
-			"src/mc2it_rte/cli/CopyCommand:run"
-		]
+		"LineLength": ["src/ckeditor/timestamp/TimestampUI:init"],
+		"OperatorWhitespace": ["src/ckeditor/core/CommandCollection:execute", "src/ckeditor/core/editor/Editor:execute"],
+		"ReturnCount": ["src/mc2it_rte/cli/BuildCommand:run", "src/mc2it_rte/cli/CopyCommand:run"]
 	},
 	"checks": [
 		{"type": "BlockBreakingConditional"},
@@ -43,9 +33,11 @@
 		{"type": "Interface", "props": {"allowProperties": true}},
 		{"type": "UnnecessaryConstructor"},
 
+		{"type": "AvoidStarImport"},
 		{"type": "UnusedImport"},
 
 		{"type": "ArrayLiteral"},
+		{"type": "ERegLiteral"},
 		{"type": "HexadecimalLiteral"},
 		{"type": "StringLiteral"},
 
@@ -60,10 +52,11 @@
 		{"type": "RedundantModifier"},
 
 		{"type": "CatchParameterName"},
+		{"type": "ConstantName", "props": {"format": "^[a-z][a-zA-Z0-9]*$"}},
 		{"type": "ListenerName"},
 		{"type": "LocalVariableName"},
 		{"type": "MemberName", "props": {"format": "^[a-z][a-zA-Z0-9]*$", "tokens": ["CLASS", "TYPEDEF"]}},
-		{"type": "MemberName", "props": {"format": "^[A-Z][a-zA-Z0-9]*$", "tokens": ["ENUM"]}},
+		{"type": "MemberName", "props": {"format": "^[A-Z][a-zA-Z0-9]*$", "tokens": ["ABSTRACT", "ENUM"]}},
 		{"type": "MethodName"},
 		{"type": "ParameterName"},
 		{"type": "TypeName"},
