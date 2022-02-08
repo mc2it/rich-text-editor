@@ -4,17 +4,17 @@ package ckeditor.engine.view;
 typedef ElementDefinition = EitherType<String, {
 
 	/** The view element name. **/
-	var name: String;
+	name: String,
 
 	/** An object with key-value pairs representing attributes. **/
-	var ?attributes: DynamicAccess<String>;
+	?attributes: DynamicAccess<String>,
 
 	/** A class name or an array of class names to match. **/
-	var ?classes: EitherType<String, Array<String>>;
+	?classes: EitherType<String, Array<String>>,
 
 	/** The element's priority. **/
-	var ?priority: Int;
+	?priority: Int,
 
 	/** An object with key-value pairs representing styles. **/
-	var ?styles: DynamicAccess<String>;
+	?styles: DynamicAccess<String>
 }>;

@@ -4,13 +4,13 @@ package ckeditor.utils;
 typedef Message = {
 
 	/** The message string to translate. **/
-	var string: String;
+	string: String,
 
 	/** The message identifier. **/
-	var ?id: String;
+	?id: String,
 
 	/** The plural form of the message. **/
-	var ?plural: String;
+	?plural: String
 }
 
 /** A set of helper functions for translation. **/

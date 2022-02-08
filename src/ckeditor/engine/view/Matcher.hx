@@ -8,14 +8,14 @@ extern class Matcher {}
 typedef MatcherPattern = EitherType<String, EitherType<EReg, {
 
 	/** The view element name to match. **/
-	var name: EitherType<String, EReg>;
+	name: EitherType<String, EReg>,
 
 	/** An object with key-value pairs representing attributes. **/
-	var ?attributes: DynamicAccess<EitherType<String, EReg>>;
+	?attributes: DynamicAccess<EitherType<String, EReg>>,
 
 	/** A class name or an array of class names to match. **/
-	var ?classes: EitherType<String, EitherType<EReg, Array<EitherType<String, EReg>>>>;
+	?classes: EitherType<String, EitherType<EReg, Array<EitherType<String, EReg>>>>,
 
 	/** An object with key-value pairs representing styles. **/
-	var ?styles: DynamicAccess<EitherType<String, EReg>>;
+	?styles: DynamicAccess<EitherType<String, EReg>>
 }>>;
