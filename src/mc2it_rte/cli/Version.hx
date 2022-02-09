@@ -87,14 +87,14 @@ abstract class Version {
 	}
 
 	/** Gets the name of the Haxe target. **/
-	macro static inline function getHaxeTarget()
+	macro static function getHaxeTarget()
 		return macro $v{Context.definedValue("target.name")};
 
 	/** Gets the version of the Haxe compiler. **/
-	macro static inline function getHaxeVersion()
+	macro static function getHaxeVersion()
 		return macro $v{Context.definedValue("haxe")};
 
 	/** Gets the package version of this program. **/
-	macro static inline function getPackageVersion()
+	macro static function getPackageVersion()
 		return macro $v{#if display "0.0.0" #else Json.parse(File.getContent("haxelib.json")).version #end};
 }
