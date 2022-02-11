@@ -93,7 +93,7 @@ class RichTextEditor extends ClassicEditor {
 	/** Creates a new rich text editor. **/
 	public static function create(sourceElementOrData: EitherType<Element, String>, ?config: EditorConfig): Promise<RichTextEditor> {
 		if (config == null) config = {language: "fr"};
-		else if (config.language == null) config.language = "fr";
+		if (config.language == null) config.language = "fr";
 		return Reflect.callMethod(RichTextEditor, ClassicEditor.create, [sourceElementOrData, config]);
 	}
 }
