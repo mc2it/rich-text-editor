@@ -5,13 +5,13 @@ A custom build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text edito
 for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Documentation
-- [User guide](https://bitbucket.org/mc2it/rich-text-editor/wiki)
+- [User guide](https://github.com/mc2it/rich-text-editor/wiki)
 - [API reference](https://mc2it.github.io/rich-text-editor)
 
 ## Development
-- [Git repository](https://bitbucket.org/mc2it/rich-text-editor)
+- [Git repository](https://github.com/mc2it/rich-text-editor)
 - [Haxelib package](https://lib.haxe.org/p/mc2it_rte)
-- [Submit an issue](https://bitbucket.org/mc2it/rich-text-editor/issues)
+- [Submit an issue](https://github.com/mc2it/rich-text-editor/issues)
 
 ## License
-[MC2IT Rich Text Editor](https://bitbucket.org/mc2it/rich-text-editor)
+[MC2IT Rich Text Editor](https://github.com/mc2it/rich-text-editor)

@@ -11,10 +11,10 @@ function main() {
 	Sys.command("lix", [
 		"run", "dox",
 		"--define", "description", "A custom build of CKEditor, a rich text editor.",
-		"--define", "source-path", "https://bitbucket.org/mc2it/rich-text-editor/src/main/src",
+		"--define", "source-path", "https://github.com/mc2it/rich-text-editor/blob/main/src",
 		"--define", "themeColor", "0x165898",
 		"--define", "version", Version.packageVersion,
-		"--define", "website", "https://bitbucket.org/mc2it/rich-text-editor",
+		"--define", "website", "https://github.com/mc2it/rich-text-editor",
 		"--include", "^ckeditor\\.*",
 		"--include", "^mc2it_rte\\.*",
 		"--input-path", "var",
