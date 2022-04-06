@@ -22,41 +22,41 @@ typedef SchemaContextDefinition = EitherType<Node, EitherType<Position, EitherTy
 typedef SchemaItemDefinition = {
 
 	/** Defines allowed attributes of the given item. **/
-	?allowAttributes: EitherType<String, Array<String>>,
+	var ?allowAttributes: EitherType<String, Array<String>>;
 
 	/** Inherits attributes from other items. **/
-	?allowAttributesOf: EitherType<String, Array<String>>,
+	var ?allowAttributesOf: EitherType<String, Array<String>>;
 
 	/** Inherits "allowed children" from other items. **/
-	?allowContentOf: EitherType<String, Array<String>>,
+	var ?allowContentOf: EitherType<String, Array<String>>;
 
 	/** Defines in which other items this item will be allowed. **/
-	?allowIn: EitherType<String, Array<String>>,
+	var ?allowIn: EitherType<String, Array<String>>;
 
 	/** Inherits "allowed in" from other items. **/
-	?allowWhere: EitherType<String, Array<String>>,
+	var ?allowWhere: EitherType<String, Array<String>>;
 
 	/** A shorthand for `allowContentOf`, `allowWhere`, `allowAttributesOf` and `inheritTypesFrom`. **/
-	?inheritAllFrom: String,
+	var ?inheritAllFrom: String;
 
 	/** Inherits `is*` properties of other items. **/
-	?inheritTypesFrom: EitherType<String, Array<String>>,
+	var ?inheritTypesFrom: EitherType<String, Array<String>>;
 
 	/** Value indicating whether this item is paragraph-like. **/
-	?isBlock: Bool,
+	var ?isBlock: Bool;
 
 	/** Value indicating whether this item always finds its way to the editor data output regardless of the number and type of its descendants. **/
-	?isContent: Bool,
+	var ?isContent: Bool;
 
 	/** Value indicating whether this item is "text-like" and should be treated as an inline node. **/
-	?isInline: Bool,
+	var ?isInline: Bool;
 
 	/** Value indicating whether this item should not be split by `Enter`. **/
-	?isLimit: Bool,
+	var ?isLimit: Bool;
 
 	/** Value indicating whether this item is "self-contained" and should be treated as a whole. **/
-	?isObject: Bool,
+	var ?isObject: Bool;
 
 	/** Value indicating whether this item should be selectable as a whole by the user. **/
-	?isSelectable: Bool
+	var ?isSelectable: Bool;
 }
