@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [1.4.0](https://github.com/mc2it/rich-text-editor/compare/v1.3.0...v1.4.0)
+- Updated the package dependencies.
+
 ## Version [1.3.0](https://github.com/mc2it/rich-text-editor/compare/v1.2.2...v1.3.0)
 - Updated the package dependencies.
 
