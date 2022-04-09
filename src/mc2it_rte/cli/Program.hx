@@ -1,7 +1,7 @@
 package mc2it_rte.cli;
 
 /** Command line interface of MC2IT Rich Text Editor. **/
-class Program {
+final class Program {
 
 	/** Create a custom build to a given file. **/
 	@:command
