@@ -1,2 +1,2 @@
-const bundle = require("../var/bundle.js");
-module.exports = bundle.ckeditor;
+const {ckeditor} = require("../var/bundle.js");
+module.exports = ckeditor;

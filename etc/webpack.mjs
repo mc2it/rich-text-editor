@@ -1,9 +1,14 @@
-const {join} = require("node:path");
-const {styles} = require("@ckeditor/ckeditor5-dev-utils");
-const CKEditorWebpackPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin");
+import {createRequire} from "node:module";
+import {join} from "node:path";
+import {fileURLToPath} from "node:url";
+import CKEditorUtils from "@ckeditor/ckeditor5-dev-utils";
+import CKEditorWebpackPlugin from "@ckeditor/ckeditor5-dev-webpack-plugin";
 
-module.exports = {
-	entry: join(__dirname, "../src/index.js"),
+const basePath = fileURLToPath(new URL("..", import.meta.url));
+const require = createRequire(import.meta.url);
+
+export default {
+	entry: join(basePath, "src/index.js"),
 	module: {
 		rules: [
 			{test: /\.svg$/, use: ["raw-loader"]},
@@ -14,7 +19,7 @@ module.exports = {
 				}},
 				"css-loader",
 				{loader: "postcss-loader", options: {
-					postcssOptions: styles.getPostCssConfig({
+					postcssOptions: CKEditorUtils.styles.getPostCssConfig({
 						minify: true,
 						themeImporter: {themePath: require.resolve("@ckeditor/ckeditor5-theme-lark")}
 					})
@@ -29,7 +34,7 @@ module.exports = {
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",
-		path: join(__dirname, "../lib")
+		path: join(basePath, "lib")
 	},
 	performance: {hints: false},
 	plugins: [
@@ -39,4 +44,4 @@ module.exports = {
 			outputDirectory: "i18n"
 		})
 	]
-};
+}
