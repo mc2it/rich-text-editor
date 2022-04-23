@@ -1,5 +1,6 @@
 {
 	"env": {
+		"browser": true,
 		"es2022": true,
 		"node": true
 	},
@@ -172,7 +173,7 @@
 		"keyword-spacing": "error",
 		"line-comment-position": "error",
 		"linebreak-style": "off",
-		"lines-around-comment": ["error", {"beforeBlockComment": true, "beforeLineComment": true}],
+		"lines-around-comment": ["error", {"allowBlockStart": true, "beforeBlockComment": true, "beforeLineComment": true}],
 		"lines-between-class-members": "error",
 		"max-len": ["error", {"code": 160}],
 		"max-statements-per-line": ["error", {"max": 3}],
