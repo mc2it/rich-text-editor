@@ -1,0 +1,16 @@
+{
+	"include": ["lib/**/*.js"],
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": true,
+		"declarationMap": true,
+		"emitDeclarationOnly": true,
+		"esModuleInterop": true,
+		"module": "es2022",
+		"moduleResolution": "node",
+		"outDir": "share",
+		"strict": true,
+		"target": "es2022"
+	}
+}
