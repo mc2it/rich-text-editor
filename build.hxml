@@ -1,8 +1,0 @@
---class-path src
---dce full
---define analyzer-optimize
---define js-es=6
---js var/bundle.js
-
-ckeditor.RichTextEditor
-mc2it_rte.RichTextEditor
