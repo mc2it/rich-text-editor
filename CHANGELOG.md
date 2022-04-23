@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.0.0](https://github.com/mc2it/rich-text-editor/compare/v1.4.0...v2.0.0)
+- Ported the source code to [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+
 ## Version [1.4.0](https://github.com/mc2it/rich-text-editor/compare/v1.3.0...v1.4.0)
 - Updated the package dependencies.
 
