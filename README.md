@@ -1,8 +1,8 @@
 # MC2IT Rich Text Editor
-![Haxe](https://badgen.net/badge/haxe/%3E%3D4.2.0/green) ![Haxelib](https://badgen.net/haxelib/v/mc2it_rte) ![License](https://badgen.net/badge/license/MIT/blue) ![Downloads](https://badgen.net/haxelib/d/mc2it_rte)
+![Runtime](https://badgen.net/npm/node/@mc2it/rte) ![Release](https://badgen.net/npm/v/@mc2it/rte) ![License](https://badgen.net/npm/license/@mc2it/rte) ![Downloads](https://badgen.net/npm/dt/@mc2it/rte)
 
 A custom build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
-for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Documentation
 - [User guide](https://github.com/mc2it/rich-text-editor/wiki)
@@ -10,7 +10,7 @@ for [Haxe](https://haxe.org) and [JavaScript](https://developer.mozilla.org/en-U
 
 ## Development
 - [Git repository](https://github.com/mc2it/rich-text-editor)
-- [Haxelib package](https://lib.haxe.org/p/mc2it_rte)
+- [npm package](https://www.npmjs.com/package/@mc2it/rte)
 - [Submit an issue](https://github.com/mc2it/rich-text-editor/issues)
 
 ## License
