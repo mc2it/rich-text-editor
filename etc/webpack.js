@@ -34,7 +34,7 @@ export default {
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",
-		path: join(basePath, "lib")
+		path: join(basePath, "www/js")
 	},
 	performance: {hints: false},
 	plugins: [

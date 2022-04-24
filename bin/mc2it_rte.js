@@ -5,6 +5,6 @@ import {main} from "../lib/cli.js";
 // Start the application.
 try { await main(); }
 catch (error) {
-	console.error(error.message);
+	console.error(error);
 	process.exitCode = 1;
 }

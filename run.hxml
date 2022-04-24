@@ -1,7 +1,0 @@
---class-path src
---dce full
---define analyzer-optimize
---define no-deprecation-warnings
---library tink_cli
---main mc2it_rte.cli.Program
---neko run.n
