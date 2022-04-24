@@ -29,6 +29,16 @@ export default {
 		]
 	},
 	optimization: {minimize: false},
+	/* TODO
+	optimization: {minimizer: [
+		new TerserWebpackPlugin({
+			extractComments: false,
+			terserOptions: {
+				// format: {comments: false},
+				ecma: 2020
+			},
+		})
+	]},*/
 	output: {
 		filename: "mc2it_rte.js",
 		hashFunction: "xxhash64",
@@ -40,7 +50,6 @@ export default {
 	performance: {hints: false},
 	plugins: [
 		new CKEditorWebpackPlugin({
-			additionalLanguages: "all",
 			language: "fr",
 			outputDirectory: "i18n"
 		})
