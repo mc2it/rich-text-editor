@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>MC2IT Rich Text Editor</title>
+
 		<script src="https://static.mc2it.com/js/rich-text-editor/latest/mc2it_rte.js"></script>
 		<script src="https://static.mc2it.com/js/rich-text-editor/latest/i18n/en.js"></script>
 
@@ -13,17 +14,18 @@
 	</head>
 
 	<body>
-		<textarea id="editor"></textarea>
+		<script type="module">
+			try {
+				const textArea = document.createElement("textarea");
+				document.body.appendChild(textArea);
 
-		<script>
-			const options = {
-				language: "en",
-				placeholder: "Type the content here!"
-			};
+				const options = {language: "en", placeholder: "Type the content here!"};
+				await RichTextEditor.create(textArea, options);
+			}
 
-			RichTextEditor
-				.create(document.querySelector("#editor"), options)
-				.catch(console.error);
+			catch (error) {
+				console.error(error);
+			}
 		</script>
 	</body>
 </html>

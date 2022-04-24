@@ -13,7 +13,7 @@ export default gulp.series(
 );
 
 /** Builds the project. */
-export async function build() {
+export function build() {
 	return exec("npx", ["webpack", "--config=etc/webpack.js", "--mode=production"]);
 }
 

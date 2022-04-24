@@ -3,12 +3,13 @@ import {join} from "node:path";
 import {fileURLToPath} from "node:url";
 import CKEditorUtils from "@ckeditor/ckeditor5-dev-utils";
 import CKEditorWebpackPlugin from "@ckeditor/ckeditor5-dev-webpack-plugin";
+import TerserWebpackPlugin from "terser-webpack-plugin";
 
 const basePath = fileURLToPath(new URL("..", import.meta.url));
 const require = createRequire(import.meta.url);
 
 export default {
-	entry: join(basePath, "src/index.js"),
+	entry: join(basePath, "lib/index.js"),
 	module: {
 		rules: [
 			{test: /\.svg$/, use: ["raw-loader"]},
