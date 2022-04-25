@@ -28,17 +28,15 @@ export default {
 			]}
 		]
 	},
-	optimization: {minimize: false},
-	/* TODO
 	optimization: {minimizer: [
 		new TerserWebpackPlugin({
 			extractComments: false,
 			terserOptions: {
-				// format: {comments: false},
-				ecma: 2020
+				ecma: 2020,
+				format: {comments: false}
 			},
 		})
-	]},*/
+	]},
 	output: {
 		filename: "mc2it_rte.js",
 		hashFunction: "xxhash64",

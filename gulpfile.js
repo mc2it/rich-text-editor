@@ -4,7 +4,7 @@ import del from "del";
 import gulp from "gulp";
 
 // The file patterns providing the list of source files.
-const sources = ["*.js", "bin/*.js", "lib/**/*.js"];
+const sources = ["*.js", "bin/*.js", "etc/*.js", "lib/**/*.js"];
 
 /** The default task. */
 export default gulp.series(
