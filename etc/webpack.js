@@ -6,9 +6,8 @@ import CKEditorWebpackPlugin from "@ckeditor/ckeditor5-dev-webpack-plugin";
 import TerserWebpackPlugin from "terser-webpack-plugin";
 
 const basePath = fileURLToPath(new URL("..", import.meta.url));
-const require = createRequire(import.meta.url);
-
 export default {
+	devtool: false,
 	entry: join(basePath, "lib/index.js"),
 	module: {
 		rules: [
@@ -22,7 +21,9 @@ export default {
 				{loader: "postcss-loader", options: {
 					postcssOptions: CKEditorUtils.styles.getPostCssConfig({
 						minify: true,
-						themeImporter: {themePath: require.resolve("@ckeditor/ckeditor5-theme-lark")}
+						themeImporter: {
+							themePath: createRequire(import.meta.url).resolve("@ckeditor/ckeditor5-theme-lark")
+						}
 					})
 				}}
 			]}
@@ -34,7 +35,7 @@ export default {
 			terserOptions: {
 				ecma: 2020,
 				format: {comments: false}
-			},
+			}
 		})
 	]},
 	output: {
