@@ -50,8 +50,9 @@ export default {
 	performance: {hints: false},
 	plugins: [
 		new CKEditorWebpackPlugin({
+			additionalLanguages: "all",
 			language: "fr",
 			outputDirectory: "i18n"
 		})
 	]
-}
+};

@@ -140,7 +140,7 @@
 		"quote-props": ["error", "as-needed"],
 		"radix": "error",
 		"require-await": "off",
-		"require-unicode-regexp": "error",
+		"require-unicode-regexp": "off",
 		"sort-imports": "off",
 		"sort-keys": "error",
 		"sort-vars": "error",
