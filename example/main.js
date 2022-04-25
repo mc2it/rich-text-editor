@@ -2,7 +2,7 @@ import {RichTextEditor} from "@mc2it/rte";
 
 /**
  * Creates a text area and attaches a rich text editor to it.
- * @returns {Promise<void>} Completes when the editor has been attached.
+ * @returns {Promise.<void>} Completes when the editor has been attached.
  */
 async function main() {
 	try {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>MC2IT Rich Text Editor: </title>
+    <title>MC2IT Rich Text Editor: cli/copy.js</title>
     
       <link type="text/css" rel="stylesheet" href="styles/vendor/prism-tomorrow-night.css">
     
@@ -31,54 +31,41 @@
 </header>
 
 
-<main class="layout-main ">
+<main class="layout-main  layout-content--source">
   <div class="container">
-    <p class="page-kind"></p>
-    <h1 class="page-title"></h1>
+    <p class="page-kind">source</p>
+    <h1 class="page-title">cli/copy.js</h1>
     
 
 
 
     
 
+<section>
+    <article>
+        <pre id="source" class="source-page line-numbers"><code class="language-js">import {cpSync} from "node:fs";
+import {fileURLToPath} from "node:url";
+import {Command} from "commander";
 
-    <h3> </h3>
+/**
+ * Copies the library assets to a given directory.
+ * @param {string} output The path to the output directory.
+ */
+export function copyAssets(output) {
+	cpSync(fileURLToPath(new URL("../../www/js", import.meta.url)), output, {recursive: true});
+}
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    <section class="readme">
-        <article><h1>MC2IT Rich Text Editor</h1>
-<p><img src="https://badgen.net/npm/node/@mc2it/rte" alt="Runtime"> <img src="https://badgen.net/npm/v/@mc2it/rte" alt="Release"> <img src="https://badgen.net/npm/license/@mc2it/rte" alt="License"> <img src="https://badgen.net/npm/dt/@mc2it/rte" alt="Downloads"></p>
-<p>A custom build of <a href="https://ckeditor.com/ckeditor-5">CKEditor</a>, a rich text editor,
-for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.</p>
-<h2>Documentation</h2>
-<ul>
-<li><a href="https://github.com/mc2it/rich-text-editor/wiki">User guide</a></li>
-<li><a href="https://mc2it.github.io/rich-text-editor">API reference</a></li>
-</ul>
-<h2>Development</h2>
-<ul>
-<li><a href="https://github.com/mc2it/rich-text-editor">Git repository</a></li>
-<li><a href="https://www.npmjs.com/package/@mc2it/rte">npm package</a></li>
-<li><a href="https://github.com/mc2it/rich-text-editor/issues">Submit an issue</a></li>
-</ul>
-<h2>License</h2>
-<p><a href="https://github.com/mc2it/rich-text-editor">MC2IT Rich Text Editor</a> is distributed under the MIT License.</p></article>
-    </section>
-
-
+/**
+ * Command copying the library assets to a given directory.
+ * @type {Command}
+ */
+export default new Command("copy")
+	.description("Copy the library assets to a given directory.")
+	.argument("directory", "the path to the output directory")
+	.action(copyAssets);
+</code></pre>
+    </article>
+</section>
 
 
 

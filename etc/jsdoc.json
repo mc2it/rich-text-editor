@@ -19,7 +19,7 @@
 	"templates": {
 		"default": {
 			"includeDate": false,
-			"staticFiles": {"include": ["www"]}
+			"staticFiles": {"include": ["www/favicon.ico", "www/favicon.svg"]}
 		}
 	}
 }

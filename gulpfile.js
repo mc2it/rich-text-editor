@@ -54,7 +54,7 @@ export function watch() {
  * Spawns a new process using the specified command.
  * @param {string} command The command to run.
  * @param {string[]} [args] The command arguments.
- * @return {Promise<void>} Resolves when the command is finally terminated.
+ * @returns {Promise.<void>} Resolves when the command is finally terminated.
  */
 function exec(command, args = []) {
 	return new Promise((resolve, reject) => spawn(command, args, {shell: true, stdio: "inherit"})
