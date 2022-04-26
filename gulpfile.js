@@ -1,5 +1,5 @@
 import {spawn} from "node:child_process";
-import {readFile} from "node:fs/promises";
+import {cp, readFile} from "node:fs/promises";
 import del from "del";
 import gulp from "gulp";
 
@@ -24,8 +24,8 @@ export function clean() {
 
 /** Builds the documentation. */
 export async function doc() {
-	await del("docs");
-	return exec("npx", ["jsdoc", "--configure", "etc/jsdoc.json"]);
+	await exec("npx", ["typedoc", "--options", "etc/typedoc.json"]);
+	return cp("www/favicon.ico", "docs/favicon.ico");
 }
 
 /** Fixes the coding standards issues. */
@@ -54,7 +54,7 @@ export function watch() {
  * Spawns a new process using the specified command.
  * @param {string} command The command to run.
  * @param {string[]} [args] The command arguments.
- * @returns {Promise.<void>} Resolves when the command is finally terminated.
+ * @returns {Promise<void>} Resolves when the command is finally terminated.
  */
 function exec(command, args = []) {
 	return new Promise((resolve, reject) => spawn(command, args, {shell: true, stdio: "inherit"})

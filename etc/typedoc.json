@@ -1,0 +1,11 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"entryPoints": ["../lib/rte/index.js"],
+	"excludePrivate": true,
+	"gitRevision": "main",
+	"hideGenerator": true,
+	"name": "MC2IT Rich Text Editor",
+	"out": "../docs",
+	"readme": "none",
+	"tsconfig": "../lib/rte/jsconfig.json"
+}
