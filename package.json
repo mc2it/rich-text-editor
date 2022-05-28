@@ -1,10 +1,8 @@
 {
-	"bin": "./bin/mc2it_rte.js",
 	"bugs": "https://github.com/mc2it/rich-text-editor/issues",
 	"description": "A custom build of CKEditor, a rich text editor.",
 	"homepage": "https://github.com/mc2it/rich-text-editor",
 	"license": "MIT",
-	"main": "./lib/index.js",
 	"name": "@mc2it/rte",
 	"repository": "github:mc2it/rich-text-editor",
 	"type": "module",
@@ -15,6 +13,9 @@
 		"name": "MC2IT",
 		"url": "https://mc2it.com"
 	},
+	"bin": {
+		"mc2it_rte": "./bin/mc2it_rte.js"
+	},
 	"contributors": [
 		{
 			"email": "cedric@belin.io",
@@ -23,7 +24,7 @@
 		}
 	],
 	"dependencies": {
-		"commander": "^9.2.0"
+		"commander": "^9.3.0"
 	},
 	"devDependencies": {
 		"@ckeditor/ckeditor5-alignment": "^34.1.0",
@@ -46,23 +47,30 @@
 		"@ckeditor/ckeditor5-table": "^34.1.0",
 		"@ckeditor/ckeditor5-theme-lark": "^34.1.0",
 		"@ckeditor/ckeditor5-typing": "^34.1.0",
-		"@types/node": "^17.0.35",
+		"@types/node": "^17.0.36",
 		"css-loader": "^6.7.1",
 		"del": "^6.1.1",
 		"eslint": "^8.16.0",
 		"gulp": "^4.0.2",
-		"jsdoc": "^3.6.10",
 		"postcss-loader": "^7.0.0",
 		"raw-loader": "^4.0.2",
 		"style-loader": "^3.3.1",
 		"terser-webpack-plugin": "^5.3.1",
-		"tidy-jsdoc": "^1.4.1",
+		"typedoc": "^0.22.15",
 		"typescript": "^4.7.2",
 		"webpack": "^5.72.1",
 		"webpack-cli": "^4.9.2"
 	},
 	"engines": {
 		"node": ">=18.0.0"
+	},
+	"exports": {
+		".": {
+			"browser": "./www/js/mc2it_rte.js",
+			"default": "./lib/index.js"
+		},
+		"./cli": "./lib/cli/index.js",
+		"./rte": "./lib/rte/index.js"
 	},
 	"files": [
 		"lib/",
