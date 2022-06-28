@@ -31,12 +31,12 @@ export async function doc() {
 
 /** Fixes the coding standards issues. */
 export function fix() {
-	return exec("npx", ["eslint", "--config=etc/eslint.json", "--fix", ...sources]);
+	return exec("npx", ["eslint", "--config=etc/eslint.json", "--fix", ...include]);
 }
 
 /** Performs the static analysis of source code. */
 export function lint() {
-	return exec("npx", ["eslint", "--config=etc/eslint.json", ...sources]);
+	return exec("npx", ["eslint", "--config=etc/eslint.json", ...include]);
 }
 
 /** Publishes the package in the registry. */
