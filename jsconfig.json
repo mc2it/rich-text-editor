@@ -7,6 +7,6 @@
 		"moduleResolution": "nodenext",
 		"resolveJsonModule": true,
 		"strict": true,
-		"target": "es2022"
+		"target": "esnext"
 	}
 }
