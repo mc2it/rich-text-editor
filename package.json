@@ -50,7 +50,7 @@
 		"@types/node": "^18.7.13",
 		"css-loader": "^6.7.1",
 		"del": "^7.0.0",
-		"eslint": "^8.22.0",
+		"eslint": "^8.23.0",
 		"gulp": "^4.0.2",
 		"postcss-loader": "^7.0.1",
 		"raw-loader": "^4.0.2",
