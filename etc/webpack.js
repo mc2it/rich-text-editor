@@ -1,14 +1,16 @@
 import {createRequire} from "node:module";
-import {join} from "node:path";
 import {fileURLToPath} from "node:url";
 import CKEditorUtils from "@ckeditor/ckeditor5-dev-utils";
 import CKEditorWebpackPlugin from "@ckeditor/ckeditor5-dev-webpack-plugin";
 import TerserWebpackPlugin from "terser-webpack-plugin";
 
-const basePath = fileURLToPath(new URL("..", import.meta.url));
+/**
+ * The bundler configuation.
+ * @type {import("webpack").Configuration}
+ */
 export default {
 	devtool: false,
-	entry: join(basePath, "lib/index.js"),
+	entry: fileURLToPath(new URL("../lib/index.js", import.meta.url)),
 	module: {
 		rules: [
 			{test: /\.svg$/, use: ["raw-loader"]},
@@ -44,7 +46,7 @@ export default {
 		library: "RichTextEditor",
 		libraryExport: "RichTextEditor",
 		libraryTarget: "window",
-		path: join(basePath, "www/js")
+		path: fileURLToPath(new URL("../www/js", import.meta.url))
 	},
 	performance: {hints: false},
 	plugins: [
