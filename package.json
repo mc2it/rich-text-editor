@@ -23,16 +23,13 @@
 			"url": "https://belin.io"
 		}
 	],
-	"dependencies": {
-		"commander": "^9.4.0"
-	},
 	"devDependencies": {
 		"@ckeditor/ckeditor5-alignment": "^35.1.0",
 		"@ckeditor/ckeditor5-autoformat": "^35.1.0",
 		"@ckeditor/ckeditor5-basic-styles": "^35.1.0",
 		"@ckeditor/ckeditor5-core": "^35.1.0",
-		"@ckeditor/ckeditor5-dev-utils": "^30.4.0",
-		"@ckeditor/ckeditor5-dev-webpack-plugin": "^30.4.0",
+		"@ckeditor/ckeditor5-dev-utils": "^30.5.0",
+		"@ckeditor/ckeditor5-dev-webpack-plugin": "^30.5.0",
 		"@ckeditor/ckeditor5-editor-classic": "^35.1.0",
 		"@ckeditor/ckeditor5-essentials": "^35.1.0",
 		"@ckeditor/ckeditor5-font": "^35.1.0",
