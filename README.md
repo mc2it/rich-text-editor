@@ -2,7 +2,7 @@
 ![Runtime](https://badgen.net/npm/node/@mc2it/rte) ![Release](https://badgen.net/npm/v/@mc2it/rte) ![License](https://badgen.net/npm/license/@mc2it/rte) ![Downloads](https://badgen.net/npm/dt/@mc2it/rte)
 
 A custom build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text editor,
-for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+for [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 
 ## Documentation
 - [User guide](https://github.com/mc2it/rich-text-editor/wiki)
