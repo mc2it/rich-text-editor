@@ -12,7 +12,6 @@ async function main() {
 		const options = {language: "en", placeholder: "Type the content here!"};
 		await RichTextEditor.create(textArea, options);
 	}
-
 	catch (error) {
 		console.error(error);
 	}
