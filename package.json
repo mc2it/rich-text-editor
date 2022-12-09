@@ -44,7 +44,7 @@
 		"@ckeditor/ckeditor5-table": "^35.3.2",
 		"@ckeditor/ckeditor5-theme-lark": "^35.3.2",
 		"@ckeditor/ckeditor5-typing": "^35.3.2",
-		"@types/node": "^18.11.11",
+		"@types/node": "^18.11.12",
 		"css-loader": "^6.7.2",
 		"del": "^7.0.0",
 		"eslint": "^8.29.0",
