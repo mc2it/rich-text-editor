@@ -1,7 +1,7 @@
 import {createRequire} from "node:module";
 import {fileURLToPath} from "node:url";
+import CKEditorTranslations from "@ckeditor/ckeditor5-dev-translations";
 import CKEditorUtils from "@ckeditor/ckeditor5-dev-utils";
-import CKEditorWebpackPlugin from "@ckeditor/ckeditor5-dev-webpack-plugin";
 import TerserWebpackPlugin from "terser-webpack-plugin";
 
 /**
@@ -50,7 +50,7 @@ export default {
 	},
 	performance: {hints: false},
 	plugins: [
-		new CKEditorWebpackPlugin({
+		new CKEditorTranslations({
 			additionalLanguages: "all",
 			language: "fr",
 			outputDirectory: "i18n"
