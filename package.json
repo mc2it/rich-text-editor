@@ -47,7 +47,7 @@
 		"@types/node": "^18.11.18",
 		"css-loader": "^6.7.3",
 		"del": "^7.0.0",
-		"eslint": "^8.30.0",
+		"eslint": "^8.31.0",
 		"gulp": "^4.0.2",
 		"postcss-loader": "^7.0.2",
 		"raw-loader": "^4.0.2",
