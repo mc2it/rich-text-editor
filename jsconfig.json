@@ -6,7 +6,6 @@
 		"module": "ESNext",
 		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
-		"rootDir": "./src",
 		"strict": true,
 		"target": "ESNext"
 	}
