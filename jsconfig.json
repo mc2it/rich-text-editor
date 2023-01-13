@@ -1,11 +1,12 @@
 {
-	"include": ["*.js", "bin/*.js", "etc/*.js"],
+	"include": ["*.js", "bin/*.js", "etc/*.js", "src/**/*.js"],
 	"compilerOptions": {
 		"checkJs": true,
 		"esModuleInterop": true,
 		"module": "ESNext",
 		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
+		"rootDir": "./src",
 		"strict": true,
 		"target": "ESNext"
 	}
