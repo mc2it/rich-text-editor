@@ -18,7 +18,7 @@ export async function build() {
 	return exec("npx", ["webpack", "--config=etc/webpack.js", "--mode=production"]);
 }
 
-/** Deletes all generated files and reset any saved state. */
+/** Deletes all generated files. */
 export function clean() {
 	return del(["share", "var/**/*", "www/js"]);
 }
@@ -39,7 +39,7 @@ export function lint() {
 	return exec("npx", ["eslint", "--config=etc/eslint.json", ...include]);
 }
 
-/** Publishes the package in the registry. */
+/** Publishes the package. */
 export async function publish() {
 	await exec("npm", ["publish"]);
 	const {version} = JSON.parse(await readFile("package.json", "utf8"));
