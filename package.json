@@ -46,9 +46,7 @@
 		"@ckeditor/ckeditor5-typing": "^36.0.1",
 		"@types/node": "^18.14.0",
 		"css-loader": "^6.7.3",
-		"del": "^7.0.0",
 		"eslint": "^8.34.0",
-		"gulp": "^4.0.2",
 		"postcss-loader": "^7.0.2",
 		"raw-loader": "^4.0.2",
 		"style-loader": "^3.3.1",
@@ -84,7 +82,7 @@
 		"wysiwyg"
 	],
 	"scripts": {
-		"prepack": "gulp",
+		"prepack": "lix Dist",
 		"start": "node bin/mc2it_rte.js"
 	}
 }
