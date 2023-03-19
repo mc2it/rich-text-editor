@@ -51,7 +51,7 @@
 		"raw-loader": "^4.0.2",
 		"style-loader": "^3.3.2",
 		"terser-webpack-plugin": "^5.3.7",
-		"typedoc": "^0.23.27",
+		"typedoc": "^0.23.28",
 		"typescript": "^5.0.2",
 		"webpack": "^5.76.2",
 		"webpack-cli": "^5.0.1"
