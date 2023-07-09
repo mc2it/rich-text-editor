@@ -5,8 +5,8 @@ A custom build of [CKEditor](https://ckeditor.com/ckeditor-5), a rich text edito
 for [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 
 ## Documentation
-- [User guide](https://github.com/mc2it/rich-text-editor/wiki)
-- [API reference](https://mc2it.github.io/rich-text-editor)
+- [User guide](https://mc2it.github.io/rich-text-editor)
+- [API reference](https://mc2it.github.io/rich-text-editor/api)
 
 ## Development
 - [Git repository](https://github.com/mc2it/rich-text-editor)
@@ -14,4 +14,4 @@ for [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 - [Submit an issue](https://github.com/mc2it/rich-text-editor/issues)
 
 ## License
-[MC2IT Rich Text Editor](https://github.com/mc2it/rich-text-editor) is distributed under the MIT License.
+[MC2IT Rich Text Editor](https://mc2it.github.io/rich-text-editor) is distributed under the MIT License.
