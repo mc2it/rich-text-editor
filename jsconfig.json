@@ -1,5 +1,5 @@
 {
-	"include": ["bin/*.js", "etc/*.js", "src/**/*.js"],
+	"include": ["bin/*.js", "etc/*.js", "scripts/*.js", "src/**/*.js"],
 	"compilerOptions": {
 		"checkJs": true,
 		"esModuleInterop": true,

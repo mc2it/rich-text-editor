@@ -82,7 +82,14 @@
 		"wysiwyg"
 	],
 	"scripts": {
-		"prepack": "lix Dist",
-		"start": "node bin/mc2it_rte.js"
+		"build": "tsc --project src/jsconfig.json && webpack --config=etc/webpack.js --mode=production",
+		"clean": "node scripts/clean.js",
+		"doc": "typedoc --options etc/typedoc.json && node scripts/doc.js",
+		"dist": "npm run clean && npm run build",
+		"lint": "tsc --project jsconfig.json && eslint --config=etc/eslint.json bin etc example scripts src",
+		"postpublish": "node scripts/publish.js",
+		"prepack": "npm run dist",
+		"start": "node bin/mc2it_rte.js --help",
+		"watch": "webpack watch --config=etc/webpack.js --mode=development"
 	}
 }
