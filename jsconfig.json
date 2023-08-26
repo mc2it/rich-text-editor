@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"checkJs": true,
 		"esModuleInterop": true,
-		"module": "ESNext",
+		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
 		"strict": true,
