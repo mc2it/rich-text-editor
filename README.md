@@ -14,4 +14,4 @@ for [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 - [Submit an issue](https://github.com/mc2it/rich-text-editor/issues)
 
 ## License
-[MC2IT Rich Text Editor](https://mc2it.github.io/rich-text-editor) is distributed under the MIT License.
+[MC2IT Rich Text Editor](https://github.com/mc2it/rich-text-editor) is distributed under the MIT License.

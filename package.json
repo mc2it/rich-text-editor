@@ -1,7 +1,7 @@
 {
 	"bugs": "https://github.com/mc2it/rich-text-editor/issues",
 	"description": "A custom build of CKEditor, a rich text editor.",
-	"homepage": "https://mc2it.github.io/rich-text-editor",
+	"homepage": "https://github.com/mc2it/rich-text-editor",
 	"license": "MIT",
 	"name": "@mc2it/rte",
 	"repository": "mc2it/rich-text-editor",
