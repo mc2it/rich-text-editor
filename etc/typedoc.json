@@ -7,5 +7,5 @@
 	"name": "MC2IT Rich Text Editor",
 	"out": "../docs/api",
 	"readme": "none",
-	"tsconfig": "../lib/rte/jsconfig.json"
+	"tsconfig": "../lib/rte/tsconfig.json"
 }
