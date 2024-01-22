@@ -11,6 +11,7 @@
 *.mjs text
 *.scss text diff=css
 *.svg text
+*.ts text
 *.txt text
 *.yaml text
 *.yml text
