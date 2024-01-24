@@ -1,8 +1,0 @@
-name: main
-on: push
-jobs:
-  notify:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send notification
-        uses: mc2it/git-report@main
